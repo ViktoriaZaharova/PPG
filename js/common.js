@@ -304,3 +304,14 @@ $(document).ready(function ($) {
 	});
 });
 
+$(".product-image-min").click(function (e) {
+	e.preventDefault();
+	var id = $(this).attr('data-tab'),
+			content = $('.product-image-max__img[data-tab="'+ id +'"]');
+
+	$('.product-image-min.active').removeClass('active'); // 1
+	$(this).addClass('active'); // 2
+
+	$('.product-image-max__img.active').removeClass('active'); // 3
+	content.addClass('active'); // 4
+});
