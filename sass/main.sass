@@ -449,7 +449,7 @@
       font-size: 14px
       color: rgba(#1D1D1B, .60 )
     &-name
-      margin: 0 auto 0 0  
+      margin: 0 auto 0 0
   &__name
     width: 100%
     font-size: 18px
@@ -470,7 +470,6 @@
         margin: 0
   .price
     margin: 0 24px 0 0
-  
 
   &:last-child
     margin: 0
@@ -800,7 +799,6 @@
     align-items: center
     flex-wrap: wrap
     margin: 0 0 24px
- 
 
 .sidebar-showcase-box
   width: 100%
@@ -811,7 +809,7 @@
   &:last-child
     margin: 0
   h4
-    margin: 0 0 8px  
+    margin: 0 0 8px
 
 .showcase-user
   h4
@@ -896,7 +894,7 @@
       width: calc( 100% - 312px )
       padding: 12px
     .price-wrapper
-      margin: 0  
+      margin: 0
 
 .stickers
   display: flex
@@ -915,15 +913,14 @@
   &:last-child
     margin: 0
   &:hover, &:active, &.active
-    border-color: $accent  
+    border-color: $accent
   img
-    mix-blend-mode: multiply  
+    mix-blend-mode: multiply
 
 .sticker2
   padding: 0
   border: none
-  border-radius: 50%  
-    
+  border-radius: 50%
 
 .new-price
   color: #008E2F
@@ -962,7 +959,7 @@
       mix-blend-mode: multiply
       // max-height: 100%
     .stickers
-      margin: 8px 0 0  
+      margin: 8px 0 0
   .card-product-top__body
     width: 100%
     height: calc( 100% - 224px )
@@ -1008,7 +1005,7 @@
     span
       margin: 0 0 0 24px
       color: rgba(#1D1D1B, .4)
-  .title-wrapper  
+  .title-wrapper
     .tabs__caption
       margin: 0 16px 0 0
       padding: 0
@@ -1029,9 +1026,9 @@
           @include d-flex
           padding: 8px
   .row-wrapper
-    align-items: stretch  
+    align-items: stretch
   .tabs__content
-    height: 100%        
+    height: 100%
 
 .in-collection
   background: rgba(#1D1D1B, .14)
@@ -1047,12 +1044,12 @@
   font-size: 14px
   line-height: 22px
   .label-title
-    font-weight: normal 
+    font-weight: normal
   input, select
-    font-size: 14px  
+    font-size: 14px
     height: 40px
   .label-checkbox
-    font-size: 14px  
+    font-size: 14px
     line-height: 22px
   .btn-group
     .btn
@@ -1061,14 +1058,14 @@
     position: sticky
     bottom: 0
     z-index: 2
-    background: #fff    
+    background: #fff
     padding: 16px 0
 
 .form-filter-box
   width: 100%
   margin: 0 0 16px
   &:last-child
-    margin: 0    
+    margin: 0
 
 .filter-selected
   width: 100%
@@ -1083,11 +1080,11 @@
     height: 34px
     margin: 0 12px 16px 0
     svg
-      margin: 0 0 0 8px  
+      margin: 0 0 0 8px
     &.btn-clear-filter
-      color: rgba($black, .6)  
+      color: rgba($black, .6)
       &:hover, &:focus
-        color: #fff  
+        color: #fff
 
 .catalog-search-result
   text-align: center
@@ -1095,11 +1092,11 @@
   align-items: center
   justify-content: center
   flex-direction: column
-  margin: 0 auto   
+  margin: 0 auto
   width: 100%
   height: 100%
   .box-text
-    color: rgba(#1D1D1B, .6)     
+    color: rgba(#1D1D1B, .6)
 
 h1.title-search-result
   font-family: $default-font
@@ -1118,15 +1115,23 @@ h1.title-search-result
     align-items: flex-start
     margin: 0 0 32px
   &__name
-    margin: 0 auto 0 0  
+    margin: 0 auto 0 0
   h1
     font-size: 40px
     margin: 0
   .stickers
-    margin: 0 0 32px  
+    margin: 0 0 32px
+  .tabs__caption
+    width: 100%
+    margin: 0 0 32px
+    li
+      flex: 1
+      a
+        width: 100%
+        text-align: center
 
 .subtitle
-  color: rgba(#1D1D1B,.6)  
+  color: rgba(#1D1D1B,.6)
   margin: 8px 0 0
 
 .product-image
@@ -1152,9 +1157,9 @@ h1.title-search-result
   height: 100px
 
   &.active
-    border-color: $accent  
+    border-color: $accent
   &:last-child
-    margin: 0      
+    margin: 0
 
 .product-image-max
   width: 100%
@@ -1170,7 +1175,7 @@ h1.title-search-result
   &__img
     display: none
     &.active
-      display: block  
+      display: block
 
 .product-page-box
   width: 100%
@@ -1196,11 +1201,11 @@ h1.title-search-result
       margin: 0
     span, a
       text-align: right
-      margin: 0 0 0 auto    
+      margin: 0 0 0 auto
       display: block
     p
-      color: rgba(#1D1D1B,.6)   
-      margin-right: auto   
+      color: rgba(#1D1D1B,.6)
+      margin-right: auto
 
 .btn-favorite2
   border: none
@@ -1212,7 +1217,7 @@ h1.title-search-result
     @include d-flex
     width: 24px
     height: 24px
-    min-width: 24px  
+    min-width: 24px
     border-radius: 50%
     margin: 0 8px 0 0
     padding: 1.5px
@@ -1226,10 +1231,9 @@ h1.title-search-result
   margin: 8px 0 32px
   align-items: center
   .btn
-    margin: 0 
+    margin: 0
   .link-rate
-    margin: 0 0 0 20px    
-
+    margin: 0 0 0 20px
 
 .price-chart
   display: flex
@@ -1242,7 +1246,7 @@ h1.title-search-result
   h2
     font-size: 28px
     width: fit-content
-    margin: 0  
+    margin: 0
 
 .chart-wrapper
   width: 100%
@@ -1260,4 +1264,4 @@ h1.title-search-result
 .table-product
   th, td
     &:first-child
-      padding-left: 16px  
+      padding-left: 16px

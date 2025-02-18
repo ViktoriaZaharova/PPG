@@ -1393,6 +1393,17 @@ h1.title-search-result strong {
 .product-page .stickers {
   margin: 0 0 32px;
 }
+.product-page .tabs__caption {
+  width: 100%;
+  margin: 0 0 32px;
+}
+.product-page .tabs__caption li {
+  flex: 1;
+}
+.product-page .tabs__caption li a {
+  width: 100%;
+  text-align: center;
+}
 
 .subtitle {
   color: rgba(29, 29, 27, 0.6);
