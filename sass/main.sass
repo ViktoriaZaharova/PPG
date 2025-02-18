@@ -1116,16 +1116,24 @@ h1.title-search-result
     width: 100%
     display: flex
     align-items: flex-start
-    margin: 0 0 24px
+    margin: 0 0 32px
   &__name
     margin: 0 auto 0 0  
   h1
     font-size: 40px
-    margin: 0 0 8px
+    margin: 0
+  .stickers
+    margin: 0 0 32px  
 
 .subtitle
   color: rgba(#1D1D1B,.6)  
+  margin: 8px 0 0
 
+.product-image
+  .product-page-box
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
 
 .product-image-preview
   width: 100%
@@ -1134,13 +1142,15 @@ h1.title-search-result
   margin: 16px 0 24px 0
 
 .product-image-min
-  flex: 1
   margin: 0 8px 8px 0
   @include d-flex
   border-radius: 16px
   padding: 12px
   border: 1px solid transparent
   overflow: hidden
+  width: 100px
+  height: 100px
+
   &.active
     border-color: $accent  
   &:last-child

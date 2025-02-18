@@ -1381,18 +1381,29 @@ h1.title-search-result strong {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  margin: 0 0 24px;
+  margin: 0 0 32px;
 }
 .product-page__name {
   margin: 0 auto 0 0;
 }
 .product-page h1 {
   font-size: 40px;
-  margin: 0 0 8px;
+  margin: 0;
+}
+.product-page .stickers {
+  margin: 0 0 32px;
 }
 
 .subtitle {
   color: rgba(29, 29, 27, 0.6);
+  margin: 8px 0 0;
+}
+
+.product-image .product-page-box {
+  margin: 0 0 16px;
+}
+.product-image .product-page-box:last-child {
+  margin: 0;
 }
 
 .product-image-preview {
@@ -1403,7 +1414,6 @@ h1.title-search-result strong {
 }
 
 .product-image-min {
-  flex: 1;
   margin: 0 8px 8px 0;
   display: flex;
   align-items: center;
@@ -1412,6 +1422,8 @@ h1.title-search-result strong {
   padding: 12px;
   border: 1px solid transparent;
   overflow: hidden;
+  width: 100px;
+  height: 100px;
 }
 .product-image-min.active {
   border-color: #57ADE3;
