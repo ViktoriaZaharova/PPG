@@ -618,33 +618,41 @@
   <script src="js/common.js"></script>
 
   <script>
-    const ctx = document.getElementById('myChart1');
+    $(document).ready(function () {
+      const ctx = document.getElementById('myChart1').getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 510);
+      gradient.addColorStop(0, 'rgba(160,0,0,1)');
+      gradient.addColorStop(1, 'rgba(160,0,0,0)');
 
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['2024', 'Апрель', 'Июль', 'Октябрь'],
-        datasets: [{
-          // label: '# of Votes',
-          data: [0, 240],
-          borderWidth: 1,
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true
-          }
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['2024', 'Апрель', 'Июль', 'Октябрь'],
+          datasets: [{
+            // label: '# of Votes',
+            data: [0, 100, 120, 200, 240],
+            borderWidth: 1,
+            fill: 'start',
+            fillColor : gradient,
+            backgroundColor: gradient
+          }]
         },
-        plugins: {
-          legend: {
-            title: {
-              display: false,
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          },
+          plugins: {
+            legend: {
+              title: {
+                display: false,
+              }
             }
           }
         }
-      }
+      });
     });
   </script>
 

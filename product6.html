@@ -702,7 +702,10 @@
 
   <script>
     $(document).ready(function () {
-      const ctx = document.getElementById('myChart1');
+      const ctx = document.getElementById('myChart1').getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 510);
+      gradient.addColorStop(0, 'rgba(160,0,0,1)');
+      gradient.addColorStop(1, 'rgba(160,0,0,0)');
 
       new Chart(ctx, {
         type: 'line',
@@ -710,8 +713,11 @@
           labels: ['2024', 'Апрель', 'Июль', 'Октябрь'],
           datasets: [{
             // label: '# of Votes',
-            data: [0, 240],
+            data: [0, 100, 120, 200, 240],
             borderWidth: 1,
+            fill: 'start',
+            fillColor : gradient,
+            backgroundColor: gradient
           }]
         },
         options: {
@@ -733,7 +739,10 @@
     });
 
     $(document).ready(function () {
-      const ctx = document.getElementById('myChart2');
+      const ctx = document.getElementById('myChart2').getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 510);
+      gradient.addColorStop(0, 'rgba(160,0,0,1)');
+      gradient.addColorStop(1, 'rgba(160,0,0,0)');
 
       new Chart(ctx, {
         type: 'line',
@@ -743,6 +752,9 @@
             // label: '# of Votes',
             data: [0, 240],
             borderWidth: 1,
+            fill: 'start',
+            fillColor : gradient,
+            backgroundColor: gradient
           }]
         },
         options: {
