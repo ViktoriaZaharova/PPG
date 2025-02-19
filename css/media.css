@@ -1,2 +1,75 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 576px) {
+  .p-32 {
+    padding: 16px 0;
+  }
+  .logo {
+    max-width: 77px;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0 auto 16px;
+  }
+  input, textarea, select {
+    height: 40px;
+  }
+  label {
+    margin: 0 0 12px;
+  }
+  label:last-child {
+    margin: 0;
+  }
+  .label-group {
+    flex-wrap: wrap;
+  }
+  .label-group label {
+    margin: 0 0 12px;
+    flex: none;
+    width: 100%;
+  }
+  .label-group label:last-child {
+    margin: 0 0 12px;
+  }
+  .label-icon {
+    top: 9px;
+  }
+  .form {
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .form [type=submit] {
+    margin: 12px 0 0;
+  }
+  .form-login {
+    font-size: 14px;
+  }
+  .form-login p {
+    margin: 0 0 16px;
+  }
+  .content-login {
+    font-size: 14px;
+  }
+  .consent {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 328px;
+  }
+  .consent br {
+    display: none;
+  }
+  .btn {
+    height: 40px;
+    font-size: 14px;
+    padding: 9px 10px;
+  }
+  .btn img {
+    max-height: 100%;
+  }
+  .btn-group .btn {
+    margin: 12px 8px 0 0;
+  }
+  .btn-group .btn:last-child {
+    margin: 12px 0 0;
+  }
+}

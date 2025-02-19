@@ -16,10 +16,9 @@
 }
 
 .content-login {
-  margin: 160px auto 0;
+  margin: auto;
   max-width: 550px;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -41,7 +40,7 @@
   width: 100%;
   text-align: center;
   color: rgba(29, 29, 27, 0.5);
-  margin: 24px 0;
+  margin: 24px 0 0;
 }
 .form-footer a {
   margin: 4px auto 0;
