@@ -1,3 +1,20 @@
+// mobile menu
+$('.btn-burger').on('click', function (e) {
+	e.preventDefault();
+	$('.overlay').fadeToggle();
+	$(this).toggleClass('active');
+	$('.nav-menu').fadeToggle();
+});
+
+$('.overlay').on('click', function () {
+	$('.btn-burger').removeClass('active');
+	$('.nav-menu').fadeOut();
+	$(this).fadeOut();
+});
+
+// mobile menu end
+
+
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 // accordeon
@@ -292,22 +309,22 @@ $('.btn-close-poppup').on('click', function (e) {
 
 $(document).ready(function ($) {
 	$('.tabs__caption li a').click(function (e) {
-			e.preventDefault();
+		e.preventDefault();
 	});
 	$('.tabs__caption li').click(function () {
-			$('.tabs__caption li').removeClass('active');
-			$(this).addClass('active').closest('.tabs').find('.tabs__content').removeClass('active');
+		$('.tabs__caption li').removeClass('active');
+		$(this).addClass('active').closest('.tabs').find('.tabs__content').removeClass('active');
 
-			var selectTab = $(this).find('a').attr("href");
+		var selectTab = $(this).find('a').attr("href");
 
-			$(selectTab).addClass('active');
+		$(selectTab).addClass('active');
 	});
 });
 
 $(".product-image-min").click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('data-tab'),
-			content = $('.product-image-max__img[data-tab="'+ id +'"]');
+		content = $('.product-image-max__img[data-tab="' + id + '"]');
 
 	$('.product-image-min.active').removeClass('active'); // 1
 	$(this).addClass('active'); // 2

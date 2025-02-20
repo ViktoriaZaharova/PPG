@@ -40,6 +40,7 @@ header .container {
   display: flex;
   align-items: center;
   color: rgba(29, 29, 27, 0.6);
+  padding: 11px 0;
 }
 .menu-link .svg-icon {
   width: 20px;
@@ -77,6 +78,36 @@ header .container {
   justify-content: center;
   max-width: 97px;
   width: 100%;
+}
+
+.btn-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  fill: none;
+  stroke: #1D1D1B;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  margin: 0 12px 0 0;
+  transition: 0.3s ease;
+}
+.btn-burger::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: url("../img/burger-menu.svg") no-repeat center;
+  background-size: 100%;
+}
+.btn-burger.active {
+  background-size: 100%;
+}
+.btn-burger.active::before {
+  background: url("../img/close-menu.svg") no-repeat center;
 }
 
 .btn-notification {

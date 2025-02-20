@@ -36,6 +36,7 @@ header
   display: flex
   align-items: center   
   color: rgba($black, .6)  
+  padding: 11px 0
   .svg-icon
     width: 20px
     height: 20px
@@ -64,6 +65,31 @@ header
   @include d-flex
   max-width: 97px
   width: 100%
+
+.btn-burger
+  display: none
+  align-items: center
+  justify-content: center
+  fill: none
+  stroke: $black
+  padding: 8px
+  width: 32px
+  height: 32px
+  min-width: 32px
+  margin: 0 12px 0 0 
+  transition: .3s ease 
+  &::before
+    content: ''
+    @include d-flex
+    width: 16px
+    height: 16px
+    background: url('../img/burger-menu.svg') no-repeat center
+    background-size: 100%
+  &.active
+    &::before
+      background: url('../img/close-menu.svg') no-repeat center
+    background-size: 100%
+
   
 .btn-notification
   @include d-flex
