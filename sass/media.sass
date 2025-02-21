@@ -8,19 +8,18 @@
   .menu li
     margin: 0 16px 0 0
     &:last-child
-      margin: 0  
-
+      margin: 0
 
 @media only screen and (max-width: 1200px)
   .btn-burger
-    display: flex   
+    display: flex
 
   .nav-menu
     display: none
     position: fixed
     margin: 0
     left: 0
-    top: 64px
+    top: 56px
     z-index: 101
     background: #fff
     width: 100%
@@ -36,8 +35,8 @@
         margin: 0
 
   header
-    z-index: 101      
-  
+    z-index: 101
+
 @media only screen and (max-width: 992px)
 
 @media only screen and (max-width: 768px)
@@ -45,14 +44,14 @@
     padding: 12px 0
 
   .wrapper-content-page
-    padding: 64px 0 0  
+    padding: 64px 0 0
 
   .error-img
     max-width: 680px
 
   .h1
     font-size: 28px
-    line-height: 36px  
+    line-height: 36px
 
   .footer-bottom
     padding: 16px 0
@@ -60,19 +59,70 @@
   footer .link
     margin: 0 16px 0 0
     &:last-child
-      margin: 0   
+      margin: 0
 
   .help-page
-    margin: 0 
-    height: 100%    
+    margin: 0
+    height: 100%
 
   header
     .logo
-      max-width: 77px   
+      max-width: 77px
+
+
+@media only screen and (max-width: 600px)
+  .btn-search-mobile
+    display: flex
+
+  .form-search-header
+    display: none
+    width: 100%
+    position: fixed
+    left: 0
+    top: 56px
+    z-index: 101
+    background: #fff
+    width: 100%
+    padding: 24px
+    box-shadow: 0 4px 10px rgba(#1D1D1B,.01)
+    margin: 0
+    max-width: none
+
+  .btn-notification
+    width: 32px
+    height: 32px
+    min-width: 32px
+    padding: 8px
+    margin: 0 12px 0 0
+    svg
+      width: 16px
+      height: 16px
+
+  .btn-cabinet
+    width: 32px
+    height: 32px
+    min-width: 32px
+    padding: 2px
+
+  .footer-bottom
+    flex-direction: column
+    align-items: flex-start
+
+  footer .link
+    order: -1
+    margin: 0 0 8px
+    &:last-child
+      margin: 0 0 8px   
 
 @media only screen and (max-width: 576px)
   .p-32
     padding: 16px 0
+
+  .mb-24
+    margin-bottom: 16px
+
+  .col-50
+    width: 100%
 
   .logo
     max-width: 77px
@@ -82,13 +132,28 @@
     line-height: 26px
     margin: 0 auto 16px
 
+  h4
+    font-size: 16px
+    line-height: 24px
+    margin: 0 0 16px  
+
   input, textarea, select
     height: 40px
+    font-size: 14px
+    line-height: 22px
+
+  textarea
+    padding: 9px 16px
 
   label
     margin: 0 0 12px
     &:last-child
       margin: 0
+
+  .label-title
+    font-size: 14px
+    line-height: 22px
+    margin: 0 0 8px
 
   .label-group
     flex-wrap: wrap
@@ -126,7 +191,7 @@
   .btn
     height: 40px
     font-size: 14px
-    padding: 9px 10px
+    padding: 9px 16px
     img
       max-height: 100%
 
@@ -137,15 +202,40 @@
     margin: 12px 0 0
 
   body
-    font-size: 14px 
-    line-height: 22px 
+    font-size: 14px
+    line-height: 22px
 
   .error-img
     max-width: 328px
-    margin: 0 auto 32px  
+    margin: 0 auto 32px
 
   .error-section .btn
-    margin: 16px auto 0  
+    margin: 16px auto 0
+
+  .nav-breadcrumb
+    margin: 24px 0 16px
+
+  .wrapper-content-page
+    padding: 56px 0 0
+
+  .form-help .btn-group
+    justify-content: flex-start
+
+  .agreement-content
+    font-size: 14px
+    line-height: 22px
+
+  .agreement-content ul .list-lower-latin
+    padding: 0 0 0 8px
+
+  .agreement-content ul ul:last-child
+    margin: 16px 0
+
+  .agreement-content ul ul
+    padding: 0 0 0 16px
+
+  .agreement-content p
+    margin: 0 0 16px        
 
 @media only screen and (max-width: 480px)
 

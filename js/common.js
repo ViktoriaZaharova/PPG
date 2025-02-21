@@ -12,6 +12,18 @@ $('.overlay').on('click', function () {
 	$(this).fadeOut();
 });
 
+$('.btn-search-mobile').on('click', function (e) {
+	e.preventDefault();
+	$('.overlay').fadeToggle();
+	$(this).toggleClass('active');
+	$('.form-search-header').fadeToggle();
+});
+
+$('.overlay').on('click', function () {
+	// $('.btn-burger').removeClass('active');
+	$('.form-search-header').fadeOut();
+	// $(this).fadeOut();
+});
 // mobile menu end
 
 
