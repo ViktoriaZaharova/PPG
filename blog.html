@@ -10,7 +10,8 @@
   <meta property="og:image" content="path/to/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
-
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -23,6 +24,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -53,7 +55,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -61,9 +63,12 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#notification"></use>
-        </svg></a>
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
     </header>
@@ -74,7 +79,7 @@
           <div class="container">
             <div class="w-100">
               <div class="row">
-                <div class="col-25">
+                <div class="col-25 d-pc">
                   <div class="sidebar sidebar-blog">
                     <h4>Категории</h4>
                     <ul class="my-ul blog-menu">
@@ -90,10 +95,20 @@
                 </div>
                 <div class="col-50">
                   <div class="page-container blog-content">
-                    <h1>Блог</h1>
-                    <div class="box-text box-text-title mb-24">
-                      <p>О мире фигурок Funko Pop и только</p>
-                    </div>
+         
+                      <h1>Блог</h1>
+                      <div class="box-text box-text-title mb-24">
+                        <p>О мире фигурок Funko Pop и только</p>
+                      </div>
+                      <ul class="my-ul blog-menu blog-menu-mobile">
+                        <li><a href="blog-page.html" class="blog-menu__link">ТОП-10</a></li>
+                        <li><a href="blog-page.html" class="blog-menu__link">Цены</a></li>
+                        <li><a href="blog-page.html" class="blog-menu__link">Продажи</a></li>
+                        <li><a href="blog-page.html" class="blog-menu__link">Премиум фигурки</a></li>
+                        <li><a href="blog-page.html" class="blog-menu__link">Без категории</a></li>
+                        <li><a href="blog-page.html" class="blog-menu__link active">Все категории</a>
+                        </li>
+                      </ul>
 
                     <div class="blog-card">
                       <a href="blog-page.html" class="blog-card__img"><img src="img/blog-img1.jpg" alt=""></a>
@@ -104,7 +119,9 @@
                           <p>Сейчас сезон резьбы по тыкве здесь, в Pop Price Guide, и мы не можем решить, как вырезать
                             наши фонари Джека в этот Хэллоуин. Поэтому мы обращаемся к Funko за вдохновением не только о
                             том, что вырезать, но и о том, как это делать.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam aperiam veniam doloremque cupiditate, deleniti aut! Aperiam voluptatem iste eius consequuntur commodi, velit ipsam quis aut, inventore cupiditate tempora sapiente?</p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam aperiam veniam
+                            doloremque cupiditate, deleniti aut! Aperiam voluptatem iste eius consequuntur commodi,
+                            velit ipsam quis aut, inventore cupiditate tempora sapiente?</p>
                         </div>
                       </div>
 
@@ -193,6 +210,8 @@
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <!-- add plugins js end-->
 

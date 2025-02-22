@@ -38,6 +38,37 @@
     z-index: 101
 
 @media only screen and (max-width: 992px)
+  .blog-page
+    .col-50
+      width: 100%
+    &__content
+      padding: 32px 12px  
+
+  .d-pc
+    display: none
+
+  .blog-menu-mobile  
+    display: flex
+    align-items: stretch
+    overflow-x: auto
+    white-space: nowrap
+    width: calc(100% + 40px)
+    font-size: 12px
+    line-height: 18px
+    margin: 0 0 16px
+    li
+      margin: 0 8px 8px 0
+      &:last-child
+        margin: 0 0 8px
+      a
+        padding: 8px 16px
+        background: #fff
+        border-radius: 40px
+        &.active
+          background: rgba(#242933,.09)
+
+  .blog-card
+    padding: 40px 32px
 
 @media only screen and (max-width: 768px)
   header
@@ -121,6 +152,9 @@
   .mb-24
     margin-bottom: 16px
 
+  .m-32
+    margin: 16px 0  
+
   .col-50
     width: 100%
 
@@ -135,7 +169,12 @@
   h4
     font-size: 16px
     line-height: 24px
-    margin: 0 0 16px  
+    margin: 0 0 16px 
+
+  h3
+    font-size: 20px
+    line-height: 26px
+       
 
   input, textarea, select
     height: 40px
@@ -235,7 +274,62 @@
     padding: 0 0 0 16px
 
   .agreement-content p
-    margin: 0 0 16px        
+    margin: 0 0 16px  
+
+  .panel-accordeon
+    padding: 16px 0
+    &__head:after        
+      width: 24px
+      height: 24px
+      min-width: 24px
+
+  .faq-page h1
+    font-size: 28px
+    line-height: 36px
+    
+  .help-desk
+    border-radius: 16px
+
+  .faq-content
+    margin: 24px auto
+
+  .box-text p, .box-text ul
+    margin: 0 0 12px
+    &:last-child
+      margin: 0  
+
+  .faq-article-page .box-text
+    font-size: 14px
+    line-height: 20px  
+
+  .grade-answer
+    padding: 0
+
+  .blog-menu-mobile
+    margin: 0 0 8px
+
+  .blog-card
+    padding: 16px
+    border-radius: 16px
+    .box-text
+      font-size: 14px
+      line-height: 22px
+    &__img
+      margin: 0 0 16px  
+    &__title
+      margin: 0 0 16px
+    &__footer
+      margin: 16px 0 0  
+
+
+  .blog-page
+    padding: 0
+    &__content
+      border-radius: 0
+      padding: 24px 0
+
+  .blog-menu-mobile
+    width: calc( 100% + 12px)        
 
 @media only screen and (max-width: 480px)
 

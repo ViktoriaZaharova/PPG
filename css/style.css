@@ -685,6 +685,7 @@ a.color-black:hover {
 }
 
 .panel-accordeon {
+  border-radius: 8px;
   border-bottom: 1px solid rgba(36, 41, 51, 0.14);
   padding: 24px 0;
 }
