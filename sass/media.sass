@@ -38,16 +38,22 @@
     z-index: 101
 
 @media only screen and (max-width: 992px)
+  .col-50, .col-30, .col-100
+    padding: 0 8px
+
+  .row
+    margin: 0 -8px
+
   .blog-page
     .col-50
       width: 100%
     &__content
-      padding: 32px 12px  
+      padding: 32px 12px
 
   .d-pc
     display: none
 
-  .blog-menu-mobile  
+  .blog-menu-mobile
     display: flex
     align-items: stretch
     overflow-x: auto
@@ -69,6 +75,22 @@
 
   .blog-card
     padding: 40px 32px
+
+  .blog-page__content
+    padding: 24px 12px
+
+  .col-100-tablet
+    width: 100%
+
+  .cabinet-page
+    .col-50
+      width: 50%
+
+  .cabinet-box
+    .col-30
+      width: 50%
+    .col-100-tablet
+      width: 100%
 
 @media only screen and (max-width: 768px)
   header
@@ -100,7 +122,15 @@
     .logo
       max-width: 77px
 
+  .blog-page-section
+    margin: 0 0 24px
 
+  .card-product
+    margin: 0 0 16px
+
+  .modal__wrapper
+    max-width: 440px
+    padding: 0 32px
 @media only screen and (max-width: 600px)
   .btn-search-mobile
     display: flex
@@ -143,7 +173,11 @@
     order: -1
     margin: 0 0 8px
     &:last-child
-      margin: 0 0 8px   
+      margin: 0 0 8px
+
+  .cabinet-page
+    .col-50, .col-30
+      width: 100%
 
 @media only screen and (max-width: 576px)
   .p-32
@@ -153,7 +187,7 @@
     margin-bottom: 16px
 
   .m-32
-    margin: 16px 0  
+    margin: 16px 0
 
   .col-50
     width: 100%
@@ -169,12 +203,11 @@
   h4
     font-size: 16px
     line-height: 24px
-    margin: 0 0 16px 
+    margin: 0 0 16px
 
   h3
     font-size: 20px
     line-height: 26px
-       
 
   input, textarea, select
     height: 40px
@@ -274,11 +307,11 @@
     padding: 0 0 0 16px
 
   .agreement-content p
-    margin: 0 0 16px  
+    margin: 0 0 16px
 
   .panel-accordeon
     padding: 16px 0
-    &__head:after        
+    &__head:after
       width: 24px
       height: 24px
       min-width: 24px
@@ -286,7 +319,7 @@
   .faq-page h1
     font-size: 28px
     line-height: 36px
-    
+
   .help-desk
     border-radius: 16px
 
@@ -296,11 +329,11 @@
   .box-text p, .box-text ul
     margin: 0 0 12px
     &:last-child
-      margin: 0  
+      margin: 0
 
   .faq-article-page .box-text
     font-size: 14px
-    line-height: 20px  
+    line-height: 20px
 
   .grade-answer
     padding: 0
@@ -315,12 +348,11 @@
       font-size: 14px
       line-height: 22px
     &__img
-      margin: 0 0 16px  
+      margin: 0 0 16px
     &__title
       margin: 0 0 16px
     &__footer
-      margin: 16px 0 0  
-
+      margin: 16px 0 0
 
   .blog-page
     padding: 0
@@ -329,10 +361,108 @@
       padding: 24px 0
 
   .blog-menu-mobile
-    width: calc( 100% + 12px)        
+    width: calc( 100% + 12px)
+
+  .btn-favorite
+    width: 74px
+
+  .blog-page .h1
+    font-size: 20px
+    line-height: 26px
+
+  .blog-page-section .box-text
+    font-size: 14px
+    line-height: 20px
+
+  .card-product
+    &__img
+      width: 148px
+      min-width: 148px
+      padding: 16px
+    &__name
+      font-size: 12px
+      line-height: 18px
+    &__head
+      .box-text
+        font-size: 12px
+        line-height: 18px
+    &__footer
+      flex-wrap: wrap
+      .price
+        width: 100%
+        text-align: right
+        margin: 0 0 12px
+    .add-collection
+      width: 74px
+      svg
+        display: flex
+        width: 20px
+        height: 20px
+      span
+        display: none
+
+  .form-row
+    flex-wrap: wrap
+
+  .form-comments__avatar
+    margin: 0 0 16px
+
+  .comment-box
+    padding: 0
+    .form-comments__avatar
+      position: relative
+      margin: 0 16px 0 0
+
+  .cabinet-box
+    border-radius: 16px
+    padding: 0 16px
+    h3
+      font-size: 14px
+      line-height: 22px
+    &__head
+      padding: 12px 0
+    &__body
+      padding: 16px 0
+
+  .banner-cabinet__avatar
+    width: 64px
+    height: 64px
+    // padding: 18px
+    margin: -32px 0 0 16px
+
+  .label-file__text
+    font-size: 12px
+    line-height: 18px
+    strong
+      font-size: 14px
+      line-height: 22px
+
+  .saved-poppup
+    padding: 16px 24px
+    bottom: 16px
+    font-size: 14px
+    img
+      margin: 0 8px 0 0  
+
+  .modal__div2 .modal-title
+    margin: 0 0 8px
+
+  .modal__wrapper
+    max-width: 328px
+    border-radius: 16px
+
+  .modal-title
+    font-size: 16px
+    line-height: 24px          
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
 @media only screen and (max-width: 370px)
+  .card-product__img
+    width: 130px
+    min-width: 130px
+
+  .btn-favorite, .card-product .add-collection
+    width: 64px

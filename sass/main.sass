@@ -61,6 +61,10 @@
 .btn-add-collection
   margin: 32px auto 0
 
+.card-product .add-collection
+  svg
+    display: none
+  
 .home-wrapper
   background: $accent
   border-radius: 32px
@@ -344,6 +348,9 @@
     border-radius: 24px
     background: rgba(#242933, .04)
 
+.blog-page-all
+  padding: 0    
+
 .blog-card
   width: 100%
   margin: 0 0 24px
@@ -533,8 +540,13 @@
 .comment-box
   width: 100%
   margin: 0 0 32px
-  display: flex
-  align-items: flex-start
+  padding: 0 0 0 72px
+  position: relative
+  z-index: 1
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
   .box-text
     font-size: 18px
     line-height: 28px
@@ -542,6 +554,11 @@
     color: rgba(#1D1D1B, .88)
   &:last-child
     margin: 0
+  .form-comments__avatar
+    position: absolute
+    left: 0
+    top: 0
+    margin: 0  
 
 // collections page
 .table-sorting

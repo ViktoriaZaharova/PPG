@@ -11,6 +11,8 @@
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
 
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -23,6 +25,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -53,7 +56,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -61,15 +64,18 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#notification"></use>
-        </svg></a>
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
     </header>
 
     <div class="wrapper-content wrapper-content-page">
-      <section class="page blog-page mb-32">
+      <section class="page blog-page blog-page-all mb-32">
         <div class="container">
           <nav class="nav-breadcrumb">
             <ul class="my-ul breadcrumb">
@@ -226,8 +232,12 @@
     </footer>
   </div>
 
+  <div class="overlay"></div>
+
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <!-- add plugins js end-->
 

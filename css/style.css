@@ -651,8 +651,7 @@ a.color-black:hover {
 
 .breadcrumb {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: start;
   font-size: 12px;
   line-height: 18px;
 }
