@@ -782,6 +782,31 @@ a.color-black:hover {
   width: 100%;
   overflow-x: auto;
 }
+.table-responsive::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background-color: rgba(36, 41, 51, 0.04);
+  border-radius: 4px;
+}
+.table-responsive::-webkit-scrollbar-track-piece {
+  background: rgba(36, 41, 51, 0.04);
+  border-radius: 4px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #57ADE3;
+  border-radius: 4px;
+}
+.table-responsive::-webkit-scrollbar-corner {
+  background: rgba(36, 41, 51, 0.04);
+  border-radius: 4px;
+}
+.table-responsive::-webkit-resizer {
+  background-color: #57ADE3;
+  border-radius: 4px;
+}
 
 .table {
   width: 100%;
@@ -885,6 +910,32 @@ a.color-black:hover {
 }
 .btn-delete:hover, .btn-delete:focus {
   color: #fff;
+}
+
+.btn-favorite {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border: 1px solid rgba(36, 41, 51, 0.14);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  fill: #1D1D1B;
+  flex: none;
+}
+.btn-favorite svg {
+  width: 20px;
+  height: 20px;
+}
+.btn-favorite:hover, .btn-favorite:focus {
+  background: #57ADE3;
+  fill: #fff;
+}
+
+.btn-favorite2 {
+  border: none;
 }
 
 .d-tablet, .d-mobile {

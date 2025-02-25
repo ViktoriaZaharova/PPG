@@ -487,22 +487,7 @@
   &:last-child
     margin: 0
 
-.btn-favorite
-  width: 40px
-  height: 40px
-  min-width: 40px
-  border: 1px solid rgba(#242933, .14)
-  border-radius: 8px
-  @include d-flex
-  padding: 10px
-  fill: $black
-  flex: none
-  svg
-    width: 20px
-    height: 20px
-  &:hover, &:focus
-    background: $accent
-    fill: #fff
+
 
 .interesting-card
   padding: 24px
@@ -1230,8 +1215,6 @@ h1.title-search-result
       color: rgba(#1D1D1B,.6)
       margin-right: auto
 
-.btn-favorite2
-  border: none
 
 .owner-box
   display: flex
@@ -1253,8 +1236,10 @@ h1.title-search-result
 .btn-group-nav
   margin: 8px 0 32px
   align-items: center
+  flex-wrap: nowrap
   .btn
     margin: 0
+    flex: 1
   .link-rate
     margin: 0 0 0 20px
 
@@ -1276,6 +1261,8 @@ h1.title-search-result
   margin: 0 0 32px
   &:last-child
     margin: 0
+  canvas
+    width: 100% !important  
 
 .price-updated
   text-align: center

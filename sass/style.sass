@@ -100,8 +100,6 @@ input, textarea, select
       color: rgba(#1D1D1B, .14)
   &.p-default
     padding: 0 16px
-    
-  
 
 .label-icon
   fill: none
@@ -234,7 +232,6 @@ button, .btn
     svg
       stroke: #fff
 
-
 .btn-black
   color: #fff
   background: $black
@@ -249,18 +246,18 @@ button, .btn
     stroke: #fff
 
 .btn-border-accent
-  color: $accent  
+  color: $accent
   border-color: $accent
-  svg  
+  svg
     width: 16px
     height: 16px
     min-width: 16px
-    fill: $accent  
+    fill: $accent
   &:hover, &:focus
     background: $accent
-    stroke: #fff  
+    stroke: #fff
     color: #fff
-    svg  
+    svg
       fill: #fff
       stroke: none
 
@@ -274,7 +271,7 @@ button, .btn
     &:last-child
       margin: 20px 0 0
   .btn-favorite, .flex-none
-    flex: none    
+    flex: none
   &.justify-end
     align-items: center
     justify-content: flex-end
@@ -286,7 +283,6 @@ button, .btn
 
 .svg-icon
   @include d-flex
-
 
 strong, b
   font-weight: bold
@@ -358,7 +354,6 @@ h4
   width: 100%
   padding: 0 12px
 
-
 .col-25
   width: 25%
   padding: 0 12px
@@ -371,9 +366,9 @@ h4
   width: 33.33%
   padding: 0 12px
 
-.col-40 
+.col-40
   width: 40%
-  padding: 0 12px 
+  padding: 0 12px
 
 .col-50
   width: 50%
@@ -381,7 +376,7 @@ h4
 
 .col-60
   width: 60%
-  padding: 0 12px    
+  padding: 0 12px
 
 .col-70
   width: 66.66%
@@ -597,7 +592,26 @@ a.color-black
 
 .table-responsive
   width: 100%
-  overflow-x: auto   
+  overflow-x: auto
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-scrollbar-track-piece
+    background: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-scrollbar-thumb
+    background-color: $accent
+    border-radius: 4px
+  &::-webkit-scrollbar-corner
+    background: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-resizer
+    background-color: $accent
+    border-radius: 4px
 
 .table
   width: 100%
@@ -685,8 +699,28 @@ a.color-black
   &:hover, &:focus
     color: #fff
 
+.btn-favorite
+  width: 40px
+  height: 40px
+  min-width: 40px
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 8px
+  @include d-flex
+  padding: 10px
+  fill: $black
+  flex: none
+  svg
+    width: 20px
+    height: 20px
+  &:hover, &:focus
+    background: $accent
+    fill: #fff
+
+.btn-favorite2
+  border: none
+
 .d-tablet, .d-mobile
-  display: none    
+  display: none
 
 .select-my
   padding: 0 32px 0 16px
@@ -877,7 +911,7 @@ a.color-black
     &.active
       background: #fff
     a
-      padding: 5px 12px  
+      padding: 5px 12px
       color: $black
 
 .title-wrapper
@@ -892,10 +926,10 @@ a.color-black
     margin: 0 auto 0 0
   .showcase-content__head
     width: fit-content
-    margin: 0 0 0 auto    
+    margin: 0 0 0 auto
   .nav-breadcrumb
     width: fit-content
-    margin: 0 auto 0 0   
+    margin: 0 auto 0 0
 
 //checkbox my
 .label-checkbox

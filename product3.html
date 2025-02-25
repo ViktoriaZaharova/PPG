@@ -25,6 +25,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -55,7 +56,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -63,6 +64,9 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
@@ -70,23 +74,47 @@
       </div>
     </header>
 
+
     <div class="wrapper-content wrapper-content-page">
       <section class="page product-page m-32">
 
         <div class="container">
-          <div class="title-wrapper">
+          <div class="title-wrapper title-wrapper-v2">
             <nav class="nav-breadcrumb">
               <ul class="my-ul breadcrumb">
                 <li><a href="catalog.html">База фигурок</a></li>
                 <li><span>God Loki</span></li>
               </ul>
             </nav>
-
+            <a href="#" class="btn btn-favorite btn-favorite2 d-tablet"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg></a>
+            <div class="dropdown showcase-dropdown d-tablet">
+              <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
+              <div class="dropdown-menu">
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/vk-icon.svg" alt="">
+                  <span>Вконтакте</span>
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/whatsapp.svg" alt="">
+                  <span>WhatsApp</span>
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/tg.svg" alt="">
+                  <span>Telegram</span>
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
+                  <span>Скопировать ссылку</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="w-100">
             <div class="row">
-              <div class="col-30 mb-16">
+              <div class="col-30 mb-16 col-image">
                 <div class="product-image">
                   <div class="product-image-max">
                     <img data-tab="1" class="product-image-max__img active" src="img/product-img.jpg" alt="">
@@ -102,101 +130,102 @@
                     <a href="#" data-tab="4" class="product-image-min"><img src="img/preview-img4.jpg" alt=""></a>
                   </div>
 
+                  <div class="d-pc">
+                    <div class="product-page-box">
+                      <h5>О фигурке</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>Выпущено:</p>
+                          <span>1 дек 2023</span>
+                        </li>
+                        <li>
+                          <p>Производитель:</p>
+                          <span>Вьетнам</span>
+                        </li>
+                        <li>
+                          <p>Материал:</p>
+                          <span>PVC/Винил</span>
+                        </li>
+                        <li>
+                          <p>Статус продукта:</p>
+                          <span>Делюкс, эксклюзив</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-page-box">
+                      <h5>Характеристики</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>Размер:</p>
+                          <span>15,2 см</span>
+                        </li>
+                        <li>
+                          <p>Стоимость:</p>
+                          <span>19 500 ₽</span>
+                        </li>
+                        <li>
+                          <p>Особенности:</p>
+                          <span>Баблхэд</span>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div class="product-page-box">
-                    <h5>О фигурке</h5>
-                    <ul class="my-ul list-characteristics">
-                      <li>
-                        <p>Выпущено:</p>
-                        <span>1 дек 2023</span>
-                      </li>
-                      <li>
-                        <p>Производитель:</p>
-                        <span>Вьетнам</span>
-                      </li>
-                      <li>
-                        <p>Материал:</p>
-                        <span>PVC/Винил</span>
-                      </li>
-                      <li>
-                        <p>Статус продукта:</p>
-                        <span>Делюкс, эксклюзив</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-page-box">
-                    <h5>Характеристики</h5>
-                    <ul class="my-ul list-characteristics">
-                      <li>
-                        <p>Размер:</p>
-                        <span>15,2 см</span>
-                      </li>
-                      <li>
-                        <p>Стоимость:</p>
-                        <span>19 500 ₽</span>
-                      </li>
-                      <li>
-                        <p>Особенности:</p>
-                        <span>Баблхэд</span>
-                      </li>
-                    </ul>
-                  </div>
+                    <div class="product-page-box">
+                      <h5>Размеры, см</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>Высота фигурки:</p>
+                          <span>15</span>
+                        </li>
+                        <li>
+                          <p>Высота коробки:</p>
+                          <span>20,3</span>
+                        </li>
+                        <li>
+                          <p>Глубина коробки:</p>
+                          <span>14</span>
+                        </li>
+                        <li>
+                          <p>Ширина коробки:</p>
+                          <span>17,8</span>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div class="product-page-box">
-                    <h5>Размеры, см</h5>
-                    <ul class="my-ul list-characteristics">
-                      <li>
-                        <p>Высота фигурки:</p>
-                        <span>15</span>
-                      </li>
-                      <li>
-                        <p>Высота коробки:</p>
-                        <span>20,3</span>
-                      </li>
-                      <li>
-                        <p>Глубина коробки:</p>
-                        <span>14</span>
-                      </li>
-                      <li>
-                        <p>Ширина коробки:</p>
-                        <span>17,8</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="product-page-box">
-                    <h5>Контрольные номера</h5>
-                    <ul class="my-ul list-characteristics">
-                      <li>
-                        <p>PPGID:</p>
-                        <span>971029</span>
-                      </li>
-                      <li>
-                        <p>Штрих-код:</p>
-                        <span>889698742900</span>
-                      </li>
-                      <li>
-                        <p>ID производителя:</p>
-                        <span>74290</span>
-                      </li>
-                      <li>
-                        <p>Номер фигурки №:</p>
-                        <span>1326</span>
-                      </li>
-                    </ul>
+                    <div class="product-page-box">
+                      <h5>Контрольные номера</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>PPGID:</p>
+                          <span>971029</span>
+                        </li>
+                        <li>
+                          <p>Штрих-код:</p>
+                          <span>889698742900</span>
+                        </li>
+                        <li>
+                          <p>ID производителя:</p>
+                          <span>74290</span>
+                        </li>
+                        <li>
+                          <p>Номер фигурки №:</p>
+                          <span>1326</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-70">
+              <div class="col-70 mb-16 col-content">
                 <div class="product-page__head">
                   <div class="product-page__name">
                     <h1>God Loki</h1>
                     <div class="subtitle">God Loki On Throne</div>
                   </div>
-                  <a href="#" class="btn btn-favorite btn-favorite2"><svg class="svg-icon">
+                  <a href="#" class="btn btn-favorite btn-favorite2 d-pc"><svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#heart"></use>
                     </svg></a>
-                  <div class="dropdown">
+                  <div class="dropdown showcase-dropdown d-pc">
                     <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
                     <div class="dropdown-menu">
                       <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
@@ -219,79 +248,240 @@
                   </div>
                 </div>
                 <div class="product-page__body w-100">
-                  <div class="btn-group btn-group-nav">
+                  <div class="btn-group btn-group-nav d-pc">
                     <a href="#" class="btn btn-sm btn-blue">В коллекцию</a>
                     <a href="#" class="color-black link-rate">Оценить фигурку</a>
                   </div>
 
-                  <div class="price-chart">
-                    <h2>График цен</h2>
-                    <span>19 500 ₽</span>
+                  <div class="d-pc">
+                    <div class="price-chart">
+                      <h2>График цен</h2>
+                      <span>19 500 ₽</span>
+                    </div>
+
+                    <div class="chart-wrapper">
+                      <canvas id="myChart2"></canvas>
+                    </div>
+
+                    <div class="table-responsive">
+                      <table class="table table-product">
+                        <thead>
+                          <tr>
+                            <th>Диапазон дней</th>
+                            <th>В продаже</th>
+                            <th>Средняя цена</th>
+                            <th>Самая низкая</th>
+                            <th>Медиана</th>
+                            <th>Самая выоская</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>18 100 ₽</td>
+                            <td>14 569 ₽</td>
+                            <td>18 000 ₽</td>
+                            <td>21 898 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>60</td>
+                            <td>3</td>
+                            <td>18 100 ₽</td>
+                            <td>14 569 ₽</td>
+                            <td>18 000 ₽</td>
+                            <td>21 898 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>90</td>
+                            <td>3</td>
+                            <td>18 100 ₽</td>
+                            <td>14 569 ₽</td>
+                            <td>18 000 ₽</td>
+                            <td>21 898 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>180</td>
+                            <td>3</td>
+                            <td>18 100 ₽</td>
+                            <td>14 569 ₽</td>
+                            <td>18 000 ₽</td>
+                            <td>21 898 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Год</td>
+                            <td>3</td>
+                            <td>18 100 ₽</td>
+                            <td>14 569 ₽</td>
+                            <td>18 000 ₽</td>
+                            <td>21 898 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="price-updated">Стоимость обновляется каждые 12 часов</div>
                   </div>
 
-                  <div class="chart-wrapper">
-                    <canvas id="myChart1"></canvas>
-                  </div>
+                  <div class="d-tablet">
+                    <div class="product-page-box">
+                      <h5>О фигурке</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>Выпущено:</p>
+                          <span>1 дек 2023</span>
+                        </li>
+                        <li>
+                          <p>Производитель:</p>
+                          <span>Вьетнам</span>
+                        </li>
+                        <li>
+                          <p>Материал:</p>
+                          <span>PVC/Винил</span>
+                        </li>
+                        <li>
+                          <p>Статус продукта:</p>
+                          <span>Делюкс, эксклюзив</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-group btn-group-nav d-tablet">
+                      <a href="#" class="btn btn-sm btn-blue">В коллекцию</a>
+                      <a href="#" class="color-black link-rate">Оценить</a>
+                    </div>
+                    <div class="product-page-box">
+                      <h5>Характеристики</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>Размер:</p>
+                          <span>15,2 см</span>
+                        </li>
+                        <li>
+                          <p>Стоимость:</p>
+                          <span>19 500 ₽</span>
+                        </li>
+                        <li>
+                          <p>Особенности:</p>
+                          <span>Баблхэд</span>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div class="table-responsive">
-                    <table class="table table-product">
-                      <thead>
-                        <tr>
-                          <th>Диапазон дней</th>
-                          <th>В продаже</th>
-                          <th>Средняя цена</th>
-                          <th>Самая низкая</th>
-                          <th>Медиана</th>
-                          <th>Самая выоская</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>30</td>
-                          <td>3</td>
-                          <td>18 100 ₽</td>
-                          <td>14 569 ₽</td>
-                          <td>18 000 ₽</td>
-                          <td>21 898 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>60</td>
-                          <td>3</td>
-                          <td>18 100 ₽</td>
-                          <td>14 569 ₽</td>
-                          <td>18 000 ₽</td>
-                          <td>21 898 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>90</td>
-                          <td>3</td>
-                          <td>18 100 ₽</td>
-                          <td>14 569 ₽</td>
-                          <td>18 000 ₽</td>
-                          <td>21 898 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>180</td>
-                          <td>3</td>
-                          <td>18 100 ₽</td>
-                          <td>14 569 ₽</td>
-                          <td>18 000 ₽</td>
-                          <td>21 898 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Год</td>
-                          <td>3</td>
-                          <td>18 100 ₽</td>
-                          <td>14 569 ₽</td>
-                          <td>18 000 ₽</td>
-                          <td>21 898 ₽</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                    <div class="product-page-box">
+                      <h5>Размеры, см</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>Высота фигурки:</p>
+                          <span>15</span>
+                        </li>
+                        <li>
+                          <p>Высота коробки:</p>
+                          <span>20,3</span>
+                        </li>
+                        <li>
+                          <p>Глубина коробки:</p>
+                          <span>14</span>
+                        </li>
+                        <li>
+                          <p>Ширина коробки:</p>
+                          <span>17,8</span>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div class="price-updated">Стоимость обновляется каждые 12 часов</div>
+                    <div class="product-page-box">
+                      <h5>Контрольные номера</h5>
+                      <ul class="my-ul list-characteristics">
+                        <li>
+                          <p>PPGID:</p>
+                          <span>971029</span>
+                        </li>
+                        <li>
+                          <p>Штрих-код:</p>
+                          <span>889698742900</span>
+                        </li>
+                        <li>
+                          <p>ID производителя:</p>
+                          <span>74290</span>
+                        </li>
+                        <li>
+                          <p>Номер фигурки №:</p>
+                          <span>1326</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="col-100 d-tablet">
+                <div class="price-chart">
+                  <h2>График цен</h2>
+                  <span>19 500 ₽</span>
+                </div>
+
+                <div class="chart-wrapper">
+                  <canvas id="myChart1"></canvas>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table table-product">
+                    <thead>
+                      <tr>
+                        <th>Диапазон дней</th>
+                        <th>В продаже</th>
+                        <th>Средняя цена</th>
+                        <th>Самая низкая</th>
+                        <th>Медиана</th>
+                        <th>Самая выоская</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>30</td>
+                        <td>3</td>
+                        <td>18 100 ₽</td>
+                        <td>14 569 ₽</td>
+                        <td>18 000 ₽</td>
+                        <td>21 898 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>60</td>
+                        <td>3</td>
+                        <td>18 100 ₽</td>
+                        <td>14 569 ₽</td>
+                        <td>18 000 ₽</td>
+                        <td>21 898 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>90</td>
+                        <td>3</td>
+                        <td>18 100 ₽</td>
+                        <td>14 569 ₽</td>
+                        <td>18 000 ₽</td>
+                        <td>21 898 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>180</td>
+                        <td>3</td>
+                        <td>18 100 ₽</td>
+                        <td>14 569 ₽</td>
+                        <td>18 000 ₽</td>
+                        <td>21 898 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Год</td>
+                        <td>3</td>
+                        <td>18 100 ₽</td>
+                        <td>14 569 ₽</td>
+                        <td>18 000 ₽</td>
+                        <td>21 898 ₽</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="price-updated">Стоимость обновляется каждые 12 часов</div>
               </div>
             </div>
           </div>
@@ -633,7 +823,43 @@
             data: [0, 100, 120, 200, 240],
             borderWidth: 1,
             fill: 'start',
-            fillColor : gradient,
+            fillColor: gradient,
+            backgroundColor: gradient
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          },
+          plugins: {
+            legend: {
+              title: {
+                display: false,
+              }
+            }
+          }
+        }
+      });
+    });
+    $(document).ready(function () {
+      const ctx = document.getElementById('myChart2').getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 510);
+      gradient.addColorStop(0, 'rgba(160,0,0,1)');
+      gradient.addColorStop(1, 'rgba(160,0,0,0)');
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['2024', 'Апрель', 'Июль', 'Октябрь'],
+          datasets: [{
+            // label: '# of Votes',
+            data: [0, 100, 120, 200, 240],
+            borderWidth: 1,
+            fill: 'start',
+            fillColor: gradient,
             backgroundColor: gradient
           }]
         },
