@@ -10,6 +10,8 @@
   <meta property="og:image" content="path/to/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -23,6 +25,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -53,7 +56,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -61,6 +64,9 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search-icon"></use>
+        </svg></a>
         <a href="login.html" class="btn btn-grey btn-login">Войти</a>
       </div>
     </header>
@@ -74,7 +80,10 @@
               <p>Сервис по управлению коллекциями фигурок Funko Popот отечественных разработчиков</p>
             </div>
             <a href="#" class="btn btn-white btn-add-collection">Создать коллекцию</a>
-            <div class="home-image"><img src="img/home-img.png" alt=""></div>
+            <div class="home-image"><img src="img/home-img.png" class="d-pc" alt="">
+              <img src="img/home-img-tablet.png" class="d-tablet" alt="">
+              <img src="img/home-img-phone.png" class="d-mobile" alt="">
+            </div>
           </div>
         </div>
       </main>
@@ -102,7 +111,9 @@
                         зарегистрироваться</p>
                     </div>
                   </div>
-                  <div class="advantages-box__img"><img src="img/adv-img1.png" alt=""></div>
+                  <div class="advantages-box__img"><img src="img/adv-img1.png" class="d-pc" alt=""> <img src="img/adv-img1-tablet.png" class="d-tablet" alt="">
+                    <img src="img/adv-img1-phone.png" class="d-mobile" alt="">
+                  </div>
                 </div>
               </div>
               <div class="col-50 mb-24">
@@ -137,7 +148,7 @@
             </div>
             <div class="row">
               <div class="col-30 mb-24">
-                <div class="interface-box interface-box1"><img src="img/interface-img1.png" alt=""></div>
+                <div class="interface-box interface-box1"><img src="img/interface-img1.png" class="d-pc" alt=""> <img src="img/interface-img1-tablet.png" class="d-tablet" alt=""></div>
               </div>
               <div class="col-70 mb-24">
                 <div class="interface-box interface-box2"><img src="img/interface-img2.png" alt=""></div>
@@ -184,8 +195,12 @@
     </footer>
   </div>
 
+  <div class="overlay"></div>
+
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <!-- add plugins js end-->
 

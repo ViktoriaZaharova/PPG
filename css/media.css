@@ -1,5 +1,9 @@
 /*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+  .about-section .box-image {
+    margin: 0 0 0 30px;
+  }
+}
 @media only screen and (max-width: 1240px) {
   .nav-menu {
     margin: 0 0 0 16px;
@@ -99,6 +103,64 @@
   .cabinet-box .col-100-tablet {
     width: 100%;
   }
+  .home-wrapper {
+    padding: 80px 0 0;
+  }
+  .h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .mb-48 {
+    margin-bottom: 24px;
+  }
+  .p-80 {
+    padding: 40px 0;
+  }
+  .home h1 {
+    max-width: 530px;
+  }
+  .home-image {
+    margin: 40px 0 0;
+  }
+  .d-tablet {
+    display: block;
+  }
+  .about-section {
+    padding: 40px 0 0;
+  }
+  .about-section .container {
+    flex-wrap: wrap;
+  }
+  .about-section .box-image {
+    max-width: 315px;
+    margin: -70px 0 0 auto;
+  }
+  .advantages-section .col-50, .advantages-section .col-30, .advantages-section .col-70, .interface-section .col-50, .interface-section .col-30, .interface-section .col-70 {
+    width: 100%;
+  }
+  .advantages-box2 .advantages-box__img {
+    margin: 10px 40px 0 auto;
+    max-width: 267px;
+  }
+  .interface-box {
+    padding: 40px 40px 0 40px;
+  }
+  .collection-start h2 {
+    max-width: 700px;
+  }
+  .footer-bottom {
+    padding: 16px 0;
+  }
+  .subscribe-wrapper {
+    max-width: 435px;
+  }
+  .footer-wrapper {
+    padding: 32px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -190,6 +252,26 @@
   .cabinet-page .col-50, .cabinet-page .col-30 {
     width: 100%;
   }
+  .footer-wrapper {
+    padding: 16px 0 0;
+    border-radius: 16px;
+  }
+  .footer-wrapper .logo {
+    display: none;
+  }
+  .subscribe-wrapper {
+    margin: 0;
+    max-width: none;
+  }
+  .form-subscribe [type=submit] {
+    position: relative;
+    margin: 8px 0 0;
+    top: 0;
+    right: 0;
+  }
+  .footer-bottom {
+    margin: 16px 0 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   .p-32 {
@@ -211,6 +293,10 @@
     font-size: 20px;
     line-height: 26px;
     margin: 0 auto 16px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
   }
   h4 {
     font-size: 16px;
@@ -490,6 +576,56 @@
   .modal-title {
     font-size: 16px;
     line-height: 24px;
+  }
+  .home h1 {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 220px;
+    margin: 0 auto 24px;
+  }
+  .home .box-text {
+    max-width: 345px;
+  }
+  .home-image .d-mobile {
+    display: block;
+  }
+  .home-image .d-tablet {
+    display: none;
+  }
+  .about-section .box-image {
+    margin: 56px 0 0 auto;
+  }
+  .advantages-box__text {
+    padding: 24px 16px 40px;
+  }
+  .advantages-box {
+    border-radius: 16px;
+  }
+  .advantages-box .box-text {
+    line-height: 22px;
+  }
+  .advantages-box .d-tablet {
+    display: none;
+  }
+  .advantages-box .d-mobile {
+    display: block;
+  }
+  .advantages-box2 .advantages-box__img {
+    max-width: 167px;
+    margin: 4px 30px 0 auto;
+  }
+  .advantages-box2 .advantages-box__text {
+    padding: 16px 16px 0;
+  }
+  .interface-text {
+    margin: 0 0 24px;
+  }
+  .interface-box {
+    border-radius: 16px;
+    padding: 40px 0 0 40px;
+  }
+  .interface-box img {
+    min-width: 523px;
   }
 }
 @media only screen and (max-width: 370px) {
