@@ -25,6 +25,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -55,7 +56,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -63,9 +64,12 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search-icon"></use>
+        </svg></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#notification"></use>
-          </svg></a>
+          <use xlink:href="img/sprite.svg#notification"></use>
+        </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
     </header>
@@ -81,7 +85,7 @@
                 <li><span>God Loki</span></li>
               </ul>
             </nav>
-            <div class="dropdown">
+            <div class="dropdown dropdown-action">
               <a href="#" class="dropdown-toggle">Действие с фигуркой <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#arrow-bottom"></use>
                 </svg></a>
@@ -114,23 +118,44 @@
               </div>
 
             </div>
+
+            <div class="dropdown showcase-dropdown d-tablet">
+              <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
+              <div class="dropdown-menu">
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/vk-icon.svg" alt="">
+                  <span>Вконтакте</span>
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/whatsapp.svg" alt="">
+                  <span>WhatsApp</span>
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/tg.svg" alt="">
+                  <span>Telegram</span>
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                  <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
+                  <span>Скопировать ссылку</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="w-100">
             <div class="row">
-              <div class="col-30 mb-16">
+              <div class="col-30 mb-16 col-image">
                 <div class="product-image">
                   <div class="product-image-max"><img src="img/product-img.jpg" alt=""></div>
-                  <div class="product-image-preview"></div>
                 </div>
               </div>
-              <div class="col-70">
+              <div class="col-70 col-content">
                 <div class="product-page__head">
                   <div class="product-page__name">
                     <h1>God Loki</h1>
                     <div class="subtitle">God Loki On Throne</div>
                   </div>
-                  <div class="dropdown showcase-dropdown">
+                  <div class="dropdown showcase-dropdown d-pc">
                     <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
                     <div class="dropdown-menu">
                       <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">

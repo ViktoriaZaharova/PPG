@@ -3,6 +3,11 @@
   .about-section .box-image
     margin: 0 0 0 30px
 
+  .dropdown-menu
+    left: auto
+    right: 0
+    transform: none  
+
 @media only screen and (max-width: 1240px)
   .nav-menu
     margin: 0 0 0 16px
@@ -151,6 +156,27 @@
   .footer-wrapper
     padding: 32px 0 0
 
+  .col-image
+    width: 45%
+
+  .col-content
+    width: 55%
+    .col-50
+      width: 100%
+
+  .dropdown-action
+    margin: 0 8px 0 auto
+
+  .product-page
+    margin: 0 0 32px
+
+  .title-wrapper
+    .btn-favorite
+      margin: 0 0 0 8px
+
+  .page-container
+    max-width: none    
+
 @media only screen and (max-width: 768px)
   header
     padding: 12px 0
@@ -190,6 +216,10 @@
   .modal__wrapper
     max-width: 440px
     padding: 0 32px
+
+  .product-image-max
+    height: 288px
+
 @media only screen and (max-width: 600px)
   .btn-search-mobile
     display: flex
@@ -246,16 +276,16 @@
 
   .subscribe-wrapper
     margin: 0
-    max-width: none 
+    max-width: none
 
-  .form-subscribe [type=submit]         
+  .form-subscribe [type=submit]
     position: relative
     margin: 8px 0 0
     top: 0
     right: 0
 
   .footer-bottom
-    margin: 16px 0 0  
+    margin: 16px 0 0
 
 @media only screen and (max-width: 576px)
   .p-32
@@ -445,7 +475,7 @@
   .blog-menu-mobile
     width: calc( 100% + 12px)
 
-  .btn-favorite
+  .card-product .btn-favorite
     width: 74px
 
   .blog-page .h1
@@ -565,7 +595,7 @@
     .d-tablet
       display: none
     .d-mobile
-      display: block    
+      display: block
 
   .advantages-box2 .advantages-box__img
     max-width: 167px
@@ -583,6 +613,47 @@
     img
       min-width: 523px
 
+  .col-image, .col-content
+    width: 100%
+
+  .product-page
+    margin: 24px 0 0
+    h1
+      font-size: 28px
+      line-height: 36px
+    &__head
+      margin: 0 0 16px
+
+  .title-wrapper
+    margin: 0 0 16px
+    flex-wrap: wrap
+    .nav-breadcrumb
+      width: 100%
+      margin: 0 0 16px
+
+  .dropdown-action
+    margin: 0 auto 0 0
+
+  .product-image-max
+    img
+      max-height: 100%
+
+  .subtitle
+    margin: 4px 0 0
+
+  .dropdown-action
+    .dropdown-menu
+      right: auto
+      left: 0  
+
+  .form-edit-collections .form-box
+    margin: 0 0 16px
+
+  .form-edit-collections h3
+    margin: 0 0 16px     
+
+  .form-edit-collections .form-footer .btn-group
+    justify-content: flex-start   
 
 @media only screen and (max-width: 480px)
 
@@ -593,5 +664,6 @@
     width: 130px
     min-width: 130px
 
-  .btn-favorite, .card-product .add-collection
-    width: 64px
+  .card-product
+    .btn-favorite, .add-collection
+      width: 64px
