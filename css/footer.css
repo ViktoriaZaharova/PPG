@@ -164,6 +164,31 @@ footer .link:last-child {
   box-sizing: border-box;
   position: relative;
 }
+.modal__wrapper::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+.modal__wrapper::-webkit-scrollbar-track {
+  background-color: rgba(36, 41, 51, 0.04);
+  border-radius: 4px;
+}
+.modal__wrapper::-webkit-scrollbar-track-piece {
+  background: rgba(36, 41, 51, 0.04);
+  border-radius: 4px;
+}
+.modal__wrapper::-webkit-scrollbar-thumb {
+  background-color: #57ADE3;
+  border-radius: 4px;
+}
+.modal__wrapper::-webkit-scrollbar-corner {
+  background: rgba(36, 41, 51, 0.04);
+  border-radius: 4px;
+}
+.modal__wrapper::-webkit-resizer {
+  background-color: #57ADE3;
+  border-radius: 4px;
+}
 
 .modal-title {
   font-size: 18px;

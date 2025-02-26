@@ -974,6 +974,9 @@
     padding: 12px
     span
       margin: 0 0 12px
+    .btn
+      span
+        margin: 0  
   .price
     margin: 0 0 0 auto
 
@@ -1079,7 +1082,8 @@
   width: 100%
   display: flex
   align-items: flex-start
-  flex-wrap: wrap
+  overflow-x: auto
+  white-space: nowrap
   &__tag
     border-radius: 40px
     padding: 8px 16px
@@ -1114,6 +1118,46 @@ h1.title-search-result
   color: rgba($black, .6 )
   strong
     color: $black
+
+.catalog-line-mobile
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 24px
+
+
+.btn-filter-mobile
+  fill: none
+  stroke: $black
+  width: 48px
+  height: 48px
+  min-width: 48px
+  margin: 0 0 0 16px
+  padding: 12px
+  svg
+    width: 24px
+    height: 24px
+
+.form-search-catalog
+  max-width: 100%
+  position: relative
+  margin: 0
+  [type='submit']
+    background: transparent
+    width: 20px
+    height: 20px
+    min-width: 20px
+    fill: none
+    stroke: rgba(#1D1D1B,.6)
+    position: absolute
+    top: 14px
+    left: 16px
+    opacity: 1
+    z-index: 1
+    svg
+      width: 20px
+      height: 20px
+
 
 // product page
 .product-page

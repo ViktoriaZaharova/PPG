@@ -19,11 +19,6 @@ $('.btn-search-mobile').on('click', function (e) {
 	$('.form-search-header').fadeToggle();
 });
 
-$('.overlay').on('click', function () {
-	// $('.btn-burger').removeClass('active');
-	$('.form-search-header').fadeOut();
-	// $(this).fadeOut();
-});
 // mobile menu end
 
 

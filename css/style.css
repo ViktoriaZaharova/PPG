@@ -1169,6 +1169,10 @@ a.color-black:hover {
   padding: 5px 12px;
   color: #1D1D1B;
 }
+.tabs__caption li a svg {
+  width: 16px;
+  height: 16px;
+}
 
 .title-wrapper {
   width: 100%;
