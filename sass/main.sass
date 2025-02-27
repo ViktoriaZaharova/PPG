@@ -549,7 +549,8 @@
 .table-sorting
   display: flex
   align-items: flex-start
-  flex-wrap: wrap
+  overflow-x: auto
+  white-space: nowrap
   border-radius: 8px
   background: rgba(#242933, .04)
   padding: 4px
@@ -592,9 +593,13 @@
   &:hover, &:focus
     background: $accent
     fill: #fff
+    svg
+      stroke: #fff
   svg
     width: 20px
     height: 20px
+    margin: 0
+
 
 .collections-avatar
   @include d-flex

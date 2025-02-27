@@ -679,7 +679,8 @@
 .table-sorting {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  white-space: nowrap;
   border-radius: 8px;
   background: rgba(36, 41, 51, 0.04);
   padding: 4px;
@@ -733,9 +734,13 @@
   background: #57ADE3;
   fill: #fff;
 }
+.btn-settings-table:hover svg, .btn-settings-table:focus svg {
+  stroke: #fff;
+}
 .btn-settings-table svg {
   width: 20px;
   height: 20px;
+  margin: 0;
 }
 
 .collections-avatar {

@@ -22,6 +22,8 @@ $('.btn-search-mobile').on('click', function (e) {
 // mobile menu end
 
 
+
+
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 // accordeon
@@ -44,15 +46,21 @@ $(function () {
 	$('.btn-table-search').on('click', function (e) {
 		e.preventDefault();
 		$(this).parents('.table-search-wrapper').find('.form-search').fadeIn();
-	})
-
-	$(document).click(function (e) {
-		var div = $(".table-search-wrapper");
-		if (!div.is(e.target)
-			&& div.has(e.target).length === 0) {
-			$(this).find('.table-search-wrapper .form-search').fadeOut();
-		}
 	});
+
+	$(window).on('load resize', function() {
+		if ($(window).width() > 1200) {
+			$(document).click(function (e) {
+				var div = $(".table-search-wrapper");
+				if (!div.is(e.target)
+					&& div.has(e.target).length === 0) {
+					$(this).find('.table-search-wrapper .form-search').fadeOut();
+				}
+			});
+		} 
+	});
+
+	
 });
 
 
