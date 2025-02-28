@@ -25,6 +25,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -55,7 +56,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -63,10 +64,11 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
-        <a href="#" class="btn-notification"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#notification"></use>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
           </svg></a>
-        <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
+     
+          <a href="login.html" class="btn btn-grey btn-login">Войти</a>
       </div>
     </header>
 
@@ -126,7 +128,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="sidebar-showcase-box">
+              <div class="sidebar-showcase-box top-10-products">
                 <h4>ТОП-10</h4>
 
                 <div class="card-product-top">
@@ -260,7 +262,7 @@
 
             <div class="showcase-content tabs">
               <div class="showcase-content__head">
-                <ul class="tabs__caption my-ul">
+                <ul class="tabs__caption my-ul tabs__caption-overflow">
                   <li class="active"><a href="#tab1">Коллекция</a></li>
                   <li><a href="#tab2">Список желаний</a></li>
                   <li><a href="#tab3">Проданы</a></li>
@@ -301,7 +303,10 @@
                             <div class="price">19 220 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -321,7 +326,10 @@
                             <div class="price">15 376 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -343,7 +351,10 @@
                             <div class="price">19 220 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -364,7 +375,10 @@
                             <div class="price">14 896 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -383,7 +397,10 @@
                             <div class="price">13 454 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -402,7 +419,10 @@
                             <div class="price">13 454 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -421,7 +441,10 @@
                             <div class="price">12 013 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -441,7 +464,10 @@
                             <div class="price">12 013 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -460,7 +486,10 @@
                             <div class="price">11 532 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -474,13 +503,19 @@
                           <img src="img/top-img10.jpg" alt="">
                         </a>
                         <div class="card-product-top__body">
-                          <a href="product.html" class="card-product-top__name">Experiment 626</a>
+                          <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#add-icon"></use>
+                            </svg></a>
                           <span>Experiment 626 (Done)</span>
                           <div class="price-wrapper">
                             <div class="price">11 052 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -500,7 +535,10 @@
                             <div class="price">11 052 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -520,7 +558,10 @@
                             <div class="price">11 052 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -541,7 +582,10 @@
                             <div class="price">19 220 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -561,7 +605,10 @@
                             <div class="price">15 376 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -583,7 +630,10 @@
                             <div class="price">19 220 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -604,7 +654,10 @@
                             <div class="price">14 896 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -623,7 +676,10 @@
                             <div class="price">13 454 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -642,7 +698,10 @@
                             <div class="price">13 454 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -661,7 +720,10 @@
                             <div class="price">12 013 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -681,7 +743,10 @@
                             <div class="price">12 013 ₽</div>
                           </div>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-grey add-collection">В коллекцию</a>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>

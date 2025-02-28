@@ -25,6 +25,7 @@
   <div class="wrapper">
     <header>
       <div class="container">
+        <a href="#" class="btn-burger"></a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -55,7 +56,7 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -63,6 +64,9 @@
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
         </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
@@ -130,7 +134,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="sidebar-showcase-box">
+              <div class="sidebar-showcase-box top-10-products">
                 <h4>ТОП-10</h4>
 
                 <div class="card-product-top">
@@ -264,7 +268,7 @@
 
             <div class="showcase-content tabs">
               <div class="showcase-content__head">
-                <ul class="tabs__caption my-ul">
+                <ul class="tabs__caption my-ul tabs__caption-overflow">
                   <li class="active"><a href="#tab1">Коллекция</a></li>
                   <li><a href="#tab2">Список желаний</a></li>
                   <li><a href="#tab3">Проданы</a></li>
