@@ -322,6 +322,12 @@
   .col-25 {
     width: 33.33%;
   }
+  .form-cabinet__footer {
+    margin: 24px 0 0;
+  }
+  .btn-group.justify-end .btn {
+    margin: 0 0 0 24px;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -958,6 +964,7 @@
   .price-chart span {
     font-size: 18px;
     line-height: 28px;
+    margin: 0 0 0 5px;
   }
   .btn-favorite {
     padding: 8px;
@@ -1006,6 +1013,13 @@
   }
   .showcase-content .col-25 {
     width: 50%;
+  }
+  .btn-group.justify-end .btn {
+    margin: 0 0 0 24px;
+  }
+  .blog-card2 .blog-card__title {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 @media only screen and (max-width: 370px) {

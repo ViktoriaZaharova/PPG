@@ -119,7 +119,9 @@
                   <div class="row">
                     <div class="col-30 mb-16">
                       <div class="label-title">Номер телефона</div>
-                      <label><input type="text" name="phone" placeholder="Введите номер телефона" class="p-default"
+                      <label><svg class="svg-icon label-icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                      </svg><input type="text" name="phone" placeholder="Введите номер телефона" 
                           required></label>
                     </div>
                     <div class="col-30 mb-16">
@@ -136,7 +138,9 @@
                     </div>
                     <div class="col-30 mb-16 col-100-tablet">
                       <div class="label-title">Адрес</div>
-                      <label><input type="text" name="address" placeholder="Введите ваш адрес" class="p-default"
+                      <label><svg class="svg-icon label-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg><input type="text" name="address" placeholder="Введите ваш адрес"
                           required></label>
                     </div>
                   </div>
@@ -170,8 +174,8 @@
               </div>
 
               <div class="btn-group justify-end form-cabinet__footer">
-                <a href="#" class="btn btn-red btn-exit">Выйти из аккаунта</a>
                 <a href="#delete-account-modal" class="color-red open_modal">Удалить аккаунт</a>
+                <a href="#" class="btn btn-red btn-exit">Выйти из аккаунта</a>
               </div>
             </form>
           </div>

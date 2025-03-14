@@ -349,7 +349,9 @@
     background: rgba(#242933, .04)
 
 .blog-page-all
-  padding: 0    
+  padding: 0   
+  
+   
 
 .blog-card
   width: 100%
@@ -414,6 +416,12 @@
   &:last-child
     margin: 0
 
+.blog-card2
+  .blog-card__title
+    font-family: $title-font
+    font-size: 28px
+    line-height: 36px
+  
 .blog-img
   width: 100%
   margin: 0 0 24px
@@ -561,7 +569,7 @@
     font-size: 14px
     line-height: 22px
     color: $black
-    &:hover, &:focus, &.active
+    &:hover, &.active
       background: #fff
       color: $black
 
@@ -576,7 +584,9 @@
 .table-collections
   td, th
     &:first-child
-      padding-left: 16px    
+      padding-left: 16px
+  td:not(:first-child), th:not(:first-child)        
+    text-align: center
 
 .btn-table-search, .btn-cloud
   border: 1px solid rgba(#242933, .14)
