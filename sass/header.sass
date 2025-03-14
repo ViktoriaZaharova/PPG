@@ -1,0 +1,132 @@
+@import "vars"
+
+// header
+header
+  width: 100%
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 3
+  background: #fff
+  padding: 16px 0
+  .container
+    align-items: center  
+    display: flex
+    flex-wrap: wrap
+
+.form-search
+  margin: 0 16px 0 auto  
+  max-width: 320px
+  width: 100%
+
+.btn-search-mobile
+  width: 32px
+  height: 32px
+  min-width: 32px
+  padding: 8px
+  margin: 0 12px 0 auto
+  fill: none
+  stroke: $black
+  align-items: center
+  justify-content: center
+  display: none
+  svg
+    width: 16px
+    height: 16px  
+
+.nav-menu
+  margin: 0 0 0 48px
+
+.menu
+  display: flex
+  align-items: center
+  font-size: 14px
+  line-height: 22px
+  li
+    margin: 0 24px 0 0
+    &:last-child
+      margin: 0
+
+.menu-link
+  display: flex
+  align-items: center   
+  color: rgba($black, .6)  
+  padding: 11px 0
+  .svg-icon
+    width: 20px
+    height: 20px
+    min-width: 20px
+    margin: 0 4px 0 0
+    fill: none
+    stroke: $black
+  span
+    padding: 1px 4px 
+  &:hover, &:focus
+    color: $black
+
+.menu-link-catalog
+  color: #fff
+  background: $accent
+  border-radius: 8px
+  padding: 14px 16px
+  font-size: 16px
+  .svg-icon
+    stroke: #fff
+  &:hover, &:focus
+    color: #fff
+    background: $blue      
+
+.logo
+  @include d-flex
+  max-width: 97px
+  width: 100%
+
+.btn-burger
+  display: none
+  align-items: center
+  justify-content: center
+  fill: none
+  stroke: $black
+  padding: 8px
+  width: 32px
+  height: 32px
+  min-width: 32px
+  margin: 0 12px 0 0 
+  transition: .3s ease 
+  &::before
+    content: ''
+    @include d-flex
+    width: 16px
+    height: 16px
+    background: url('../img/burger-menu.svg') no-repeat center
+    background-size: 100%
+  &.active
+    &::before
+      background: url('../img/close-menu.svg') no-repeat center
+    background-size: 100%
+
+  
+.btn-notification
+  @include d-flex
+  fill: none
+  margin: 0 16px 0 0
+  width: 40px
+  height: 40px
+  min-width: 40px
+  stroke: $black
+  padding: 10px
+  &:hover, &:focus
+    stroke: $blue
+  svg
+    width: 20px
+    height: 20px  
+
+.btn-cabinet
+  @include d-flex
+  overflow: hidden
+  width: 48px
+  height: 48px
+  min-width: 48px
+  padding: 3px
+  border-radius: 50%
+  border: 1px solid rgba(#242933, .14)

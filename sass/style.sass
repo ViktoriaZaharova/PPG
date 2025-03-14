@@ -1,0 +1,999 @@
+@import 'fonts'
+@import 'vars'
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: $black
+
+html, body, .wrapper
+  height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 16px 0 48px
+  box-sizing: border-box
+  font-family: $default-font
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 8px
+  width: 100%
+  height: 48px
+  background: #fff
+  color: $black
+  font-size: 16px
+  cursor: pointer
+  transition: .3s ease
+  &::placeholder
+    color: rgba(#1D1D1B, .6)
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    border-color: $blue
+  &:disabled
+    appearance: none
+    cursor: text
+    background: rgba(#1D1D1B, .04)
+    .svg-icon
+      stroke: rgba(#1D1D1B, .14)
+    &::placeholder
+      color: rgba(#1D1D1B, .14)
+  &.p-default
+    padding: 0 16px
+
+.label-icon
+  fill: none
+  stroke: rgba(#1D1D1B, .6)
+  position: absolute
+  top: 14px
+  left: 16px
+  width: 20px
+  height: 20px
+  @include d-flex
+
+input[type="radio"], input[type="checkbox"]
+  width: auto
+  height: auto
+  appearance: auto
+  margin: 0 5px 0 0
+  display: inline
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 20px
+  position: relative
+  &:last-child
+    margin: 0
+
+textarea
+  resize: none
+  padding: 12px 16px
+  height: 120px
+  resize: none
+
+.label-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  label
+    flex: 1
+    margin: 0 12px 20px 0
+    &:last-child
+      margin: 0 0 20px
+
+.label-title
+  display: block
+  width: 100%
+  font-weight: 600
+  margin: 0 0 8px
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+  border-radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 12px 20px
+  font-size: 16px
+  height: 48px
+  border-radius: 8px
+  transition: 0.3s ease
+
+.btn-icon
+  margin: 0 8px 0 0
+  width: 16px
+  height: 16px
+  min-width: 16px
+
+.btn-sm
+  height: 40px
+  font-size: 14px
+  line-height: 22px
+
+.btn-blue
+  color: #fff
+  background: $accent
+  svg
+    stroke: #fff
+    fill: none
+  &:hover, &:focus
+    color: #fff
+    background: $blue
+    svg
+      stroke: #fff
+
+.btn-red
+  color: #fff
+  background: $error
+  svg
+    stroke: #fff
+    fill: none
+  &:hover, &:focus
+    color: #fff
+    background: $blue
+    svg
+      stroke: #fff
+
+.btn-white
+  background: #fff
+  color: $black
+  &:hover, &:focus
+    background: $blue
+    color: #fff
+    svg
+      stroke: #fff
+    .svg-icon
+      filter: brightness(0) invert(1)
+
+.btn-grey
+  background: rgba($black, .09)
+  color: $black
+  svg
+    stroke: $black
+    fill: none
+  &:hover, &:focus
+    background: $blue
+    color: #fff
+    svg
+      stroke: #fff
+
+.btn-black
+  color: #fff
+  background: $black
+  &:hover, &:focus
+    background: $blue
+    color: #fff
+
+.btn-border
+  border: 1px solid rgba($black, .14)
+  &:hover, &:focus
+    background: $accent
+    stroke: #fff
+
+.btn-border-accent
+  color: $accent
+  border-color: $accent
+  svg
+    width: 16px
+    height: 16px
+    min-width: 16px
+    fill: $accent
+  &:hover, &:focus
+    background: $accent
+    stroke: #fff
+    color: #fff
+    svg
+      fill: #fff
+      stroke: none
+
+.btn-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  .btn
+    margin: 20px 8px 0 0
+    flex: 1
+    &:last-child
+      margin: 20px 0 0
+  .btn-favorite, .flex-none
+    flex: none
+  &.justify-end
+    align-items: center
+    justify-content: flex-end
+    .btn
+      margin: 0 16px 0 0
+      flex: none
+      &:last-child
+        margin: 0
+
+.svg-icon
+  @include d-flex
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.list-dots
+  list-style-type: disc
+
+h1
+  width: 100%
+  margin: 0 auto 24px
+  font-size: 28px
+  font-family: $title-font
+
+.h1
+  width: 100%
+  text-align: center
+  margin: 0 auto 24px
+  font-size: 56px
+  font-family: $title-font
+
+h2
+  width: 100%
+  font-family: $title-font
+  font-size: 32px
+
+h3
+  width: 100%
+  font-family: $title-font
+  font-size: 28px
+  margin: 0 0 8px
+
+h4
+  width: 100%
+  font-weight: 600
+  font-size: 20px
+  line-height: 32px
+  margin: 0 0 24px
+
+.container
+  max-width: 1344px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  // display: flex
+  // flex-wrap: wrap
+  padding: 0 12px
+
+.row
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  margin: 0 -12px
+
+.row-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.col-100
+  width: 100%
+  padding: 0 12px
+
+.col-25
+  width: 25%
+  padding: 0 12px
+
+.col-20
+  width: 20%
+  padding: 0 12px
+
+.col-30
+  width: 33.33%
+  padding: 0 12px
+
+.col-40
+  width: 40%
+  padding: 0 12px
+
+.col-50
+  width: 50%
+  padding: 0 12px
+
+.col-60
+  width: 60%
+  padding: 0 12px
+
+.col-70
+  width: 66.66%
+  padding: 0 12px
+
+.col-80
+  width: 80%
+  padding: 0 12px
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.wrapper-content
+  flex: 1 1 auto
+
+.wrapper-content-page
+  padding: 80px 0 0
+
+.page-container
+  margin: 0 auto
+  width: 100%
+  max-width: 648px
+
+.p-32
+  padding: 32px 0
+
+.p-80
+  padding: 80px 0
+
+.mb-48
+  margin-bottom: 48px
+
+.mb-40
+  margin-bottom: 40px
+
+.mb-32
+  margin-bottom: 32px
+
+.mb-24
+  margin-bottom: 24px
+
+.mb-16
+  margin-bottom: 16px
+
+.mt-32
+  margin-top: 32px
+
+.m-32
+  margin: 32px 0
+
+.d-inline
+  display: inline
+
+.d-flex
+  display: flex
+  align-items: center
+
+.text-decoration
+  text-decoration: underline
+
+.color-blue
+  color: $blue
+
+a.color-blue
+  color: $blue
+  &:hover
+    color: rgba($black, .6)
+
+.color-red
+  color: $error
+
+a.color-red
+  color: $error
+  &:hover
+    color: $blue
+
+.color-black-500
+  color: rgba($black, .6)
+
+.color-black
+  color: $black
+
+a.color-black
+  &:hover
+    color: $blue
+
+.color-grey
+  color: rgba($black, .6 )
+
+.style-italic
+  font-style: italic
+
+.w-100
+  width: 100%
+
+.form
+  width: 100%
+  background: rgba(#242933, .04)
+  border-radius: 24px
+  padding: 24px
+  [type='submit']
+    margin: 20px 0 0
+
+.nav-breadcrumb
+  width: 100%
+  margin: 32px 0 24px
+
+.breadcrumb
+  display: flex
+  align-items: start
+  // flex-wrap: wrap
+  font-size: 12px
+  line-height: 18px
+  a
+    display: flex
+    align-items: center
+    color: rgba($black, .6)
+    &:hover, &:focus
+      color: $blue
+    &::after
+      content: ''
+      @include d-flex
+      width: 12px
+      height: 18px
+      min-width: 12px
+      background: url('../img/arrow-breadcrumb.svg') no-repeat center
+      background-size: 100%
+      margin: 0 4px
+
+.box-text
+  p, ul
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.panel-accordeon
+  border-radius: 8px
+  border-bottom: 1px solid rgba(#242933, .14)
+  padding: 24px 0
+  &:last-child
+    border: none
+  &__head
+    display: flex
+    align-items: center
+    cursor: pointer
+    &:after
+      content: ''
+      @include d-flex
+      width: 40px
+      height: 40px
+      min-width: 40px
+      background: url('../img/arrow-accordeon.svg') no-repeat center
+      background-size: 100%
+      transition: .3s ease
+  h3
+    margin: 0 auto 0 0
+  h4
+    margin: 0 0 16px
+    font-size: 16px
+    line-height: 24px
+  &__body
+    display: none
+    padding: 24px 0 0
+  &.in
+    .panel-accordeon
+      &__head
+        &:after
+          transform: rotate(180deg)
+
+.sidebar
+  max-width: 312px
+  width: 100%
+
+.nav-pagination
+  margin: 24px auto 0
+  width: 100%
+
+.pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  li
+    margin: 0 8px 0 0
+    &:last-child
+      margin: 0 0 0 24px
+    &:first-child
+      margin: 0 32px 0 0
+    a
+      @include d-flex
+      text-align: center
+      width: 32px
+      height: 32px
+      min-width: 32px
+      border-radius: 8px
+      padding: 4px
+      color: $black
+      background: rgba(#242933, .09)
+      &:hover, &.active, &:focus
+        background: $accent
+        color: #fff
+      &.pagination-arrow
+        border: 1px solid rgba(#242933, .14)
+        background: #fff
+        fill: none
+        stroke: $black
+        padding: 8px
+        &:hover, &.active, &:focus
+          background: $accent
+          stroke: #fff
+
+.table-responsive
+  width: 100%
+  overflow-x: auto
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-scrollbar-track-piece
+    background: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-scrollbar-thumb
+    background-color: $accent
+    border-radius: 4px
+  &::-webkit-scrollbar-corner
+    background: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-resizer
+    background-color: $accent
+    border-radius: 4px
+
+.table
+  width: 100%
+  font-size: 14px
+  line-height: 22px
+  tr
+    border-bottom: 1px solid rgba($black, .14)
+  td, th
+    vertical-align: middle
+    text-align: left
+    padding: 13px 0
+  .label-checkbox
+    font-size: 14px
+    line-height: 22px
+  thead
+    .label-checkbox
+      input
+        &:checked ~ .checkbox-custom
+          background: $accent url('../img/checked-line.svg') no-repeat center
+          background-size: 12px
+  tbody
+    td
+      padding: 8px 0
+    tr
+      transition: .3s ease
+      &:hover
+        background: rgba(#57ADE3, .14)
+        border-color: #57ADE3
+
+.dropdown
+  position: relative
+
+.dropdown-toggle
+  color: $black
+  display: flex
+  align-items: center
+  svg
+    width: 20px
+    height: 20px
+    min-width: 20px
+    margin: 0 0 0 8px
+    fill: none
+    stroke: $black
+  &.active, &:hover, &:focus
+    color: $accent
+    svg
+      transform: rotate(180deg)
+      stroke: $accent
+
+.dropdown-menu
+  display: none
+  position: absolute
+  z-index: 3
+  padding: 8px 0
+  background: #fff
+  box-shadow: 4px 0 16px rgba(#000, .1)
+  border-radius: 8px
+  left: 50%
+  top: 100%
+  transform: translate(-50%,0)
+  margin: 5px auto 0
+  &__item
+    border-radius: 0
+    white-space: nowrap
+    .svg-icon
+      width: 16px
+      height: 16px
+      min-width: 16px
+      margin: 0 8px 0 0
+      fill: none
+      stroke: $black
+  &__icon
+    width: 16px
+    min-width: 16px
+    margin: 0 8px 0 0
+  .btn-delete
+    color: $error
+    svg
+      stroke: $error
+
+.btn-delete
+  color: $error
+  svg
+    stroke: $error
+  &:hover, &:focus
+    color: #fff
+
+.btn-favorite
+  width: 40px
+  height: 40px
+  min-width: 40px
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 8px
+  @include d-flex
+  padding: 10px
+  fill: $black
+  flex: none
+  svg
+    width: 20px
+    height: 20px
+  &:hover, &:focus
+    background: $accent
+    fill: #fff
+
+.btn-favorite2
+  border: none
+
+.d-tablet, .d-mobile
+  display: none
+
+.select-my
+  padding: 0 32px 0 16px
+  height: 40px
+  font-size: 14px
+  background: #fff url('../img/arrow-select.svg') no-repeat calc(100% - 12px) center
+  background-size: 20px
+
+.select-md
+  height: 48px
+
+.datepicker
+  background: #fff url('../img/calendar.svg') no-repeat 16px center
+  background-size: 20px
+  padding: 0 16px 0 48px
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  width: 100%
+  border: none
+  text-align: center
+  font-family: $default-font
+  font-size: 14px
+
+.ui-datepicker th
+  font-family: $default-font
+  font-size: 14px
+  font-weight: 500
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+  background: url('../img/arrow-select.svg') no-repeat center
+  background-size: 20px
+  border: none
+  border-radius: 0
+  cursor: pointer
+
+.ui-datepicker .ui-datepicker-prev
+  transform: rotate(90deg)
+
+.ui-datepicker .ui-datepicker-next
+  transform: rotate(-90deg)
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span
+  display: none
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+  background: $blue
+  color: #fff
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  background: $accent
+
+.label-file
+  height: 200px
+  margin: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  cursor: pointer
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 16px
+  input
+    display: none
+
+.label-file__text
+  margin: 16px auto 0
+  max-width: 316px
+  display: block
+  font-size: 14px
+  line-height: 22px
+  color: rgba(#1D1D1B, .6)
+  strong
+    display: block
+    font-size: 18px
+    font-weight: 600
+    color: $black
+
+.sizes-banner-text
+  display: block
+  margin: 4px 0 0
+  color: rgba(#1D1D1B, .6)
+
+.label-file__result
+  width: 100%
+  margin: 16px 0 0
+
+.fileup-file
+  width: 100%
+  max-width: none
+  margin: 0 0 16px
+  background: #fff
+  border-radius: 16px
+  border: 1px solid rgba(#242933, .14)
+  padding: 16px
+  font-family: $default-font
+  &:last-child
+    margin: 0
+
+.fileup-file.fileup-doc .fileup-preview
+  width: 24px
+  height: 24px
+  min-width: 24px
+  margin: 0 16px 0 0
+  background: url('../img/file-icon.svg') no-repeat center
+  background-size: 100%
+
+.fileup-file .fileup-container .fileup-description
+  font-size: 16px
+  padding-right: 24px
+
+.fileup-file .fileup-container .fileup-size
+  display: block
+  font-size: 14px
+  margin: 8px 0 0
+
+.fileup-file .fileup-controls .fileup-remove
+  position: absolute
+  width: 24px
+  height: 24px
+  min-width: 24px
+  top: 16px
+  right: 16px
+  background: url('../img/clear.svg') no-repeat center
+  background-size: 100%
+
+.fileup-progress
+  background: rgba(#242933, .04)
+  margin: 12px 0 0
+  border-radius: 4px
+  height: 4px
+
+.fileup-progress-bar
+  background: $blue
+  border-radius: 4px
+
+.fileup-file .fileup-controls .fileup-upload
+  display: none
+
+.tooltip
+  position: absolute
+  z-index: 1
+  top: 14px
+  right: 16px
+  &:hover
+    .tooltip-text
+      display: block
+  &-icon
+    cursor: pointer
+    opacity: 0.14
+  &-text
+    position: absolute
+    background: #fff
+    width: 200px
+    top: 100%
+    left: 50%
+    transform: translate(-50%,0)
+    padding: 10px
+    border-radius: 8px
+    box-shadow: 0 0 10px rgba(#000, .14)
+    font-size: 12px
+    text-align: center
+    margin: 5px auto 0
+    display: none
+
+.tabs__content
+  display: none
+  width: 100%
+  transition: .3s ease
+  &.active
+    display: block
+
+.tabs__caption
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  padding: 4px
+  border-radius: 8px
+  background: rgba(#242933, .04)
+  width: fit-content
+  font-size: 14px
+  li
+    padding: 0
+    text-align: center
+    transition: .3s ease
+    cursor: pointer
+    border-radius: 8px
+    &.active
+      background: #fff
+    a
+      padding: 5px 12px
+      color: $black
+      svg
+        width: 16px
+        height: 16px
+
+.title-wrapper
+  width: 100%
+  margin: 0 0 24px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+  h1
+    width: fit-content
+    margin: 0 auto 0 0
+  .showcase-content__head
+    width: fit-content
+    margin: 0 0 0 auto
+  .nav-breadcrumb
+    width: fit-content
+    margin: 0 auto 0 0
+
+
+
+//checkbox my
+.label-checkbox
+  position: relative
+  display: flex
+  align-items: center
+  color: $black
+  font-size: 16px
+  margin: 0
+  cursor: pointer
+  input
+    display: none
+    &:checked ~ .checkbox-custom
+      background: $accent url('../img/checked.svg') no-repeat center
+      background-size: 11px
+      border-color: $accent
+
+.checkbox-custom
+  margin: 0 12px 0 0
+  position: relative
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 4px
+  background: rgba(#242933, .04)
+  width: 20px
+  height: 20px
+  min-width: 20px
+  cursor: pointer
+  display: block
+
+//checkbox my end
+
+// checkbox toggle
+.label-toggle
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+  cursor: pointer
+  &__custom
+    position: absolute
+    width: 16px
+    height: 16px
+    border-radius: 16px
+    background: #fff
+    left: 2px
+    top: 3px
+    transition: .3s ease
+  input
+    width: 40px
+    height: 20px
+    min-width: 40px
+    border: none
+    appearance: none
+    padding: 0
+    background: rgba(#242933, .14)
+    border-radius: 56px
+    margin: 0 12px 0 0
+    opacity: 1
+    &:checked
+      background: #242933
+      ~ .label-toggle__custom
+        left: 22px

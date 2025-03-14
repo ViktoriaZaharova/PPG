@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="wrapper-content p-32">
+      <div class="login-section">
+        <div class="container">
+          <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+
+          <div class="content-login">
+            <h1>Регистрация</h1>
+
+            <form method="post" class="form-login form">
+              <label>
+                <svg class="svg-icon label-icon">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                <input type="text" placeholder="Электронная почта" name="mail" required>
+              </label>
+            
+
+              <button class="btn btn-blue w-100" type="submit">Получить код</button>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-white"><img src="img/vk.svg" alt=""></a>
+                <a href="#" class="btn btn-white"><img src="img/yandex.svg" alt=""></a>
+              </div>
+            </form>
+
+            <div class="form-footer text-center">
+              <p>Уже зарегистрированы?</p>
+              <a href="login.html" class="color-black">Войти в аккаунт</a>
+            </div>
+
+            
+          </div>
+          <div class="consent color-black-500">
+            <p>Нажимая «Получить код» или на кнопки сервисов, вы подтверждаете, что полностью принимаете условия <a
+                href="#" target="_blank" class="text-decoration color-blue d-inline">соглашения</a> и ознакомились
+              <br>с
+              <a href="#" target="_blank" class="text-decoration color-blue d-inline">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/fileup.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <a href="#" class="btn-burger"></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <nav class="nav-menu">
+          <ul class="my-ul menu">
+            <li><a href="catalog.html" class="menu-link menu-link-catalog btn">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#catalog-icon"></use>
+                </svg>
+                <span>Все фигурки</span>
+              </a></li>
+            <li><a href="collections.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#collection-icon"></use>
+                </svg>
+                <span>Управление коллекцией</span>
+              </a></li>
+            <li><a href="blog.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#blog-icon"></use>
+                </svg>
+                <span>Блог</span>
+              </a></li>
+            <li><a href="help.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#help-icon"></use>
+                </svg>
+                <span>Поддержка</span>
+              </a></li>
+          </ul>
+        </nav>
+        <form method="post" class="form-search form-search-header">
+          <label>
+            <svg class="svg-icon label-icon">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <input type="text" name="search" placeholder="Поиск фигурки" required>
+          </label>
+        </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search-icon"></use>
+        </svg></a>
+        <a href="#" class="btn-notification"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#notification"></use>
+        </svg></a>
+        <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
+      </div>
+    </header>
+
+    <div class="wrapper-content wrapper-content-page">
+      <section class="page help-page">
+        <div class="container">
+          <nav class="nav-breadcrumb">
+            <ul class="my-ul breadcrumb">
+              <li><a href="collections.html">Управление коллекцией</a></li>
+              <li><span>Создание списка</span></li>
+            </ul>
+          </nav>
+
+          <div class="page-container agreement-content">
+            <h1>Создание списка</h1>
+
+            <form method="post" class="form-help w-100">
+              <div class="row">
+                <div class="col-100 mb-24">
+                  <span class="label-title">Название списка</span>
+                  <label>
+                    <input type="text" name="name" placeholder="Это увидят все" class="p-default">
+                  </label>
+                </div>
+
+                <div class="col-100 mb-24">
+                  <label class="label-checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Приватный список</span>
+                  </label>
+                </div>
+
+                <div class="col-100 mb-24">
+                  <span class="label-title">Приватное описание</span>
+                  <textarea name="message" placeholder="Это не увидит никто"></textarea>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <a href="index.html" class="btn btn-grey">Вернуться назад</a>
+                <button type="submit" class="btn btn-blue">Создать</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer-page">
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="copyright">© poppriceguide.ru</div>
+          <a href="agreement.html" class="link" target="_blank">Соглашения пользования сервисом</a>
+          <a href="policy.html" class="link" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="overlay"></div>
+
+  
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/fileup.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

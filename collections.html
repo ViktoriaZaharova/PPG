@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <a href="#" class="btn-burger"></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <nav class="nav-menu">
+          <ul class="my-ul menu">
+            <li><a href="catalog.html" class="menu-link menu-link-catalog btn">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#catalog-icon"></use>
+                </svg>
+                <span>Все фигурки</span>
+              </a></li>
+            <li><a href="collections.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#collection-icon"></use>
+                </svg>
+                <span>Управление коллекцией</span>
+              </a></li>
+            <li><a href="blog.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#blog-icon"></use>
+                </svg>
+                <span>Блог</span>
+              </a></li>
+            <li><a href="help.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#help-icon"></use>
+                </svg>
+                <span>Поддержка</span>
+              </a></li>
+          </ul>
+        </nav>
+        <form method="post" class="form-search form-search-header">
+          <label>
+            <svg class="svg-icon label-icon">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <input type="text" name="search" placeholder="Поиск фигурки" required>
+          </label>
+        </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
+        <a href="#" class="btn-notification"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
+        <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
+      </div>
+    </header>
+
+    <div class="wrapper-content wrapper-content-page">
+      <section class="page collections-page m-32">
+        <div class="container">
+          <h1>Управление коллекцией</h1>
+
+          <div class="row-wrapper">
+            <div class="table-sorting">
+              <a href="#" class="table-sorting__item active">Все</a>
+              <a href="#" class="table-sorting__item">Без стоимости</a>
+              <a href="#" class="table-sorting__item">Прибыли/убытки</a>
+              <a href="#" class="table-sorting__item">В продаже</a>
+              <a href="#" class="table-sorting__item">Не продаётся</a>
+              <a href="#" class="table-sorting__item">Для торговли</a>
+            </div>
+
+            <div class="table-nav">
+              <div class="table-search-wrapper">
+                <form method="post" class="form-search">
+                  <label>
+                    <svg class="svg-icon label-icon">
+                      <use xlink:href="img/sprite.svg#search-icon"></use>
+                    </svg>
+                    <input type="text" name="search" placeholder="Поиск фигурки" required>
+                  </label>
+                </form>
+
+                <a href="#" class="btn btn-sm btn-white btn-table-search"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+              </div>
+              <a href="#filter-modal" class="btn btn-sm btn-grey btn-filter open_modal">
+                <svg class="svg-icon btn-icon">
+                  <use xlink:href="img/sprite.svg#filter-icon"></use>
+                </svg>
+                <span>Фильтра</span>
+              </a>
+
+              <a href="#export-modal" class="btn btn-sm btn-blue btn-export open_modal">
+                <svg class="svg-icon btn-icon">
+                  <use xlink:href="img/sprite.svg#download-icon"></use>
+                </svg>
+                <span>Экспорт</span>
+              </a>
+
+              <a href="#" class="btn btn-sm btn-white btn-cloud"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#cloud-icon"></use>
+                </svg></a>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-collections w-100">
+              <thead>
+                <tr>
+                  <th>
+                    <label class="label-checkbox">
+                      <input type="checkbox" name="checkbox_table1">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Название</span>
+                    </label>
+                  </th>
+                  <th>Дата добавления</th>
+                  <th>Заметки</th>
+                  <th>Кол-во</th>
+                  <th>Состояние</th>
+                  <th>Стоимость</th>
+                  <th>Приватность</th>
+                  <th>В списках</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img1.jpg" alt=""></span>
+                      <span class="checkbox-text">Shou (Longevity)</span>
+                    </label>
+                  </td>
+                  <td>04.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>6 000 ₽</td>
+                  <td>Публичен</td>
+                  <td>На продажу</td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img1.jpg" alt=""></span>
+                      <span class="checkbox-text">Lu (Good Fortune)</span>
+                    </label>
+                  </td>
+                  <td>04.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>3 700 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img1.jpg" alt=""></span>
+                      <span class="checkbox-text">Fu (Happinnes)</span>
+                    </label>
+                  </td>
+                  <td>04.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>3 700 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img2.jpg" alt=""></span>
+                      <span class="checkbox-text">Qing</span>
+                    </label>
+                  </td>
+                  <td>04.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>18 000 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img2.jpg" alt=""></span>
+                      <span class="checkbox-text">Song</span>
+                    </label>
+                  </td>
+                  <td>04.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>18 000 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img3.jpg" alt=""></span>
+                      <span class="checkbox-text">Tang</span>
+                    </label>
+                  </td>
+                  <td>04.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>1 900 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img4.jpg" alt=""></span>
+                      <span class="checkbox-text">Spider–Punk</span>
+                    </label>
+                  </td>
+                  <td>02.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>2 100 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="label-checkbox collections-name">
+                      <input type="checkbox" name="checkbox_table2">
+                      <span class="checkbox-custom"></span>
+                      <span class="collections-avatar"><img src="img/collection-img5.jpg" alt=""></span>
+                      <span class="checkbox-text">Eddie</span>
+                    </label>
+                  </td>
+                  <td>02.10.2024</td>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>Мятый</td>
+                  <td>3 700 ₽</td>
+                  <td>Публичен</td>
+                  <td></td>
+                  <td>
+                    <div class="dropdown">
+                      <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots-icon"></use>
+                        </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                          </svg>
+                          <span>Редактировать</span>
+                        </a>
+                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                          <span>В список</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#delete-icon"></use>
+                          </svg>
+                          <span>Удалить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <nav class="nav-pagination">
+            <ul class="my-ul pagination">
+              <li><a href="#" class="pagination-arrow"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg></a></li>
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">...</a></li>
+              <li><a href="#" class="pagination-arrow"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer-page">
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="copyright">© poppriceguide.ru</div>
+          <a href="agreement.html" class="link" target="_blank">Соглашения пользования сервисом</a>
+          <a href="policy.html" class="link" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- modal -->
+  <div class="collections-poppup poppup-modal">
+    <div class="poppup-modal__body">
+      <label class="label-checkbox">
+        <input type="checkbox" name="checkbox_table3" checked>
+        <span class="checkbox-custom"></span>
+        <span class="checkbox-text">4 фигурки выбрано</span>
+      </label>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-sm btn-white btn-close-poppup">Удалить</a>
+        <a href="#list-modal" class="btn btn-sm btn-white open_modal">В список</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__div" id="filter-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Фильтр</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="filter-wrapper w-100">
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Название</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Содержит">Содержит</option>
+                <option value="Содержит">Содержит</option>
+              </select>
+              <label><input type="text" name="language" placeholder="На англ. языке"></label>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>HBID</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="number" placeholder="8 цифр"></label>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Количество</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="text" placeholder="Любое"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Дата добавления в коллекцию</p>
+            </div>
+            <div class="filter-row__body">
+              <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                  class="datepicker datepicker-2"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Дата покупки</p>
+            </div>
+            <div class="filter-row__body">
+              <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                  class="datepicker datepicker-2-1"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Состояние</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Выберите">Выберите</option>
+                <option value="Выберите">Выберите</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Прибыль/убыток</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="text" placeholder="В рублях"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Приватность</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Любая">Любая</option>
+                <option value="Любая">Любая</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>В списке</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Все">Все</option>
+                <option value="Все">Все</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div" id="list-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Добавление в список</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Выберите список или несколько списков, <br>в которые стоит добавить фигуру</p>
+        </div>
+
+        <ul class="list-collections-add my-ul">
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Все списки</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Без стоимости</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Высокая прибыль</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Для продажи</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Высокая прибыль</span>
+            </label>
+          </li>
+          <li><a href="#" class="link-btn-add-collections">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#plus-icon"></use>
+              </svg>
+              <span>Создать новый список</span>
+            </a></li>
+        </ul>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div" id="export-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Импорт коллекции</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form method="post" class="form-export">
+          <label class="label-file">
+            <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+            <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+            <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                class="d-inline color-blue text-decoration">загрузить</a></span>
+          </label>
+          <div class="label-file__result queue" id="upload-demo-queue"></div>
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Добавить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/fileup.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

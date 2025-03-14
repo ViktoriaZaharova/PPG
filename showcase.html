@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <a href="#" class="btn-burger"></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <nav class="nav-menu">
+          <ul class="my-ul menu">
+            <li><a href="catalog.html" class="menu-link menu-link-catalog btn">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#catalog-icon"></use>
+                </svg>
+                <span>Все фигурки</span>
+              </a></li>
+            <li><a href="collections.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#collection-icon"></use>
+                </svg>
+                <span>Управление коллекцией</span>
+              </a></li>
+            <li><a href="blog.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#blog-icon"></use>
+                </svg>
+                <span>Блог</span>
+              </a></li>
+            <li><a href="help.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#help-icon"></use>
+                </svg>
+                <span>Поддержка</span>
+              </a></li>
+          </ul>
+        </nav>
+        <form method="post" class="form-search form-search-header">
+          <label>
+            <svg class="svg-icon label-icon">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <input type="text" name="search" placeholder="Поиск фигурки" required>
+          </label>
+        </form>
+        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
+        <a href="#" class="btn-notification"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
+        <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
+      </div>
+    </header>
+
+    <div class="wrapper-content wrapper-content-page">
+      <section class="page showcase-page m-32">
+
+        <div class="container">
+          <div class="banner-cabinet banner-showcase mb-24">
+            <div class="label-file-banner">
+              <img src="img/cabinet-banner.jpg" alt="">
+            </div>
+            <div class="banner-cabinet__avatar"><img src="img/avatar-comment1.jpg" alt=""></div>
+          </div>
+
+          <div class="row-wrapper">
+            <div class="sidebar sidebar-showcase">
+              <div class="sidebar-showcase-box">
+                <div class="showcase-user">
+                  <h4>Nikotinel</h4>
+                  <span>На сайте с 29 июля 2018</span>
+                </div>
+                <div class="dropdown showcase-dropdown">
+                  <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
+                  <div class="dropdown-menu">
+                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                      <img class="dropdown-menu__icon" src="img/vk-icon.svg" alt="">
+                      <span>Вконтакте</span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                      <img class="dropdown-menu__icon" src="img/whatsapp.svg" alt="">
+                      <span>WhatsApp</span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                      <img class="dropdown-menu__icon" src="img/tg.svg" alt="">
+                      <span>Telegram</span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                      <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
+                      <span>Скопировать ссылку</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-showcase-box">
+                <ul class="my-ul list-collections">
+                  <li>
+                    <a href="#">Фигурок в коллекции</a>
+                    <span>1,262</span>
+                  </li>
+                  <li>
+                    <a href="#">Оценочная стоимость</a>
+                    <span>2 585 838,90 ₽</span>
+                  </li>
+                  <li>
+                    <a href="#">Список желаний</a>
+                    <span>25</span>
+                  </li>
+                  <li>
+                    <a href="#">Фактическая стоимость</a>
+                    <span>2 000 838,90 ₽</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar-showcase-box top-10-products">
+                <h4>ТОП-10</h4>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img1.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">God Loki</a>
+                    <span>God Loki On Throne</span>
+                    <div class="price-wrapper">
+                      <div class="price">19 220 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img2.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                    <span>Gol D. Roger Wanted Poster</span>
+                    <div class="price-wrapper">
+                      <div class="price">15 376 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img3.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Balrog</a>
+                    <span>Barlog (Glow in the Dark)</span>
+                    <div class="price-wrapper">
+                      <div class="new-price">+ 961 ₽</div>
+                      <div class="price">19 220 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img4.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Shanks</a>
+                    <span>Shanks with Hat</span>
+                    <div class="price-wrapper">
+                      <div class="price">14 896 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img5.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                    <div class="price-wrapper">
+                      <div class="price">13 454 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img6.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Father</a>
+                    <div class="price-wrapper">
+                      <div class="price">13 454 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img7.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                    <div class="price-wrapper">
+                      <div class="price">12 013 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img8.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                    <span>Gol D. Roger with hat (Chase)</span>
+                    <div class="price-wrapper">
+                      <div class="price">12 013 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img9.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Ghost Rider</a>
+                    <div class="price-wrapper">
+                      <div class="price">11 532 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-product-top">
+                  <a href="product.html" class="card-product-top__img">
+                    <img src="img/top-img10.jpg" alt="">
+                  </a>
+                  <div class="card-product-top__body">
+                    <a href="product.html" class="card-product-top__name">Experiment 626</a>
+                    <span>Experiment 626 (Done)</span>
+                    <div class="price-wrapper">
+                      <div class="price">11 052 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-content tabs">
+              <div class="showcase-content__head">
+                <ul class="tabs__caption my-ul tabs__caption-overflow">
+                  <li class="active"><a href="#tab1">Коллекция</a></li>
+                  <li><a href="#tab2">Список желаний</a></li>
+                  <li><a href="#tab3">Проданы</a></li>
+                </ul>
+
+                <div class="showcase-sorter">
+                  <div class="showcase-sorter-item">
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle">Выберите список <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                      </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">На продажу</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Лучшие фигурки</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="showcase-sorter-item">
+                    <p>Сначала:</p>
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle">Новые <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                      </svg></a>
+
+                      <div class="dropdown-menu">
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Старые</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дороже</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дешевле</a>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs__content active" id="tab1">
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img1.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">God Loki</a>
+                          <span>God Loki On Throne</span>
+                          <div class="price-wrapper">
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img2.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger Wanted Poster</span>
+                          <div class="price-wrapper">
+                            <div class="price">15 376 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img3.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Balrog</a>
+                          <span>Barlog (Glow in the Dark)</span>
+                          <div class="price-wrapper">
+                            <div class="new-price">+ 961 ₽</div>
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img8.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger with hat (Chase)</span>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img9.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Ghost Rider</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 532 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img10.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Experiment 626</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img11.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">James Hetfield / Lars Ulrich / Kirk
+                            Hammett / Jason Newsted</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img12.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Samurai Brook</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img1.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">God Loki</a>
+                          <span>God Loki On Throne</span>
+                          <div class="price-wrapper">
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img2.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger Wanted Poster</span>
+                          <div class="price-wrapper">
+                            <div class="price">15 376 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img3.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Balrog</a>
+                          <span>Barlog (Glow in the Dark)</span>
+                          <div class="price-wrapper">
+                            <div class="new-price">+ 961 ₽</div>
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img8.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger with hat (Chase)</span>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content" id="tab2">
+                <div class="w-100">
+                  <div class="row">
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img8.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger with hat (Chase)</span>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img9.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Ghost Rider</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 532 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img10.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Experiment 626</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img11.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">James Hetfield / Lars Ulrich / Kirk
+                            Hammett / Jason Newsted</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img12.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Samurai Brook</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img1.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">God Loki</a>
+                          <span>God Loki On Throne</span>
+                          <div class="price-wrapper">
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img2.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger Wanted Poster</span>
+                          <div class="price-wrapper">
+                            <div class="price">15 376 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img3.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Balrog</a>
+                          <span>Barlog (Glow in the Dark)</span>
+                          <div class="price-wrapper">
+                            <div class="new-price">+ 961 ₽</div>
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img8.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger with hat (Chase)</span>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content" id="tab3">
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img1.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">God Loki</a>
+                          <span>God Loki On Throne</span>
+                          <div class="price-wrapper">
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img2.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger Wanted Poster</span>
+                          <div class="price-wrapper">
+                            <div class="price">15 376 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img3.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Balrog</a>
+                          <span>Barlog (Glow in the Dark)</span>
+                          <div class="price-wrapper">
+                            <div class="new-price">+ 961 ₽</div>
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img8.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger with hat (Chase)</span>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img9.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Ghost Rider</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 532 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img12.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Samurai Brook</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img1.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">God Loki</a>
+                          <span>God Loki On Throne</span>
+                          <div class="price-wrapper">
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img2.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger Wanted Poster</span>
+                          <div class="price-wrapper">
+                            <div class="price">15 376 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img3.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Balrog</a>
+                          <span>Barlog (Glow in the Dark)</span>
+                          <div class="price-wrapper">
+                            <div class="new-price">+ 961 ₽</div>
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img8.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger with hat (Chase)</span>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer class="footer-page">
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="copyright">© poppriceguide.ru</div>
+          <a href="agreement.html" class="link" target="_blank">Соглашения пользования сервисом</a>
+          <a href="policy.html" class="link" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- modal -->
+  <div class="collections-poppup poppup-modal">
+    <div class="poppup-modal__body">
+      <label class="label-checkbox">
+        <input type="checkbox" name="checkbox_table3" checked>
+        <span class="checkbox-custom"></span>
+        <span class="checkbox-text">4 фигурки выбрано</span>
+      </label>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-sm btn-white btn-close-poppup">Удалить</a>
+        <a href="#list-modal" class="btn btn-sm btn-white open_modal">В список</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal__div" id="filter-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Фильтр</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="filter-wrapper w-100">
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Название</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Содержит">Содержит</option>
+                <option value="Содержит">Содержит</option>
+              </select>
+              <label><input type="text" name="language" placeholder="На англ. языке"></label>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>HBID</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="number" placeholder="8 цифр"></label>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Количество</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="text" placeholder="Любое"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Дата добавления в коллекцию</p>
+            </div>
+            <div class="filter-row__body">
+              <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                  class="datepicker datepicker-2"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Дата покупки</p>
+            </div>
+            <div class="filter-row__body">
+              <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                  class="datepicker datepicker-2-1"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Состояние</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Выберите">Выберите</option>
+                <option value="Выберите">Выберите</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Прибыль/убыток</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="text" placeholder="В рублях"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Приватность</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Любая">Любая</option>
+                <option value="Любая">Любая</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>В списке</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Все">Все</option>
+                <option value="Все">Все</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div" id="list-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Добавление в список</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Выберите список или несколько списков, <br>в которые стоит добавить фигуру</p>
+        </div>
+
+        <ul class="list-collections-add my-ul">
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Все списки</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Без стоимости</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Высокая прибыль</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Для продажи</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Высокая прибыль</span>
+            </label>
+          </li>
+          <li><a href="#" class="link-btn-add-collections">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#plus-icon"></use>
+              </svg>
+              <span>Создать новый список</span>
+            </a></li>
+        </ul>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div" id="export-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Импорт коллекции</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form method="post" class="form-export">
+          <label class="label-file">
+            <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+            <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+            <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                class="d-inline color-blue text-decoration">загрузить</a></span>
+          </label>
+          <div class="label-file__result queue" id="upload-demo-queue"></div>
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Добавить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div modal__div2" id="delete-account-modal">
+    <div class="modal__wrapper">
+
+
+      <button type="button" class="modal__close"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close-icon"></use>
+        </svg></button>
+
+      <div class="modal-body">
+        <h3 class="modal-title"><span class="color-red">Внимание!</span> Вы действительно хотите удалить аккаунт?</h3>
+        <div class="box-text">
+          <p>Это действие необратимо, и все ваши данные будут утеряны. Пожалуйста, убедитесь, что хотите это сделать.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-grey btn-cancel">Отменить</a>
+          <a href="#" class="btn btn-red btn-delete-account">Удалить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/fileup.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

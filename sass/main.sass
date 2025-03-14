@@ -1,0 +1,1332 @@
+@import "vars"
+
+//  login page
+.login-section
+  height: 100%
+  .container
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-wrap: nowrap
+  h1
+    text-align: center
+  .logo
+    margin: 0 auto
+
+.content-login
+  margin: auto
+  max-width: 550px
+  width: 100%
+  // height: 100%
+  display: flex
+  flex-direction: column
+  .consent
+    margin: auto auto 0
+
+.form-login
+  margin: 0 auto
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.form-footer
+  width: 100%
+  text-align: center
+  color: rgba($black, .5)
+  margin: 24px 0 0
+  a
+    margin: 4px auto 0
+  p
+    line-height: 22px
+
+.timer-code
+  color: rgba($black, .4)
+
+// home page
+.home
+  padding: 0 16px
+  text-align: center
+  color: #fff
+  h1
+
+    max-width: 750px
+  .box-text
+    max-width: 465px
+    margin: 0 auto
+  .container
+    max-width: 1500px
+
+.btn-add-collection
+  margin: 32px auto 0
+
+.card-product .add-collection
+  svg
+    display: none
+  
+.home-wrapper
+  background: $accent
+  border-radius: 32px
+  width: 100%
+  padding: 160px 0 0px
+
+.home-image
+  width: 100%
+  @include d-flex
+  margin: 80px auto 0
+  img
+    width: 100%
+
+// collection start
+.collection-start
+  .btn
+    margin: 0 auto
+  h2
+    margin: 0 auto 24px
+    max-width: 900px
+
+.about-section
+  .box-image
+    margin: 0 -80px 0 38px
+
+.advantages-box
+  width: 100%
+  height: 100%
+  border-radius: 24px
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  .box-text
+    color: rgba($black, .88)
+    line-height: 24px
+  h3
+    color: $black
+  &__text
+    padding: 40px
+  &__img
+    margin: auto 0 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.advantages-box1
+  background: rgba(#242933, .01)
+  border: 1px solid rgba(#242933, .14)
+
+.advantages-box2
+  background: $accent
+  .advantages-box__text
+    padding: 40px 40px 0
+  .advantages-box__img
+    margin: -7px 0 0
+  .box-text
+    background: #fff
+    position: relative
+    z-index: 1
+    width: 100%
+    border-radius: 16px
+    padding: 24px
+    filter: drop-shadow(0 4px 16px rgba(#000, .1))
+    color: rgba($black, .88)
+    line-height: 24px
+    &::before
+      content: ''
+      position: absolute
+      bottom: -15px
+      right: 30px
+      clip-path: polygon(0 0, 50% 100%, 100% 0)
+      width: 46px
+      height: 16px
+      background: #fff
+
+.interface-box
+  width: 100%
+  height: 100%
+  border-radius: 24px
+  overflow: hidden
+  background: rgba(#242933, .01)
+  border: 1px solid rgba(#242933, .14)
+  padding: 32px 32px 0
+
+.interface-box1
+  padding-right: 0
+
+.interface-text
+  margin: 0 0 40px
+
+.error-section
+  text-align: center
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  h1
+    margin: 0 auto 8px
+  .btn
+    margin: 48px auto 0
+
+.error-img
+  @include d-flex
+  margin: 0 auto 48px
+
+// agreement
+.agreement-content
+  font-size: 18px
+  line-height: 28px
+
+  .box-text
+    margin: 0 0 24px
+    color: rgba($black, .88)
+    counter-reset: item
+    &:last-child
+      margin: 0
+    h4
+      &::before
+        content: counter(item) '.'
+        display: inline-block
+        counter-increment: item
+        margin: 0 5px 0 0
+  p
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+  ul
+    margin: 0 0 24px
+    li
+      margin: 0 0 16px
+      &:last-child
+        margin: 0
+    ul
+      margin: 16px 0 24px
+      padding: 0 0 0 36px
+      &:last-child
+        margin: 16px 0 24px
+    .list-lower-latin
+      padding: 0 0 0 16px
+
+.list-lower-latin
+  li
+    display: flex
+    align-items: flex-start
+    span
+      margin: 0 8px 0 0
+
+.help-page
+  margin: 0 0 32px
+
+.form-help
+  .btn-group
+    justify-content: flex-end
+    .btn
+      width: fit-content
+      flex: none
+
+// faq page
+.faq-page
+  h1
+    margin: 0 0 8px
+    font-size: 40px
+
+.faq-content
+  margin: 32px auto    
+
+.help-desk
+  width: 100%
+  border-radius: 24px
+  padding: 24px
+  background: rgba(#242933, .04)
+  h4
+    margin: 0 0 8px
+  .btn
+    margin: 16px 0 0
+
+.list-menu-faq
+  li
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+  a
+    display: flex
+    align-items: center
+    color: $black
+    &::before
+      content: ''
+      @include d-flex
+      background: url('../img/article-icon.svg') no-repeat center
+      background-size: 100%
+      margin: 0 12px 0 0
+      width: 20px
+      height: 20px
+      min-width: 20px
+    &:hover
+      color: $accent
+
+.faq-article-page
+  .box-text
+    font-size: 18px
+    line-height: 28px
+    color: rgba($black, .88)
+
+.grade-answer
+  width: 100%
+  margin: 24px 0 0
+  padding: 16px 0 0
+  .box-text
+    font-size: 16px
+  h3
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+  .btn
+    margin: 16px 0 0
+
+.list-grade
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 16px 0 0
+  li
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+  a
+    @include d-flex
+    width: 48px
+    height: 48px
+    min-width: 48px
+    border-radius: 8px
+    border: 1px solid rgba(#242933, .14)
+    &:hover, &:focus
+      background: $accent
+
+// blog page
+.sidebar-blog
+  margin: 106px 0 0
+  h4
+    font-size: 16px
+    margin: 0 0 8px
+
+.blog-menu
+  font-size: 14px
+  &__link
+    color: $black
+    display: flex
+    align-items: center
+    padding: 10.5px 0
+    &:hover
+      color: $blue
+    &-category
+      &::after
+        content: ''
+        width: 16px
+        height: 16px
+        min-width: 16px
+        margin: 0 0 0 8px
+        background: url('../img/arrow-right.svg') no-repeat center
+        background-size: 100%
+        @include d-flex
+
+.blog-menu-mobile
+  display: none        
+
+.blog-page
+  padding: 0 16px
+  h1
+    font-size: 40px
+    margin: 0 0 8px
+  .h1
+    font-size: 28px
+    margin: 0 0 24px
+    text-align: left
+  &__content
+    padding: 32px 0
+    width: 100%
+    border-radius: 24px
+    background: rgba(#242933, .04)
+
+.blog-page-all
+  padding: 0    
+
+.blog-card
+  width: 100%
+  margin: 0 0 24px
+  background: #fff
+  padding: 40px
+  border-radius: 24px
+  &__img
+    width: 100%
+    @include d-flex
+    margin: 0 0 24px
+    img
+      width: 100%
+  &__body
+    width: 100%
+  &__title
+    margin: 0 0 24px
+    font-size: 20px
+    line-height: 32px
+    font-weight: 600
+    color: $black
+    &:hover
+      color: $accent
+  .box-text
+    line-height: 24px
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -moz-box
+    -moz-box-orient: vertical
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical
+    line-clamp: 4
+    box-orient: vertical
+  &__footer
+    margin: 24px 0 0
+    width: 100%
+  &__list
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    font-size: 14px
+    line-height: 22px
+    color: rgba(#1D1D1B, .4)
+    li
+      a
+        display: flex
+        align-items: center
+        color: $black
+        &:after
+          content: ''
+          display: inline-block
+          margin: 0 12px
+          width: 4px
+          height: 4px
+          min-width: 4px
+          border-radius: 50%
+          background: rgba(#1D1D1B, .4)
+        &:hover
+          color: $accent
+  &:last-child
+    margin: 0
+
+.blog-img
+  width: 100%
+  margin: 0 0 24px
+  img
+    width: 100%
+
+.blog-page-section
+  width: 100%
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+  h3
+    margin: 0 0 24px
+  .box-text
+    font-size: 18px
+    line-height: 29px
+
+.card-product
+  width: 100%
+  margin: 0 0 24px
+  border-radius: 16px
+  border: 1px solid rgba(#242933, .14)
+  display: flex
+  align-items: stretch
+  overflow: hidden
+  &__img
+    width: 200px
+    min-width: 200px
+    @include d-flex
+    flex-wrap: wrap
+    background: rgba(#242933, .04)
+    img
+      mix-blend-mode: multiply
+      border-radius: 16px 0 0 16px
+  &__body
+    width: 100%
+    padding: 12px
+    display: flex
+    flex-direction: column
+  &__head
+    margin: 0 0 auto
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    .box-text
+      font-size: 14px
+      color: rgba(#1D1D1B, .60 )
+    &-name
+      margin: 0 auto 0 0
+  &__name
+    width: 100%
+    font-size: 18px
+    color: $black
+    &:hover
+      color: $blue
+  &__footer
+    width: 100%
+    margin: 12px 0 0
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    // flex-wrap: wrap
+    .btn
+      margin: 0 8px 0 0
+      white-space: nowrap
+      &:last-child
+        margin: 0
+  .price
+    margin: 0 24px 0 0
+
+  &:last-child
+    margin: 0
+
+
+
+.interesting-card
+  padding: 24px
+  background: rgba(#242933, .04)
+  .blog-card__title
+    font-size: 20px
+
+.form-comments
+  width: 100%
+  margin: 0 0 32px
+  &:last-child
+    margin: 0
+  textarea
+    height: 156px
+  [type="submit"]
+    margin: 16px 0 0 auto
+  &__avatar
+    margin: 0 16px 0 0
+    @include d-flex
+    width: 56px
+    height: 56px
+    min-width: 56px
+    padding: 3px
+    border-radius: 50%
+    border: 1px solid rgba(#242933, .14)
+    overflow: hidden
+    img
+      width: 100%
+
+.form-row
+  width: 100%
+  display: flex
+  align-items: flex-start
+
+.comment-box
+  width: 100%
+  margin: 0 0 32px
+  padding: 0 0 0 72px
+  position: relative
+  z-index: 1
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+  .box-text
+    font-size: 18px
+    line-height: 28px
+    margin: 16px 0 0
+    color: rgba(#1D1D1B, .88)
+  &:last-child
+    margin: 0
+  .form-comments__avatar
+    position: absolute
+    left: 0
+    top: 0
+    margin: 0  
+
+// collections page
+.table-sorting
+  display: flex
+  align-items: flex-start
+  overflow-x: auto
+  white-space: nowrap
+  border-radius: 8px
+  background: rgba(#242933, .04)
+  padding: 4px
+  margin: 0 0 24px
+  &__item
+    padding: 5px 12px
+    border-radius: 8px
+    font-size: 14px
+    line-height: 22px
+    color: $black
+    &:hover, &:focus, &.active
+      background: #fff
+      color: $black
+
+.table-nav
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin: 0 0 24px auto
+  .btn
+    margin: 0 0 0 8px
+
+.table-collections
+  td, th
+    &:first-child
+      padding-left: 16px    
+
+.btn-table-search, .btn-cloud
+  border: 1px solid rgba(#242933, .14)
+  padding: 10px
+  svg
+    width: 20px
+    height: 20px
+    fill: none
+    stroke: $black
+
+.btn-settings-table
+  width: 40px
+  min-width: 40px
+  height: 40px
+  fill: $black
+  padding: 10px
+  @include d-flex
+  margin: 0 0 0 auto
+  &:hover, &:focus
+    background: $accent
+    fill: #fff
+    svg
+      stroke: #fff
+  svg
+    width: 20px
+    height: 20px
+    margin: 0
+
+
+.collections-avatar
+  @include d-flex
+  overflow: hidden
+  margin: 0 16px 0 4px
+  width: 40px
+  height: 40px
+  min-width: 40px
+  border-radius: 50%
+  border: 1px solid rgba(#242933, .14)
+  padding: 2.5px
+
+.table-search-wrapper
+  position: relative
+  z-index: 1
+  .form-search
+    position: absolute
+    right: 0
+    top: 0
+    display: none
+    width: 320px
+    margin: 0
+    input
+      height: 40px
+  .label-icon
+    top: 10px
+
+.btn-refresh
+  fill: none
+  stroke: $black
+  width: 48px
+  height: 48px
+  min-width: 48px
+  flex: none
+  padding: 10px
+  svg
+    width: 22px
+    height: 22px
+
+.filter-row
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 16px
+  &:last-child
+    margin: 0
+  &__name
+    width: 140px
+  &__body
+    width: calc( 100% - 140px )
+    display: flex
+    align-items: flex-start
+    select
+      width: 124px
+      min-width: 124px
+      margin: 0 8px 0 0
+      &:last-child
+        margin: 0
+      &.w-100
+        width: 100%
+    input
+      height: 40px
+      font-size: 14px
+      padding: 0 16px
+    .datepicker
+      padding: 0 16px 0 48px
+
+.poppup-modal
+  display: none
+  position: fixed
+  z-index: 3
+  bottom: 24px
+  left: 50%
+  transform: translate(-50%,0)
+  width: fit-content
+  background: #242933
+  border-radius: 24px
+  color: #fff
+  padding: 32px
+  .label-checkbox
+    color: #fff
+  &__body
+    display: flex
+    align-items: center
+    .btn-group
+      margin: 0 0 0 40px
+      .btn
+        margin-top: 0
+        white-space: nowrap
+
+.list-collections-add
+  margin: 24px 0 0
+  li
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+.link-btn-add-collections
+  display: flex
+  align-items: center
+  color: $black
+  &:hover
+    color: $blue
+  svg
+    width: 20px
+    height: 20px
+    min-width: 20px
+    fill: none
+    stroke: $black
+    margin: 0 12px 0 0
+
+.form-edit-collections
+  h3
+    margin: 0 0 32px
+  input
+    padding: 0 16px
+    &.datepicker
+      padding: 0 16px 0 48px
+
+  .form-footer
+    margin: 0
+    .btn-group
+      justify-content: flex-end
+      .btn
+        margin-top: 0
+        flex: none
+  .form-box
+    width: 100%
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+
+// cabinet page
+.cabinet-box
+  width: 100%
+  margin: 0 0 16px
+  padding: 0 24px
+  border-radius: 24px
+  background: #fff
+  &:last-child
+    margin: 0
+
+  h3, h1
+    margin: 0
+    font-size: 18px
+    font-family: $default-font
+    font-weight: 600
+  &__head
+    width: 100%
+    padding: 16px 0
+    border-bottom: 1px solid rgba(#242933, .14)
+  &__body
+    padding: 24px 0
+    width: 100%
+
+.form-cabinet
+  &__footer
+    width: 100%
+    margin: 32px 0 0
+
+.banner-cabinet
+  width: 100%
+  &__avatar
+    margin: -40px 0 0 40px
+    z-index: 1
+    width: 80px
+    height: 80px
+    @include d-flex
+    position: relative
+    background: #fff
+    border: 1px solid rgba(#242933, .14)
+    border-radius: 50%
+    padding: 5px
+    overflow: hidden
+
+.label-file-banner
+  height: 200px
+  width: 100%
+  overflow: hidden
+  border-radius: 24px
+  border: 1px solid rgba(#242933, .14)
+  @include d-flex
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 24px
+
+.saved-poppup
+  display: block
+  background: #fff
+  padding: 32px 68px
+  box-shadow: 0 0 10px rgba(#000, .10)
+  border-radius: 16px
+  border: 1px solid rgba(#008E2F, .4)
+  color: #008E2F
+  img
+    margin: 0 16px 0 0
+
+// showcase page
+.banner-showcase
+  .label-file-banner
+    height: 224px
+
+.showcase-content
+  width: calc(100% - 312px)
+  padding: 0 0 0 24px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 24px
+
+.sidebar-showcase-box
+  width: 100%
+  margin: 0 0 24px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  &:last-child
+    margin: 0
+  h4
+    margin: 0 0 8px
+
+.showcase-user
+  h4
+    margin: 0
+    font-size: 16px
+  span
+    color: rgba(#1D1D1B, .6)
+
+// .showcase-dropdown
+//   margin-left: auto
+
+.list-collections
+  font-size: 14px
+  line-height: 22px
+  width: 100%
+  li
+    width: 100%
+    margin: 0 0 4px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    &:last-child
+      margin: 0
+    a
+      color: rgba(#1D1D1B, .6)
+      &:hover
+        color: $blue
+
+.card-product-top
+  width: 100%
+  display: flex
+  align-items: stretch
+  padding: 16px 0
+  border-bottom: 1px solid rgba(#242933, .14)
+  font-size: 14px
+  line-height: 22px
+  &__img
+    @include d-flex
+    flex-wrap: wrap
+    width: 72px
+    height: 72px
+    min-width: 72px
+  &__body
+    width: calc( 100% - 72px )
+    padding: 4px 0 0 16px
+    display: flex
+    flex-direction: column
+    >span
+      color: rgba(#1D1D1B, .6)
+      display: block
+      margin: 0 0 10px
+  &__name
+    color: $black
+    &:hover
+      color: $blue
+  .price-wrapper
+    margin: auto 0 0
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+  .price
+    text-align: right
+    margin-left: auto
+  &.card-product-row
+    padding: 0
+    height: 180px
+    .card-product__img
+      padding: 16px
+      width: 312px
+      min-width: 312px
+      img
+        max-height: 100%
+    .card-product__head
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+      &-name
+        margin: 0 auto 0 0
+    .card-product__body
+      width: calc( 100% - 312px )
+      padding: 12px
+    .price-wrapper
+      margin: 0
+
+.stickers
+  display: flex
+  align-items: flex-start
+
+.sticker
+  @include d-flex
+  width: 40px
+  height: 40px
+  min-width: 40px
+  margin: 0 8px 0 0
+  border-radius: 8px
+  border: 1px solid rgba(#242933, .04)
+  background: rgba(#242933, .04)
+  padding: 4px
+  &:last-child
+    margin: 0
+  &:hover, &:active, &.active
+    border-color: $accent
+  img
+    mix-blend-mode: multiply
+
+.sticker2
+  padding: 0
+  border: none
+  border-radius: 50%
+
+.new-price
+  color: #008E2F
+  display: flex
+  align-items: center
+  &:before
+    content: ''
+    display: inline-block
+    margin: 0 4px 0 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+    background: url('../img/linear-top-arrow.svg') no-repeat center
+    background-size: 100%
+
+.card-product-column
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 16px
+  overflow: hidden
+  width: 100%
+  height: 100%
+  flex-direction: column
+  align-items: flex-start
+  padding: 0
+  .card-product-top__img
+    height: 224px
+    width: 100%
+    min-width: auto
+    border-radius: 16px
+    background: rgba(#242933, .04)
+    padding: 16px 16px 8px
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: flex-start
+    img
+      mix-blend-mode: multiply
+      // max-height: 100%
+    .stickers
+      margin: 8px 0 0
+  .card-product-top__body
+    width: 100%
+    height: calc( 100% - 224px )
+    padding: 12px
+    span
+      margin: 0 0 12px
+    .btn
+      span
+        margin: 0  
+  .price
+    margin: 0 0 0 auto
+
+// select sorter
+.showcase-sorter
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  margin: 0 0 0 auto
+  font-size: 14px
+
+.showcase-sorter-item
+  display: flex
+  align-items: center
+  margin: 0 24px 0 0
+  &:last-child
+    margin: 0
+  p
+    margin: 0 8px 0 0
+    color: rgba(#1D1D1B, .6 )
+  .dropdown-toggle
+    display: flex
+    align-items: center
+    color: rgba(#1D1D1B,.88 )
+    stroke: rgba(#1D1D1B,.88 )
+    fill: none
+    &.active, &:hover
+      color: $accent
+      svg
+        transform: rotate(180deg)
+        stroke: $accent
+
+// catalog page
+.catalog-page
+  h1
+    font-size: 40px
+    span
+      margin: 0 0 0 24px
+      color: rgba(#1D1D1B, .4)
+  .title-wrapper
+    .tabs__caption
+      margin: 0 16px 0 0
+      padding: 0
+      border-radius: 0
+      background: transparent
+      li
+        fill: none
+        stroke: $black
+        width: 32px
+        height: 32px
+        min-width: 32px
+        opacity: 0.5
+        &.active
+          opacity: 1
+        a
+          width: 100%
+          height: 100%
+          @include d-flex
+          padding: 8px
+  .row-wrapper
+    align-items: stretch
+  .tabs__content
+    height: 100%
+
+.in-collection
+  background: rgba(#1D1D1B, .14)
+  color: rgba(#1D1D1B, .4)
+  svg
+    width: 16px
+    height: 16px
+    min-width: 16px
+    stroke: rgba(#1D1D1B, .4)
+    margin: 0 8px 0 0
+
+.form-filter
+  font-size: 14px
+  line-height: 22px
+  .label-title
+    font-weight: normal
+  input, select
+    font-size: 14px
+    height: 40px
+  .label-checkbox
+    font-size: 14px
+    line-height: 22px
+  .btn-group
+    .btn
+      margin-top: 0
+  &__footer
+    position: sticky
+    bottom: 0
+    z-index: 2
+    background: #fff
+    padding: 16px 0
+
+.form-filter-box
+  width: 100%
+  margin: 0 0 16px
+  &:last-child
+    margin: 0
+
+.filter-selected
+  width: 100%
+  display: flex
+  align-items: flex-start
+  overflow-x: auto
+  white-space: nowrap
+  &__tag
+    border-radius: 40px
+    padding: 8px 16px
+    font-size: 12px
+    line-height: 18px
+    height: 34px
+    margin: 0 12px 16px 0
+    svg
+      margin: 0 0 0 8px
+    &.btn-clear-filter
+      color: rgba($black, .6)
+      &:hover, &:focus
+        color: #fff
+
+.catalog-search-result
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  margin: 0 auto
+  width: 100%
+  height: 100%
+  .box-text
+    color: rgba(#1D1D1B, .6)
+
+h1.title-search-result
+  font-family: $default-font
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: rgba($black, .6 )
+  strong
+    color: $black
+
+.catalog-line-mobile
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 24px
+
+
+.btn-filter-mobile
+  fill: none
+  stroke: $black
+  width: 48px
+  height: 48px
+  min-width: 48px
+  margin: 0 0 0 16px
+  padding: 12px
+  svg
+    width: 24px
+    height: 24px
+
+.form-search-catalog
+  max-width: 100%
+  position: relative
+  margin: 0
+  [type='submit']
+    background: transparent
+    width: 20px
+    height: 20px
+    min-width: 20px
+    fill: none
+    stroke: rgba(#1D1D1B,.6)
+    position: absolute
+    top: 14px
+    left: 16px
+    opacity: 1
+    z-index: 1
+    svg
+      width: 20px
+      height: 20px
+
+
+// product page
+.product-page
+  &__head
+    width: 100%
+    display: flex
+    align-items: flex-start
+    margin: 0 0 32px
+  &__name
+    margin: 0 auto 0 0
+  h1
+    font-size: 40px
+    margin: 0
+  .stickers
+    margin: 0 0 32px
+  .tabs__caption
+    width: 100%
+    margin: 0 0 32px
+    li
+      flex: 1
+      a
+        width: 100%
+        text-align: center
+
+.subtitle
+  color: rgba(#1D1D1B,.6)
+  margin: 8px 0 0
+
+.product-image
+  .product-page-box
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+.product-image-preview
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 16px 0 24px 0
+
+.product-image-min
+  margin: 0 8px 8px 0
+  @include d-flex
+  border-radius: 16px
+  padding: 12px
+  border: 1px solid transparent
+  overflow: hidden
+  width: 100px
+  height: 100px
+
+  &.active
+    border-color: $accent
+  &:last-child
+    margin: 0
+
+.product-image-max
+  width: 100%
+  height: 459px
+  overflow: hidden
+  padding: 24px
+  border-radius: 24px
+  background: rgba(#242933, .04 )
+  @include d-flex
+  img
+    mix-blend-mode: multiply
+    transition: .3s ease
+  &__img
+    display: none
+    &.active
+      display: block
+
+.product-page-box
+  width: 100%
+  margin: 0 0 24px
+  font-size: 14px
+  line-height: 22px
+  &:last-child
+    margin: 0
+  h5
+    font-size: 16px
+    line-height: 24px
+    margin: 0 0 8px
+    width: 100%
+
+.list-characteristics
+  width: 100%
+  li
+    width: 100%
+    display: flex
+    align-items: flex-start
+    margin: 0 0 4px
+    &:last-child
+      margin: 0
+    span, a
+      text-align: right
+      margin: 0 0 0 auto
+      display: block
+    p
+      color: rgba(#1D1D1B,.6)
+      margin-right: auto
+
+
+.owner-box
+  display: flex
+  align-items: center
+  &__img
+    @include d-flex
+    width: 24px
+    height: 24px
+    min-width: 24px
+    border-radius: 50%
+    margin: 0 8px 0 0
+    padding: 1.5px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.btn-group-nav
+  margin: 8px 0 32px
+  align-items: center
+  flex-wrap: nowrap
+  .btn
+    margin: 0
+    flex: 1
+  .link-rate
+    margin: 0 0 0 20px
+
+.price-chart
+  display: flex
+  align-items: center
+  margin: 0 0 24px
+  span
+    color: #A00000
+    font-size: 24px
+    margin: 0 0 0 16px
+  h2
+    font-size: 28px
+    width: fit-content
+    margin: 0
+
+.chart-wrapper
+  width: 100%
+  margin: 0 0 32px
+  &:last-child
+    margin: 0
+  canvas
+    width: 100% !important  
+
+.price-updated
+  text-align: center
+  width: 100%
+  font-size: 14px
+  color: rgba(#1D1D1B, .6 )
+  margin: 32px 0 0
+
+.table-product
+  th, td
+    &:first-child
+      padding-left: 16px

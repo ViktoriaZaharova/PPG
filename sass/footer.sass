@@ -1,0 +1,207 @@
+@import "vars"
+
+footer
+  padding: 16px
+  .link
+    color: rgba(#fff, .88)
+    margin: 0 32px 0 0
+    &:hover
+      color: $black
+    &:last-child
+      margin: 0
+
+.footer-wrapper
+  width: 100%
+  color: #fff
+  border-radius: 24px
+  background: $accent
+  padding: 40px 0 0
+  .copyright
+    color: rgba(#fff, .6)
+
+.footer-top
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.subscribe-wrapper
+  margin: 0 0 0 auto
+  max-width: 512px
+  width: 100%
+  p
+    margin: 0 0 8px
+    font-weight: 600  
+
+.form-subscribe
+  max-width: 512px
+  width: 100%
+  position: relative
+  z-index: 1
+  label
+    margin: 0
+  [type="submit"]
+    height: 40px
+    font-size: 14px
+    position: absolute
+    z-index: 1
+    right: 4px
+    top: 4px
+  input
+    padding: 0 135px 0 48px  
+
+.footer-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 32px 0
+  margin: 40px 0 0
+  border-top: 1px solid rgba(#fff, .14)
+  font-size: 14px
+  color: rgba(#fff, .88)
+
+.copyright
+  margin: 0 auto 0 0
+
+.consent
+  text-align: center
+  font-size: 14px
+  line-height: 22px
+  max-width: 500px
+
+.footer-page
+  border-top: 1px solid rgba(#242933, .14)  
+  color: rgba($black, .6)
+  padding: 0
+  .footer-bottom
+    color: rgba($black, .6)
+    border: none
+    margin: 0
+    a
+      color: $black
+      &:hover
+        color: $blue
+
+// modal
+.modal__div
+  position: fixed
+  width: 100%
+  max-width: 584px
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__close
+  position: relative
+  margin: 0 0 0 auto
+  width: 48px
+  height: 48px
+  min-width: 48px
+  fill: none
+  stroke: $black
+  background: transparent
+  @include d-flex
+  svg
+    width: 24px
+    height: 24px
+  &:hover
+    stroke: $accent  
+
+.modal-head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 6px 0
+  border-bottom: 1px solid rgba($black, .14)  
+  
+.modal-body
+  padding: 16px 0 0
+  width: 100%
+
+.modal__wrapper
+  background: #fff
+  border-radius: 24px
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 30px auto
+  padding: 0 24px
+  box-sizing: border-box
+  position: relative
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-scrollbar-track-piece
+    background: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-scrollbar-thumb
+    background-color: $accent
+    border-radius: 4px
+  &::-webkit-scrollbar-corner
+    background: rgba(#242933, .04)
+    border-radius: 4px
+  &::-webkit-resizer
+    background-color: $accent
+    border-radius: 4px
+
+  
+.modal-title
+  font-size: 18px
+  line-height: 28px
+  color: $black
+  font-weight: 600
+  margin: 0
+  width: fit-content
+  font-family: $default-font
+
+.modal-footer
+  width: 100%
+  padding: 24px 0
+  margin: auto 0 0  
+  .btn-group
+    .btn
+      flex: none
+      margin: 0 8px 0 0
+      &:last-child
+        margin: 0
+    .btn-apply
+      width: calc(100% - 48px - 8px)    
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #242933
+  opacity: 0.4
+  -moz-opacity: 0.4
+  filter: alpha(opacity = 40)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none  
+
+.modal__div2
+  .modal__close
+    margin-right: -24px
+  .modal-body
+    padding: 0
+  .modal-title
+    margin: 0 0 16px
+  .btn-group
+    .btn
+      flex: 1
