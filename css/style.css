@@ -176,6 +176,10 @@ input.p-default, textarea.p-default, select.p-default {
   align-items: center;
   justify-content: center;
 }
+.label-icon.stroke-none {
+  stroke: none;
+  fill: rgba(29, 29, 27, 0.6);
+}
 
 input[type=radio], input[type=checkbox] {
   width: auto;
