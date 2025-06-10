@@ -340,3 +340,32 @@ $(".product-image-min").click(function (e) {
 	$('.product-image-max__img.active').removeClass('active'); // 3
 	content.addClass('active'); // 4
 });
+
+// slick slider
+$('.autographs-slider').slick({
+  variableWidth: true,
+  slidesToShow: 1,
+	infinite: false,
+	arrows: true,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+	dots: true,
+	responsive: [
+		{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: false,
+      }
+    },
+		{
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: false,
+				arrows: false
+      }
+    }
+  ]
+});
+	

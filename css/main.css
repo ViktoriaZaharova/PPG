@@ -714,11 +714,35 @@
   margin: 0 0 0 8px;
 }
 
-.table-collections td:first-child, .table-collections th:first-child {
+.table-collections td:nth-child(2), .table-collections th:nth-child(2) {
   padding-left: 16px;
 }
 .table-collections td:not(:first-child), .table-collections th:not(:first-child) {
   text-align: center;
+}
+.table-collections .dropdown {
+  width: -moz-fit-content;
+  width: fit-content;
+  left: auto;
+  right: 0;
+}
+
+.collections-name .tooltip-wrapper {
+  margin: 0 12px 0 0;
+}
+
+.tooltip-btn {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: none;
+}
+.tooltip-btn svg {
+  width: 32px;
+  height: 32px;
 }
 
 .btn-table-search, .btn-cloud {
@@ -951,6 +975,7 @@
 
 .form-cabinet__footer {
   width: 100%;
+  flex-wrap: wrap;
   margin: 32px 0 0;
 }
 
@@ -989,6 +1014,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
+}
+
+.label-file__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .saved-poppup {
@@ -1228,7 +1258,10 @@
   margin: 0;
 }
 .card-product-column .price {
-  margin: 0 0 0 auto;
+  margin: 0 0 auto;
+}
+.card-product-column .btn-group {
+  margin: auto 0 0;
 }
 
 .showcase-sorter {
@@ -1514,10 +1547,11 @@ h1.title-search-result strong {
 .product-image-max {
   width: 100%;
   height: 459px;
-  overflow: hidden;
   padding: 24px;
   border-radius: 24px;
   background: rgba(36, 41, 51, 0.04);
+  position: relative;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1531,6 +1565,70 @@ h1.title-search-result strong {
 }
 .product-image-max__img.active {
   display: block;
+}
+
+.tooltip-fake {
+  top: 24px;
+  right: 24px;
+}
+.tooltip-fake .tooltip-icon {
+  opacity: 1;
+}
+.tooltip-fake .tooltip-text {
+  color: #fff;
+  background: #242933;
+  min-width: 459px;
+  max-width: 459px;
+  padding: 32px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 16px;
+}
+.tooltip-fake .tooltip-text::before {
+  content: "";
+  left: 50%;
+  top: -6px;
+  transform: translate(-50%, 0);
+  width: 14px;
+  height: 6px;
+  background: #242933;
+  -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+  position: absolute;
+}
+.tooltip-fake .tooltip-text__img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tooltip-fake .tooltip-text__img img {
+  width: 100%;
+}
+.tooltip-fake .tooltip-text__body {
+  width: 100%;
+  padding: 24px 0 0;
+}
+.tooltip-fake .tooltip-text__body h4 {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Xolonium", sans-serif;
+  margin: 0 0 12px;
+}
+.tooltip-fake .tooltip-text__body .box-text p {
+  margin: 0;
+}
+.tooltip-fake .tooltip-text__body .btn-group {
+  padding: 12px 0 24px;
+}
+.tooltip-fake .tooltip-text a.color-blue {
+  color: #57ADE3;
+}
+.tooltip-fake .tooltip-text a.color-blue:hover {
+  text-decoration: underline;
 }
 
 .product-page-box {
@@ -1600,22 +1698,115 @@ h1.title-search-result strong {
   flex-wrap: nowrap;
 }
 .btn-group-nav .btn {
-  margin: 0;
   flex: 1;
 }
 .btn-group-nav .link-rate {
   margin: 0 0 0 20px;
 }
 
+.btn-in-collection .svg-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  fill: #fff;
+  margin: 0 0 0 8px;
+  stroke: none !important;
+}
+
+.label-radio-autographs {
+  width: 380px;
+  height: 200px;
+  min-width: 380px;
+  border: 1px solid #57ADE3;
+  border-radius: 8px;
+  padding: 24px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.label-radio-autographs__content {
+  width: 100%;
+  margin: auto 0 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.label-radio-autographs .price {
+  font-size: 20px;
+  font-family: "Xolonium", sans-serif;
+}
+.label-radio-autographs__bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  top: 0;
+}
+.label-radio-autographs__icon {
+  margin: 0 0 0 auto;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-radio-autographs-v2 {
+  color: #fff;
+  border-color: rgba(36, 41, 51, 0.14);
+}
+.label-radio-autographs-v2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 29, 27, 0.54);
+  z-index: -1;
+}
+.label-radio-autographs-v2 .radio-custom {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.autographs-wrapper__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px;
+}
+.autographs-wrapper__head h3 {
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+}
+.autographs-wrapper__head h3 span {
+  margin: 0 0 0 16px;
+  color: rgba(29, 29, 27, 0.4);
+}
+
+.autographs-slider .slide {
+  margin: 0 16px 0 0;
+}
+
 .price-chart {
   display: flex;
   align-items: center;
   margin: 0 0 24px;
+  width: 100%;
 }
 .price-chart span {
   color: #A00000;
-  font-size: 24px;
-  margin: 0 0 0 16px;
+  font-size: 28px;
+  margin: 0 0 0 auto;
+  font-family: "Xolonium", sans-serif;
 }
 .price-chart h2 {
   font-size: 28px;

@@ -101,6 +101,7 @@
   .table-collections
     min-width: 1320px
     margin: 0 0 8px
+    
     th, td
       &:first-child
         position: sticky
@@ -265,7 +266,6 @@
     margin: 8px 0 16px
     span
       margin: 0 0 0 auto
-      font-weight: 600
 
   .product-page-box
     margin: 0 0 16px
@@ -311,6 +311,14 @@
 
   .btn-group.justify-end .btn
     margin: 0 0 0 24px
+
+  .table-collections
+    th
+      &:first-child
+        padding-left: 45px  
+
+  .btn-group-nav
+    margin: 0 0 16px   
 
 @media only screen and (max-width: 768px)
   header
@@ -381,6 +389,19 @@
     .modal__wrapper
       max-width: 600px
 
+  .label-radio-autographs
+    width: 100%
+    min-width: auto
+    height: 160px
+    padding: 16px 
+
+  .radio-custom
+    top: 16px
+    left: 16px  
+
+  .autographs-slider .slide
+    margin: 0     
+
 @media only screen and (max-width: 680px)
   .showcase-sorter
     width: 100%
@@ -399,6 +420,12 @@
     width: 64px
     height: 64px
     padding: 4px
+
+  .tooltip-fake .tooltip-text
+    min-width: 328px
+    max-width: 328px
+    padding: 24px
+    
 
 @media only screen and (max-width: 600px)
   .btn-search-mobile
@@ -904,9 +931,8 @@
       font-size: 20px
       line-height: 26px
     span
-      font-size: 18px
-      line-height: 28px
-      margin: 0 0 0 5px
+      font-size: 20px
+      line-height: 26px
 
   .btn-favorite
     padding: 8px
@@ -965,6 +991,16 @@
       font-size: 20px
       line-height: 26px
 
+
+  .tooltip-fake .tooltip-text
+    left: auto
+    transform: none
+    right: 0
+    &::before
+      left: auto
+      right: 10px
+      transform: none
+      
 @media only screen and (max-width: 370px)
   .card-product__img
     width: 130px
@@ -985,3 +1021,8 @@
     width: 30px
     height: 30px
     min-width: 30px
+    
+  .tooltip-fake .tooltip-text
+    min-width: 280px
+    max-width: 280px
+    

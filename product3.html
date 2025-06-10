@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -117,6 +118,26 @@
               <div class="col-30 mb-16 col-image">
                 <div class="product-image">
                   <div class="product-image-max">
+                    <div class="tooltip tooltip-fake"><img src="img/tooltip-fake.svg" alt="" class="tooltip-icon">
+                      <div class="tooltip-text">
+                        <div class="tooltip-text__img"><img src="img/fake-img.jpg" alt=""></div>
+                        <div class="tooltip-text__body">
+                          <h4>Внимание! <br>
+                            У фигурки есть фейки</h4>
+                          <div class="box-text">
+                            <p>Пожалуйста, ознакомьтесь с материалом прежде чем покупать фигурку, будьте бдительны</p>
+
+                            <div class="btn-group">
+                              <a href="#" class="btn btn-grey2">Фото</a>
+                              <a href="#" class="btn btn-grey2">Видео</a>
+                            </div>
+                            <p>Благодарность за сравнение <a href="#" class="d-inline color-blue">@serjo_funko_pop</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <img data-tab="1" class="product-image-max__img active" src="img/product-img.jpg" alt="">
                     <img data-tab="2" class="product-image-max__img" src="img/preview-img2.jpg" alt="">
                     <img data-tab="3" class="product-image-max__img" src="img/preview-img3.jpg" alt="">
@@ -248,9 +269,57 @@
                   </div>
                 </div>
                 <div class="product-page__body w-100">
+
+                  <div class="autographs-wrapper w-100">
+                    <div class="autographs-wrapper__head">
+                      <h3>Автографы<span>5</span></h3>
+
+                    </div>
+                    <div class="autographs-slider">
+                      <div class="slide">
+                        <label class="label-radio label-radio-autographs">
+                          <input type="radio" name="radio">
+                          <span class="radio-custom"></span>
+                          <span class="radio-text">Без автографа</span>
+                          <span class="label-radio-autographs__content">
+                            <span class="price">19 500 ₽</span>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="slide">
+                        <label class="label-radio label-radio-autographs label-radio-autographs-v2">
+                          <img src="img/autographs-bg.png" alt="" class="label-radio-autographs__bg">
+                          <input type="radio" name="radio">
+                          <span class="radio-custom"></span>
+                          <span class="radio-text">Tom Hiddleston</span>
+                          <span class="label-radio-autographs__content">
+                            <span class="price">39 874 ₽</span>
+                            <span class="label-radio-autographs__icon"><img src="img/wikipedia-icon.svg" alt=""></span>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="slide">
+                        <label class="label-radio label-radio-autographs label-radio-autographs-v2">
+                          <img src="img/autographs-bg.png" alt="" class="label-radio-autographs__bg">
+                          <input type="radio" name="radio">
+                          <span class="radio-custom"></span>
+                          <span class="radio-text">Tom Hiddleston</span>
+                          <span class="label-radio-autographs__content">
+                            <span class="price">39 874 ₽</span>
+                            <span class="label-radio-autographs__icon"><img src="img/wikipedia-icon.svg" alt=""></span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="btn-group btn-group-nav d-pc">
-                    <a href="#" class="btn btn-sm btn-blue">В коллекцию</a>
-                    <a href="#" class="color-black link-rate">Оценить фигурку</a>
+                    <a href="#" class="btn btn-sm btn-blue btn-in-collection">В коллекцию <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg></a>
+                    <a href="#" class="btn btn-sm btn-grey">Оценить фигурку</a>
                   </div>
 
                   <div class="d-pc">
@@ -324,6 +393,11 @@
                   </div>
 
                   <div class="d-tablet">
+                    <div class="btn-group btn-group-nav">
+                      <a href="#" class="btn btn-sm btn-blue">В коллекцию</a>
+                      <a href="#" class="btn btn-sm btn-grey">Оценить</a>
+                    </div>
+                    
                     <div class="product-page-box">
                       <h5>О фигурке</h5>
                       <ul class="my-ul list-characteristics">
@@ -345,10 +419,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="btn-group btn-group-nav">
-                      <a href="#" class="btn btn-sm btn-blue">В коллекцию</a>
-                      <a href="#" class="color-black link-rate">Оценить</a>
-                    </div>
+                    
                     <div class="product-page-box">
                       <h5>Характеристики</h5>
                       <ul class="my-ul list-characteristics">
@@ -803,6 +874,7 @@
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/fileup.js"></script>
   <script src="js/chart.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

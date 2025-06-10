@@ -332,6 +332,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   stroke: #fff;
 }
 
+.btn-grey2 {
+  background: #383c45;
+  color: #fff;
+}
+.btn-grey2:hover {
+  background: #57ADE3;
+  color: #fff;
+}
+
 .btn-black {
   color: #fff;
   background: #1D1D1B;
@@ -1199,6 +1208,51 @@ a.color-black:hover {
   margin: 0 auto 0 0;
 }
 
+.tooltip-wrapper {
+  position: relative;
+  z-index: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.tooltip-wrapper:hover .tooltip-wrapper__box {
+  display: block;
+}
+.tooltip-wrapper__btn {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-wrapper__box {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  padding: 8px 16px;
+  background: #242933;
+  min-width: 180px;
+  bottom: 100%;
+  left: -10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  display: none;
+}
+.tooltip-wrapper__box::before {
+  content: "";
+  position: absolute;
+  background: #242933;
+  left: 10px;
+  bottom: -10px;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+          clip-path: polygon(100% 0, 0 0, 50% 100%);
+  height: 10px;
+  width: 14px;
+  border-radius: 0 0 5px 5px;
+}
+
 .label-checkbox {
   position: relative;
   display: flex;
@@ -1266,4 +1320,133 @@ a.color-black:hover {
 }
 .label-toggle input:checked ~ .label-toggle__custom {
   left: 22px;
+}
+
+.label-radio {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  color: #1D1D1B;
+  cursor: pointer;
+}
+.label-radio input {
+  display: none;
+}
+.label-radio input:checked ~ .radio-custom {
+  border-color: #57ADE3;
+}
+.label-radio input:checked ~ .radio-custom::before {
+  opacity: 1;
+}
+
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(29, 29, 27, 0.14);
+  background: transparent;
+  transition: 0.3s ease;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+.radio-custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #57ADE3;
+  opacity: 0;
+}
+
+.radio-text {
+  padding: 0 0 0 32px;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto 0;
+}
+.slick-dots li {
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  min-width: 8px;
+  margin: 0 8px 0 0;
+  background: rgba(36, 41, 51, 0.14);
+}
+.slick-dots li:last-child {
+  margin: 0;
+}
+.slick-dots li.slick-active {
+  width: 32px;
+  height: 8px;
+  background: #57ADE3;
+}
+.slick-dots li button {
+  display: none;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 1;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(36, 41, 51, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  box-shadow: none;
+  fill: none;
+  stroke: #1D1D1B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-arrow svg {
+  width: 16px;
+  height: 16px;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  background: #57ADE3;
+  border-color: #57ADE3;
+  stroke: #fff;
+}
+.slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.slick-next {
+  right: -16px;
+}
+
+.slick-prev {
+  left: -16px;
 }

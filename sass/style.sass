@@ -235,6 +235,13 @@ button, .btn
     svg
       stroke: #fff
 
+.btn-grey2
+  background: #383c45
+  color: #fff
+  &:hover
+    background: $accent
+    color: #fff
+
 .btn-black
   color: #fff
   background: $black
@@ -281,7 +288,6 @@ button, .btn
     .btn
       margin: 0 0 0 32px
       flex: none
-    
 
 .svg-icon
   @include d-flex
@@ -936,6 +942,43 @@ a.color-black
     width: fit-content
     margin: 0 auto 0 0
 
+.tooltip-wrapper
+  position: relative
+  z-index: 1
+  width: fit-content
+  &:hover
+    .tooltip-wrapper__box
+      display: block
+  &__btn
+    width: 32px
+    height: 32px
+    min-width: 32px
+    @include d-flex
+
+.tooltip-wrapper__box
+  position: absolute
+  z-index: 2
+  color: #fff
+  padding: 8px 16px
+  background: #242933
+  min-width: 180px
+  bottom: 100%
+  left: -10px
+  border-radius: 10px
+  font-size: 14px
+  line-height: 22px
+  display: none
+  &::before
+    content: ''
+    position: absolute
+    background: #242933
+    left: 10px
+    bottom: -10px
+    clip-path: polygon(100% 0, 0 0, 50% 100%)
+    height: 10px
+    width: 14px
+    border-radius: 0 0 5px 5px
+
 //checkbox my
 .label-checkbox
   position: relative
@@ -997,3 +1040,114 @@ a.color-black
       background: #242933
       ~ .label-toggle__custom
         left: 22px
+
+// radio custom
+.label-radio
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 16px
+  position: relative
+  z-index: 1
+  color: #1D1D1B
+  cursor: pointer
+  input
+    display: none
+    &:checked ~ .radio-custom
+      border-color: $accent
+      &::before
+        opacity: 1
+
+.radio-custom
+  width: 20px
+  height: 20px
+  min-width: 20px
+  border-radius: 50%
+  border: 1px solid rgba(#1D1D1B, .14)
+  background: transparent
+  transition: .3s ease
+  position: absolute
+  left: 24px
+  top: 24px
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background: $accent
+    opacity: 0
+
+.radio-text
+  padding: 0 0 0 32px  
+
+
+// slick slider
+.slick-slider
+  width: 100%
+  
+.slick-dots
+  list-style: none
+  padding: 0  
+  position: relative
+  z-index: 1
+  opacity: 1
+  bottom: 0
+  left: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 16px auto 0
+  li
+    cursor: pointer
+    transition: .3s ease
+    width: 8px
+    height: 8px
+    border-radius: 10px  
+    min-width: 8px
+    margin: 0 8px 0 0
+    background: rgba(#242933, .14)
+    &:last-child
+      margin: 0
+    &.slick-active
+      width: 32px
+      height: 8px
+      background: $accent
+    button
+      display: none
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)  
+  opacity: 1
+  z-index: 1
+  width: 32px
+  height: 32px
+  border: 1px solid rgba(#242933, .14)
+  border-radius: 8px
+  background: #fff
+  outline: none
+  box-shadow: none
+  fill: none
+  stroke: #1D1D1B
+  @include d-flex
+  svg
+    width: 16px
+    height: 16px
+  &:hover, &:focus
+    background: $accent
+    border-color: $accent
+    stroke: #fff
+  &.slick-disabled
+    opacity: 0  
+
+.slick-next
+  right: -16px
+
+.slick-prev
+  left: -16px        
