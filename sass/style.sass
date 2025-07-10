@@ -58,7 +58,7 @@ img
   text-align: center
 
 a
-  display: block
+  display: inline-block
   text-decoration: none
   transition: .3s ease
   outline: none
@@ -150,6 +150,7 @@ textarea
   width: 100%
   font-weight: 600
   margin: 0 0 8px
+  
 
 button, .btn
   outline: none
@@ -539,8 +540,9 @@ a.color-black
       height: 40px
       min-width: 40px
       background: url('../img/arrow-accordeon.svg') no-repeat center
-      background-size: 100%
+      background-size: 20px
       transition: .3s ease
+      margin-left: auto
   h3
     margin: 0 auto 0 0
   h4
@@ -634,6 +636,7 @@ a.color-black
   .label-checkbox
     font-size: 14px
     line-height: 22px
+    padding-left: 5px
   thead
     .label-checkbox
       input
@@ -720,9 +723,12 @@ a.color-black
   svg
     width: 20px
     height: 20px
-  &:hover, &:focus
+  &:hover
     background: $accent
     fill: #fff
+  &:focus
+    background: #fff
+    fill: $black  
 
 .btn-favorite2
   border: none
@@ -1151,3 +1157,21 @@ a.color-black
 
 .slick-prev
   left: -16px        
+
+.list-social
+  margin: 0 auto
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+  a
+    @include d-flex
+    width: 26px
+    height: 26px
+    min-width: 26px
+    opacity: 0.6
+    &:hover
+      opacity: 1   

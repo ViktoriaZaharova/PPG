@@ -103,7 +103,7 @@ img {
 }
 
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   transition: 0.3s ease;
   outline: none;
@@ -715,8 +715,9 @@ a.color-black:hover {
   height: 40px;
   min-width: 40px;
   background: url("../img/arrow-accordeon.svg") no-repeat center;
-  background-size: 100%;
+  background-size: 20px;
   transition: 0.3s ease;
+  margin-left: auto;
 }
 .panel-accordeon h3 {
   margin: 0 auto 0 0;
@@ -834,6 +835,7 @@ a.color-black:hover {
 .table .label-checkbox {
   font-size: 14px;
   line-height: 22px;
+  padding-left: 5px;
 }
 .table thead .label-checkbox input:checked ~ .checkbox-custom {
   background: #57ADE3 url("../img/checked-line.svg") no-repeat center;
@@ -939,9 +941,13 @@ a.color-black:hover {
   width: 20px;
   height: 20px;
 }
-.btn-favorite:hover, .btn-favorite:focus {
+.btn-favorite:hover {
   background: #57ADE3;
   fill: #fff;
+}
+.btn-favorite:focus {
+  background: #fff;
+  fill: #1D1D1B;
 }
 
 .btn-favorite2 {
@@ -1449,4 +1455,29 @@ a.color-black:hover {
 
 .slick-prev {
   left: -16px;
+}
+
+.list-social {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.list-social li {
+  margin: 0 10px 0 0;
+}
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  opacity: 0.6;
+}
+.list-social a:hover {
+  opacity: 1;
 }

@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -22,10 +23,35 @@
 </head>
 
 <body>
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
+        <!-- <a href="#" class="btn-burger"></a> -->
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -63,10 +89,11 @@
             </svg>
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
+          </svg></a> -->
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
@@ -100,9 +127,12 @@
                       </svg></a>
 
                     <div class="dropdown-menu">
-                      <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Старые</a>
-                      <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Новые</a>
-                      <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дешевле</a>
+                      <div class="dropdown-menu-wrapper">
+                        <h4 class="d-mobile">Поделиться</h4>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Старые</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Новые</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дешевле</a>
+                      </div>
                     </div>
                   </div>
 
@@ -208,6 +238,27 @@
 
                     <div class="col-100 mb-16">
                       <div class="card-product-top card-product card-product-row">
+                        <div class="tooltip tooltip-fake"><img src="img/tooltip-fake.svg" alt="" class="tooltip-icon">
+                          <div class="tooltip-text">
+                            <div class="tooltip-text__img"><img src="img/fake-img.jpg" alt=""></div>
+                            <div class="tooltip-text__body">
+                              <h4>Внимание! <br>
+                                У фигурки есть фейки</h4>
+                              <div class="box-text">
+                                <p>Пожалуйста, ознакомьтесь с материалом прежде чем покупать фигурку, будьте бдительны
+                                </p>
+
+                                <div class="btn-group">
+                                  <a href="#" class="btn btn-grey2">Фото</a>
+                                  <a href="#" class="btn btn-grey2">Видео</a>
+                                </div>
+                                <p>Благодарность за сравнение <a href="#"
+                                    class="d-inline color-blue">@serjo_funko_pop</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <a href="product.html" class="card-product__img"><img src="img/top-img1.jpg" alt=""></a>
                         <div class="card-product__body">
                           <div class="card-product__head">
@@ -387,6 +438,27 @@
                   <div class="row">
                     <div class="col-25 mb-16">
                       <div class="card-product-top card-product card-product-column">
+                        <div class="tooltip tooltip-fake"><img src="img/tooltip-fake.svg" alt="" class="tooltip-icon">
+                          <div class="tooltip-text">
+                            <div class="tooltip-text__img"><img src="img/fake-img.jpg" alt=""></div>
+                            <div class="tooltip-text__body">
+                              <h4>Внимание! <br>
+                                У фигурки есть фейки</h4>
+                              <div class="box-text">
+                                <p>Пожалуйста, ознакомьтесь с материалом прежде чем покупать фигурку, будьте бдительны
+                                </p>
+
+                                <div class="btn-group">
+                                  <a href="#" class="btn btn-grey2">Фото</a>
+                                  <a href="#" class="btn btn-grey2">Видео</a>
+                                </div>
+                                <p>Благодарность за сравнение <a href="#"
+                                    class="d-inline color-blue">@serjo_funko_pop</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <a href="product.html" class="card-product-top__img">
                           <img src="img/top-img1.jpg" alt="">
                         </a>
@@ -397,15 +469,15 @@
                             <div class="price">19 220 ₽</div>
                           </div>
                           <div class="btn-group">
-                           
-                              <a href="#" class="btn btn-sm btn-grey in-collection">
-                                <svg class="svg-icon">
-                                  <use xlink:href="img/sprite.svg#check-icon"></use>
-                                </svg>
-                                <span>В коллекции</span>
-                                <svg class="svg-icon d-mobile">
-                                  <use xlink:href="img/sprite.svg#add-icon"></use>
-                                </svg></a>
+
+                            <a href="#" class="btn btn-sm btn-grey in-collection">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check-icon"></use>
+                              </svg>
+                              <span>В коллекции</span>
+                              <svg class="svg-icon d-mobile">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
                             <a href="#" class="btn btn-favorite"><svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#heart"></use>
                               </svg></a>
@@ -686,6 +758,10 @@
       <div class="container">
         <div class="footer-bottom">
           <div class="copyright">© poppriceguide.ru</div>
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/Telegram2.svg" alt=""></a></li>
+            <li><a href="https://www.instagram.com/poppriceguide.ru"><img src="img/WhatsApp2.svg" alt=""></a></li>
+          </ul>
           <a href="agreement.html" class="link" target="_blank">Соглашения пользования сервисом</a>
           <a href="policy.html" class="link" target="_blank">Политика конфиденциальности</a>
         </div>
@@ -1002,7 +1078,7 @@
             <span class="label-title">Название фигурки</span>
             <label><input type="text" name="language" placeholder="На англ. языке" class="p-default"></label>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">Эксклюзивно для</span>
             <select name="select" class="select-my">
@@ -1011,7 +1087,7 @@
               <option value="Выберите">Выберите</option>
             </select>
           </div>
-      
+
           <div class="form-filter-box">
             <label class="label-checkbox">
               <input type="checkbox" name="checkbox_filter">
@@ -1019,7 +1095,7 @@
               <span class="checkbox-text">Наличие автографа</span>
             </label>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">Размер</span>
             <select name="select" class="select-my">
@@ -1028,29 +1104,28 @@
               <option value="Выберите">Выберите</option>
             </select>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">Дата выпуска</span>
             <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
                 class="datepicker datepicker-2"></label>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">Номер фигурки</span>
-            <label><input type="text" name="number_figure" placeholder="Написан на коробке"
-                class="p-default"></label>
+            <label><input type="text" name="number_figure" placeholder="Написан на коробке" class="p-default"></label>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">PPGID</span>
             <label><input type="text" name="ppgid" placeholder="8 цифр" class="p-default"></label>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">Добавлено пользователем</span>
             <label><input type="text" name="name_user" placeholder="Никнейм" class="p-default"></label>
           </div>
-      
+
           <div class="form-filter-box">
             <span class="label-title">Тип фигурки</span>
             <select name="select" class="select-my">
@@ -1059,7 +1134,7 @@
               <option value="Выберите">Выберите</option>
             </select>
           </div>
-      
+
           <!-- <div class="btn-group form-filter__footer">
             <a href="#" class="btn btn-blue btn-apply">Применить</a>
             <a href="#" class="btn btn-refresh btn-border flex-none"><svg class="svg-icon">
@@ -1081,7 +1156,65 @@
 
     </div>
   </div>
-  
+
+  <div class="modal__div tabs" id="codeModal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Поиск фигурки по штрих-коду</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-search-modal">
+
+          <ul class="tabs__caption my-ul w-100">
+            <li class="active"><a href="#tab3">Загрузить</a></li>
+            <li><a href="#tab4">Сканировать</a></li>
+          </ul>
+
+          <div class="tabs__content active" id="tab3">
+            <label class="label-file">
+              <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+              <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+              <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                  class="d-inline color-blue text-decoration">загрузить</a></span>
+            </label>
+            <div class="label-file__result queue" id="upload-demo-queue"></div>
+          </div>
+
+          <div class="tabs__content" id="tab4">
+            <div class="form-search-modal__img"><img src="img/tab-scan1.jpg" alt=""></div>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Введите штрих-код</span>
+            <label>
+              <svg class="svg-icon label-icon">
+                <use xlink:href="img/sprite.svg#code-icon"></use>
+              </svg>
+              <input type="number" name="name_figure" placeholder="____ ____ _____[_]"></label>
+          </div>
+
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Найти</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <div class="overlay"></div>
 
@@ -1091,6 +1224,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/fileup.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

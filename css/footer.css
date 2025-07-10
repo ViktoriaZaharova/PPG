@@ -29,6 +29,9 @@ footer .link:last-child {
   align-items: center;
   flex-wrap: wrap;
 }
+.footer-top .list-social li a {
+  opacity: 1;
+}
 
 .subscribe-wrapper {
   margin: 0 0 0 auto;

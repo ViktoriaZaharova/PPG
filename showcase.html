@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -22,10 +24,36 @@
 </head>
 
 <body>
+
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
+        <!-- <a href="#" class="btn-burger"></a> -->
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -63,10 +91,11 @@
             </svg>
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
+          </svg></a> -->
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
@@ -95,22 +124,33 @@
                 <div class="dropdown showcase-dropdown">
                   <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
                   <div class="dropdown-menu">
-                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
-                      <img class="dropdown-menu__icon" src="img/vk-icon.svg" alt="">
-                      <span>Вконтакте</span>
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
-                      <img class="dropdown-menu__icon" src="img/whatsapp.svg" alt="">
-                      <span>WhatsApp</span>
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
-                      <img class="dropdown-menu__icon" src="img/tg.svg" alt="">
-                      <span>Telegram</span>
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
-                      <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
-                      <span>Скопировать ссылку</span>
-                    </a>
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Поделиться</h4>
+                      <div class="list-messangers">
+                        <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                          <img class="dropdown-menu__icon" src="img/vk-icon.svg" alt="">
+                          <span>Вконтакте</span>
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                          <img class="dropdown-menu__icon" src="img/whatsapp.svg" alt="">
+                          <span>WhatsApp</span>
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
+                          <img class="dropdown-menu__icon" src="img/tg.svg" alt="">
+                          <span>Telegram</span>
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item link-copyright">
+                          <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
+                          <span>Скопировать ссылку</span>
+                        </a>
+                      </div>
+
+                      <div class="label-copyright">
+                        <label><input type="text" name="link" class="p-default"
+                            placeholder="https://poppriceguide.ru/user/nikotinel/"></label>
+                        <a href="#" class="label-copyright__link"><img src="img/copy-icon.svg" alt=""></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -278,30 +318,37 @@
                   <div class="showcase-sorter-item">
                     <div class="dropdown">
                       <a href="#" class="dropdown-toggle">Выберите список <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#arrow-bottom"></use>
-                      </svg></a>
+                          <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                        </svg></a>
 
                       <div class="dropdown-menu">
-                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">На продажу</a>
-                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Лучшие фигурки</a>
+                        <div class="dropdown-menu-wrapper">
+                          <h4 class="d-mobile">Показать сначала</h4>
+                          <a href="#" class="btn btn-sm btn-white dropdown-menu__item active">На продажу</a>
+                          <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Лучшие фигурки</a>
+                        </div>
                       </div>
                     </div>
-                    
+
                   </div>
                   <div class="showcase-sorter-item">
                     <p>Сначала:</p>
                     <div class="dropdown">
                       <a href="#" class="dropdown-toggle">Новые <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#arrow-bottom"></use>
-                      </svg></a>
+                          <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                        </svg></a>
 
                       <div class="dropdown-menu">
-                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Старые</a>
-                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дороже</a>
-                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дешевле</a>
+                        <div class="dropdown-menu-wrapper">
+                          <h4 class="d-mobile">Показать сначала</h4>
+                          <a href="#" class="btn btn-sm btn-white dropdown-menu__item active">Новые</a>
+                          <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Старые</a>
+                          <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дороже</a>
+                          <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дешевле</a>
+                        </div>
                       </div>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>
@@ -1412,6 +1459,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/fileup.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

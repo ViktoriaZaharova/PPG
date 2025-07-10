@@ -22,10 +22,36 @@
 </head>
 
 <body>
+
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
+        <!-- <a href="#" class="btn-burger"></a> -->
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -63,10 +89,11 @@
             </svg>
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
+          </svg></a> -->
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
@@ -109,7 +136,7 @@
                 <svg class="svg-icon btn-icon">
                   <use xlink:href="img/sprite.svg#filter-icon"></use>
                 </svg>
-                <span>Фильтр</span>
+                <span>Фильтра</span>
               </a>
 
               <a href="#export-modal" class="btn btn-sm btn-blue btn-export open_modal">
@@ -125,7 +152,7 @@
             </div>
           </div>
 
-          <div class="table-responsive">
+          <div class="table-responsive table-responsive-collections">
             <table class="table table-collections w-100">
               <thead>
                 <tr>
@@ -150,12 +177,12 @@
               <tbody>
                 <tr>
                   <td>
-                  
+
                     <label class="label-checkbox collections-name">
-                       <span class="tooltip-wrapper d-tablet">
-                      <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
-                      <span class="tooltip-wrapper__box">Найти фигурку в базе</span>
-                    </span>
+                      <span class="tooltip-wrapper d-tablet">
+                        <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                        <span class="tooltip-wrapper__box">Найти фигурку в базе</span>
+                      </span>
 
                       <input type="checkbox" name="checkbox_table2">
                       <span class="checkbox-custom"></span>
@@ -183,22 +210,25 @@
                         </svg></a>
 
                       <div class="dropdown-menu">
-                        <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
-                          <svg class="svg-icon">
-                            <use xlink:href="img/sprite.svg#pencil-icon"></use>
-                          </svg>
-                          <span>Редактировать</span>
-                        </a>
-                        <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
-                          <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
-                          <span>В список</span>
-                        </a>
-                        <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
-                          <svg class="svg-icon">
-                            <use xlink:href="img/sprite.svg#delete-icon"></use>
-                          </svg>
-                          <span>Удалить</span>
-                        </a>
+                        <div class="dropdown-menu-wrapper">
+                          <h4 class="d-mobile">Действия с фигуркой</h4>
+                          <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                            </svg>
+                            <span>Редактировать</span>
+                          </a>
+                          <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                            <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                            <span>В список</span>
+                          </a>
+                          <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#delete-icon"></use>
+                            </svg>
+                            <span>Удалить</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </td>
@@ -515,9 +545,459 @@
             </table>
           </div>
 
+          <div class="table-collections-mobile">
+            <div class="panel-accordeon panel-accordeon-collections in">
+              <div class="panel-accordeon-collections__top">
+                <label class="label-checkbox collections-name">
+                  <input type="checkbox" name="checkbox_table1">
+                  <span class="checkbox-custom"></span>
+                  <!-- <span class="checkbox-text">Название</span> -->
+                </label>
+
+                <div class="tooltip-wrapper">
+                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                  <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
+                </div>
+
+                <div class="dropdown">
+                  <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#dots-icon"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Действия с фигуркой</h4>
+                      <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                        </svg>
+                        <span>Редактировать</span>
+                      </a>
+                      <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                        <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                        <span>В список</span>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#delete-icon"></use>
+                        </svg>
+                        <span>Удалить</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-accordeon__head">
+                <div class="collections-name-row">
+                  <span class="collections-avatar"><img src="img/collection-img1.jpg" alt=""></span>
+                  <span class="checkbox-text">Shou (Longevity)</span>
+                </div>
+              </div>
+              <div class="panel-accordeon__body">
+
+                <ul class="my-ul accordeon-collections-list">
+                  <li>
+                    <p>Добавлен</p>
+                    <span>04.10.2024</span>
+                  </li>
+                  <li>
+                    <p>Количество</p>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <p>Состояние</p>
+                    <span>Мятый</span>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <span>3 700 ₽</span>
+                  </li>
+                  <li>
+                    <p>Статус</p>
+                    <span>Публичен</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-accordeon panel-accordeon-collections">
+              <div class="panel-accordeon-collections__top">
+                <label class="label-checkbox collections-name">
+                  <input type="checkbox" name="checkbox_table1">
+                  <span class="checkbox-custom"></span>
+                  <!-- <span class="checkbox-text">Название</span> -->
+                </label>
+
+                <div class="tooltip-wrapper">
+                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                  <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
+                </div>
+
+                <div class="dropdown">
+                  <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#dots-icon"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Действия с фигуркой</h4>
+                      <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                        </svg>
+                        <span>Редактировать</span>
+                      </a>
+                      <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                        <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                        <span>В список</span>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#delete-icon"></use>
+                        </svg>
+                        <span>Удалить</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-accordeon__head">
+                <div class="collections-name-row">
+                  <span class="collections-avatar"><img src="img/collection-img1.jpg" alt=""></span>
+                  <span class="checkbox-text">Lu (Good Fortune)</span>
+                </div>
+              </div>
+              <div class="panel-accordeon__body">
+
+                <ul class="my-ul accordeon-collections-list">
+                  <li>
+                    <p>Добавлен</p>
+                    <span>04.10.2024</span>
+                  </li>
+                  <li>
+                    <p>Количество</p>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <p>Состояние</p>
+                    <span>Мятый</span>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <span>3 700 ₽</span>
+                  </li>
+                  <li>
+                    <p>Статус</p>
+                    <span>Публичен</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-accordeon panel-accordeon-collections">
+              <div class="panel-accordeon-collections__top">
+                <label class="label-checkbox collections-name">
+                  <input type="checkbox" name="checkbox_table1">
+                  <span class="checkbox-custom"></span>
+                  <!-- <span class="checkbox-text">Название</span> -->
+                </label>
+
+                <div class="tooltip-wrapper">
+                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                  <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
+                </div>
+
+                <div class="dropdown">
+                  <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#dots-icon"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Действия с фигуркой</h4>
+                      <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                        </svg>
+                        <span>Редактировать</span>
+                      </a>
+                      <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                        <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                        <span>В список</span>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#delete-icon"></use>
+                        </svg>
+                        <span>Удалить</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-accordeon__head">
+                <div class="collections-name-row">
+                  <span class="collections-avatar"><img src="img/collection-img1.jpg" alt=""></span>
+                  <span class="checkbox-text">Fu (Happinnes)</span>
+                </div>
+              </div>
+              <div class="panel-accordeon__body">
+
+                <ul class="my-ul accordeon-collections-list">
+                  <li>
+                    <p>Добавлен</p>
+                    <span>04.10.2024</span>
+                  </li>
+                  <li>
+                    <p>Количество</p>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <p>Состояние</p>
+                    <span>Мятый</span>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <span>3 700 ₽</span>
+                  </li>
+                  <li>
+                    <p>Статус</p>
+                    <span>Публичен</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-accordeon panel-accordeon-collections">
+              <div class="panel-accordeon-collections__top">
+                <label class="label-checkbox collections-name">
+                  <input type="checkbox" name="checkbox_table1">
+                  <span class="checkbox-custom"></span>
+                  <!-- <span class="checkbox-text">Название</span> -->
+                </label>
+
+                <div class="tooltip-wrapper">
+                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                  <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
+                </div>
+
+                <div class="dropdown">
+                  <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#dots-icon"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Действия с фигуркой</h4>
+                      <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                        </svg>
+                        <span>Редактировать</span>
+                      </a>
+                      <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                        <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                        <span>В список</span>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#delete-icon"></use>
+                        </svg>
+                        <span>Удалить</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-accordeon__head">
+                <div class="collections-name-row">
+                  <span class="collections-avatar"><img src="img/collection-img2.jpg" alt=""></span>
+                  <span class="checkbox-text">Qing</span>
+                </div>
+              </div>
+              <div class="panel-accordeon__body">
+
+                <ul class="my-ul accordeon-collections-list">
+                  <li>
+                    <p>Добавлен</p>
+                    <span>04.10.2024</span>
+                  </li>
+                  <li>
+                    <p>Количество</p>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <p>Состояние</p>
+                    <span>Мятый</span>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <span>3 700 ₽</span>
+                  </li>
+                  <li>
+                    <p>Статус</p>
+                    <span>Публичен</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-accordeon panel-accordeon-collections">
+              <div class="panel-accordeon-collections__top">
+                <label class="label-checkbox collections-name">
+                  <input type="checkbox" name="checkbox_table1">
+                  <span class="checkbox-custom"></span>
+                  <!-- <span class="checkbox-text">Название</span> -->
+                </label>
+
+                <div class="tooltip-wrapper">
+                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                  <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
+                </div>
+
+                <div class="dropdown">
+                  <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#dots-icon"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Действия с фигуркой</h4>
+                      <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                        </svg>
+                        <span>Редактировать</span>
+                      </a>
+                      <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                        <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                        <span>В список</span>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#delete-icon"></use>
+                        </svg>
+                        <span>Удалить</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-accordeon__head">
+                <div class="collections-name-row">
+                  <span class="collections-avatar"><img src="img/collection-img2.jpg" alt=""></span>
+                  <span class="checkbox-text">Song</span>
+                </div>
+              </div>
+              <div class="panel-accordeon__body">
+
+                <ul class="my-ul accordeon-collections-list">
+                  <li>
+                    <p>Добавлен</p>
+                    <span>04.10.2024</span>
+                  </li>
+                  <li>
+                    <p>Количество</p>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <p>Состояние</p>
+                    <span>Мятый</span>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <span>3 700 ₽</span>
+                  </li>
+                  <li>
+                    <p>Статус</p>
+                    <span>Публичен</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-accordeon panel-accordeon-collections">
+              <div class="panel-accordeon-collections__top">
+                <label class="label-checkbox collections-name">
+                  <input type="checkbox" name="checkbox_table1">
+                  <span class="checkbox-custom"></span>
+                  <!-- <span class="checkbox-text">Название</span> -->
+                </label>
+
+                <div class="collection-status-box light-blue">На продажу</div>
+
+                <div class="tooltip-wrapper">
+                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                  <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
+                </div>
+
+                <div class="dropdown">
+                  <a href="#" class="btn-settings-table dropdown-toggle"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#dots-icon"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <h4 class="d-mobile">Действия с фигуркой</h4>
+                      <a href="edit-collections.html" class="btn btn-sm btn-white btn-edit dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#pencil-icon"></use>
+                        </svg>
+                        <span>Редактировать</span>
+                      </a>
+                      <a href="#list-modal" class="btn btn-sm btn-white btn-list dropdown-menu__item open_modal">
+                        <span class="svg-icon"><img src="img/list-icon.svg" alt=""></span>
+                        <span>В список</span>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-white btn-delete dropdown-menu__item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#delete-icon"></use>
+                        </svg>
+                        <span>Удалить</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-accordeon__head">
+                <div class="collections-name-row">
+                  <span class="collections-avatar"><img src="img/collection-img3.jpg" alt=""></span>
+                  <span class="checkbox-text">Tang</span>
+                </div>
+              </div>
+              <div class="panel-accordeon__body">
+
+                <ul class="my-ul accordeon-collections-list">
+                  <li>
+                    <p>Добавлен</p>
+                    <span>04.10.2024</span>
+                  </li>
+                  <li>
+                    <p>Количество</p>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <p>Состояние</p>
+                    <span>Мятый</span>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <span>3 700 ₽</span>
+                  </li>
+                  <li>
+                    <p>Статус</p>
+                    <span>Публичен</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <nav class="nav-pagination">
             <ul class="my-ul pagination">
-              <li><a href="#" class="pagination-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></a></li>
+              <li><a href="#" class="pagination-arrow"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg></a></li>
               <li><a href="#" class="active">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
@@ -691,7 +1171,7 @@
 
       <div class="modal-footer">
         <div class="btn-group">
-          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-blue btn-apply">Показать более 10 тыс. фигурок</a>
           <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
               <use xlink:href="img/sprite.svg#refresh-icon"></use>
             </svg></a>
@@ -713,7 +1193,7 @@
 
       <div class="modal-body">
         <div class="box-text">
-          <p>Выберите список или несколько списков, <br>в которые стоит добавить фигуру</p>
+          <p>Выберите один или несколько списков</p>
         </div>
 
         <ul class="list-collections-add my-ul">
@@ -764,7 +1244,7 @@
 
       <div class="modal-footer">
         <div class="btn-group">
-          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-blue btn-apply">Добавить</a>
           <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
               <use xlink:href="img/sprite.svg#refresh-icon"></use>
             </svg></a>

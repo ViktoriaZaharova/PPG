@@ -1,23 +1,35 @@
-// mobile menu
-$('.btn-burger').on('click', function (e) {
-	e.preventDefault();
-	$('.overlay').fadeToggle();
-	$(this).toggleClass('active');
-	$('.nav-menu').fadeToggle();
-});
 
-$('.overlay').on('click', function () {
-	$('.btn-burger').removeClass('active');
-	$('.nav-menu').fadeOut();
-	$(this).fadeOut();
-});
 
-$('.btn-search-mobile').on('click', function (e) {
-	e.preventDefault();
-	$('.overlay').fadeToggle();
-	$(this).toggleClass('active');
-	$('.form-search-header').fadeToggle();
-});
+
+function mediaClick() {
+	var checkWidth = $(window).width();
+	if (checkWidth < 1200) {
+		// mobile menu
+		$('.btn-burger').on('click', function (e) {
+			e.preventDefault();
+			$('.overlay').fadeToggle();
+			$(this).toggleClass('active');
+			$('.nav-menu').fadeToggle();
+		});
+
+		$('.overlay').on('click', function () {
+			$('.btn-burger').removeClass('active');
+			$('.nav-menu').fadeOut();
+			$(this).fadeOut();
+		});
+
+		$('.btn-search-mobile').on('click', function (e) {
+			e.preventDefault();
+			$('.overlay').fadeToggle();
+			$(this).toggleClass('active');
+			$('.form-search-header').fadeToggle();
+		});
+	}
+
+}
+
+mediaClick();
+$(window).resize(mediaClick);
 
 // mobile menu end
 
@@ -48,7 +60,7 @@ $(function () {
 		$(this).parents('.table-search-wrapper').find('.form-search').fadeIn();
 	});
 
-	$(window).on('load resize', function() {
+	$(window).on('load resize', function () {
 		if ($(window).width() > 1200) {
 			$(document).click(function (e) {
 				var div = $(".table-search-wrapper");
@@ -57,10 +69,10 @@ $(function () {
 					$(this).find('.table-search-wrapper .form-search').fadeOut();
 				}
 			});
-		} 
+		}
 	});
 
-	
+
 });
 
 
@@ -82,6 +94,8 @@ $(function () {
 		}
 	});
 });
+
+
 
 
 // модальные окна (несколько)
@@ -343,29 +357,29 @@ $(".product-image-min").click(function (e) {
 
 // slick slider
 $('.autographs-slider').slick({
-  variableWidth: true,
-  slidesToShow: 1,
+	variableWidth: true,
+	slidesToShow: 1,
 	infinite: false,
 	arrows: true,
+	infinite: true,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 	dots: true,
 	responsive: [
 		{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        variableWidth: false,
-      }
-    },
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: false,
+			}
+		},
 		{
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        variableWidth: false,
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: false,
 				arrows: false
-      }
-    }
-  ]
+			}
+		}
+	]
 });
-	

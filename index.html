@@ -22,10 +22,36 @@
 </head>
 
 <body>
+
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
   <div class="wrapper">
-    <header>
+    <header class="header-noadmin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
+        <!-- <a href="#" class="btn-burger"></a> -->
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <nav class="nav-menu">
@@ -63,10 +89,14 @@
             </svg>
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
           <use xlink:href="img/sprite.svg#search-icon"></use>
-        </svg></a>
+        </svg></a> -->
+        <a href="#" class="btn-login-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#login-icon"></use>
+          </svg></a>
         <a href="login.html" class="btn btn-grey btn-login">Войти</a>
       </div>
     </header>
@@ -111,7 +141,8 @@
                         зарегистрироваться</p>
                     </div>
                   </div>
-                  <div class="advantages-box__img"><img src="img/adv-img1.png" class="d-pc" alt=""> <img src="img/adv-img1-tablet.png" class="d-tablet" alt="">
+                  <div class="advantages-box__img"><img src="img/adv-img1.png" class="d-pc" alt=""> <img
+                      src="img/adv-img1-tablet.png" class="d-tablet" alt="">
                     <img src="img/adv-img1-phone.png" class="d-mobile" alt="">
                   </div>
                 </div>
@@ -148,7 +179,8 @@
             </div>
             <div class="row">
               <div class="col-30 mb-24">
-                <div class="interface-box interface-box1"><img src="img/interface-img1.png" class="d-pc" alt=""> <img src="img/interface-img1-tablet.png" class="d-tablet" alt=""></div>
+                <div class="interface-box interface-box1"><img src="img/interface-img1.png" class="d-pc" alt=""> <img
+                    src="img/interface-img1-tablet.png" class="d-tablet" alt=""></div>
               </div>
               <div class="col-70 mb-24">
                 <div class="interface-box interface-box2"><img src="img/interface-img2.png" alt=""></div>
@@ -172,6 +204,11 @@
       <div class="footer-wrapper">
         <div class="container">
           <div class="footer-top"><a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+
+            <ul class="list-social my-ul">
+              <li><a href="#"><img src="img/Telegram3.svg" alt=""></a></li>
+              <li><a href="https://www.instagram.com/poppriceguide.ru"><img src="img/WhatsApp3.svg" alt=""></a></li>
+            </ul>
             <div class="subscribe-wrapper">
               <p>Узнавай новости первым!</p>
               <form method="post" class="form-subscribe">

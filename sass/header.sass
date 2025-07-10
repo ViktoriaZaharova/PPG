@@ -10,14 +10,24 @@ header
   background: #fff
   padding: 16px 0
   .container
-    align-items: center  
+    align-items: center
     display: flex
     flex-wrap: wrap
 
 .form-search
-  margin: 0 16px 0 auto  
+  margin: 0 16px 0 auto
   max-width: 320px
   width: 100%
+  position: relative
+  z-index: 1
+  label
+    margin: 0
+
+.btn-modal-code
+  position: absolute
+  top: 14px
+  right: 14px
+  z-index: 1
 
 .btn-search-mobile
   width: 32px
@@ -32,7 +42,7 @@ header
   display: none
   svg
     width: 16px
-    height: 16px  
+    height: 16px
 
 .nav-menu
   margin: 0 0 0 48px
@@ -49,8 +59,8 @@ header
 
 .menu-link
   display: flex
-  align-items: center   
-  color: rgba($black, .6)  
+  align-items: center
+  color: rgba($black, .6)
   padding: 11px 0
   .svg-icon
     width: 20px
@@ -60,7 +70,7 @@ header
     fill: none
     stroke: $black
   span
-    padding: 1px 4px 
+    padding: 1px 4px
   &:hover, &:focus
     color: $black
 
@@ -74,7 +84,7 @@ header
     stroke: #fff
   &:hover, &:focus
     color: #fff
-    background: $blue      
+    background: $blue
 
 .logo
   @include d-flex
@@ -91,8 +101,8 @@ header
   width: 32px
   height: 32px
   min-width: 32px
-  margin: 0 12px 0 0 
-  transition: .3s ease 
+  margin: 0 12px 0 0
+  transition: .3s ease
   &::before
     content: ''
     @include d-flex
@@ -103,9 +113,24 @@ header
   &.active
     &::before
       background: url('../img/close-menu.svg') no-repeat center
-    background-size: 100%
+      background-size: 100%
 
-  
+.btn-login-mobile
+  display: none
+  width: 40px
+  height: 40px
+  min-width: 40px
+  align-items: center
+  justify-content: center
+  padding: 8px
+  stroke: $black
+  fill: none
+  &:hover, &:focus
+    stroke: $blue
+  svg
+    width: 20px
+    height: 20px
+
 .btn-notification
   @include d-flex
   fill: none
@@ -119,7 +144,7 @@ header
     stroke: $blue
   svg
     width: 20px
-    height: 20px  
+    height: 20px
 
 .btn-cabinet
   @include d-flex
@@ -130,3 +155,46 @@ header
   padding: 3px
   border-radius: 50%
   border: 1px solid rgba(#242933, .14)
+
+.tabbar
+  display: none
+  position: fixed
+  z-index: 10
+  bottom: 8px
+  left: 50%
+  transform: translate(-50%,0)
+  background: #fff
+  border-radius: 8px
+  padding: 4px
+  border: 1px solid rgba(#242933, .1)
+
+.tabbar-list
+  width: 100%
+  display: flex
+  align-items: stretch
+  li
+    margin: 0 4px 0 0
+    &:last-child
+      margin: 0
+  &__link
+    @include d-flex
+    width: 48px
+    height: 49px
+    min-width: 48px
+    background: rgba(#242933, .1)
+    border-radius: 8px
+    padding: 4px
+    fill: #1D1D1B
+    svg
+      width: 24px
+      height: 24px
+
+    &.fill-none
+      fill: none
+      stroke: #1D1D1B
+    &:hover
+      background: $accent
+      fill: #fff
+      &.fill-none
+        fill: none
+        stroke: #fff
