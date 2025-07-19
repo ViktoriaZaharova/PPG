@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -23,10 +24,12 @@
 <body>
 
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
         <a href="#" class="btn-burger"></a>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -63,20 +66,26 @@
             </svg>
             <input type="text" name="search" placeholder="Поиск фигурки" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
         <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#search-icon"></use>
-        </svg></a>
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a>
+          <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#notification"></use>
-        </svg></a>
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
+       
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
+
       </div>
+      
     </header>
     <div class="wrapper-content wrapper-content-page">
       <div class="error-section">
         <div class="container">
-          <div class="error-img"><img src="img/404.svg" alt=""></div>
+          <div class="error-img"><img src="img/404.svg" alt=""><img src="img/404-white.svg" alt="" class="logo-white">
+          </div>
           <h1 class="h1">Страница не найдена</h1>
           <div class="box-text">
             <p>К сожалению, страницы, которую Вы искали, уже нет…</p>
@@ -89,13 +98,14 @@
 
   </div>
 
-<div class="overlay"></div>
+  <div class="overlay"></div>
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

@@ -171,6 +171,8 @@
 .error-img
   @include d-flex
   margin: 0 auto 48px
+  .logo-white
+    display: none
 
 // agreement
 .agreement-content
@@ -232,6 +234,8 @@
 
 .faq-content
   margin: 32px auto
+  .panel-accordeon
+    border-radius: 0
 
 .help-desk
   width: 100%
@@ -425,6 +429,7 @@
   margin: 0 0 24px
   img
     width: 100%
+    border-radius: 30px
 
 .blog-page-section
   width: 100%
@@ -481,7 +486,7 @@
     flex-wrap: wrap
     background: rgba(#242933, .04)
     img
-      mix-blend-mode: multiply
+      // mix-blend-mode: multiply
       border-radius: 16px 0 0 16px
   &__body
     width: 100%
@@ -549,6 +554,7 @@
     overflow: hidden
     img
       width: 100%
+      border-radius: 50%
 
 .form-row
   width: 100%
@@ -668,6 +674,8 @@
   border-radius: 50%
   border: 1px solid rgba(#242933, .14)
   padding: 2.5px
+  img
+    border-radius: 50%
 
 .table-search-wrapper
   position: relative
@@ -775,7 +783,7 @@
   input
     padding: 0 16px
     &.datepicker
-      padding: 0 16px 0 48px
+      padding: 0 48px 0 16px
 
   .form-footer
     margin: 0
@@ -899,6 +907,12 @@
     border-radius: 50%
     padding: 5px
     overflow: hidden
+    img
+      border-radius: 50%
+
+.banner-cabinet__avatar-text
+  img
+    border-radius: 0  
 
 .label-file-banner
   height: 200px
@@ -961,6 +975,24 @@
   span
     color: rgba(#1D1D1B, .6)
 
+.showcase-dropdown
+  margin-left: auto    
+
+.btn-showcase-dropdown
+  width: 40px
+  height: 40px
+  min-width: 40px
+  stroke: #1D1D1B
+  fill: none
+  @include d-flex
+  svg
+    width: 20px
+    height: 20px  
+    margin: 0  
+  &:hover
+    svg
+      transform: none  
+
 // .showcase-dropdown
 //   margin-left: auto
 
@@ -1005,6 +1037,10 @@
     width: 72px
     height: 72px
     min-width: 72px
+    border-radius: 10px
+    overflow: hidden
+    background: #F6F7F7
+  
   &__body
     width: calc( 100% - 72px )
     padding: 4px 0 0 16px
@@ -1043,8 +1079,10 @@
       padding: 16px
       width: 312px
       min-width: 312px
+      border-radius: 10px 0 0 10px
       img
         max-height: 100%
+        border-radius: 0
     .card-product__head
       display: flex
       align-items: flex-start
@@ -1091,9 +1129,9 @@
     content: ''
     display: inline-block
     margin: 0 4px 0 0
-    width: 16px
-    height: 16px
-    min-width: 16px
+    width: 20px
+    height: 20px
+    min-width: 20px
     background: url('../img/linear-top-arrow.svg') no-repeat center
     background-size: 100%
 
@@ -1132,6 +1170,8 @@
         margin: 0
   .price
     margin: 0 0 auto
+  .new-price
+    margin: 0 auto 0 0  
   .btn-group
     margin: auto 0 0
 
@@ -1389,6 +1429,12 @@ h1.title-search-result
   right: 24px
   .tooltip-icon
     opacity: 1
+    background: #A00000
+    border-radius: 8px
+    width: 32px
+    height: 32px
+    padding: 8px
+    @include d-flex
   .tooltip-text
     color: #fff
     background: #242933
@@ -1480,6 +1526,7 @@ h1.title-search-result
       width: 100%
       height: 100%
       object-fit: cover
+      border-radius: 50%
 
 .btn-group-nav
   margin: 8px 0 32px

@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -22,11 +23,37 @@
 </head>
 
 <body>
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
   <div class="wrapper">
-    <header>
+    <header class="header-noadmin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+         <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -56,19 +83,20 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search form-search-header">
+       <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
      
-          <a href="login.html" class="btn btn-grey btn-login">Войти</a>
+        <a href="#" class="btn-theme"></a>
+       
+
+        <a href="login.html" class="btn btn-grey btn-login">Войти</a>
       </div>
     </header>
 
@@ -91,7 +119,11 @@
                   <span>На сайте с 29 июля 2018</span>
                 </div>
                 <div class="dropdown showcase-dropdown">
-                  <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
+                  <a href="#" class="btn-showcase-dropdown dropdown-toggle">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#share-icon"></use>
+                    </svg>
+                  </a>
                   <div class="dropdown-menu">
                     <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
                       <img class="dropdown-menu__icon" src="img/vk-icon.svg" alt="">
@@ -105,8 +137,10 @@
                       <img class="dropdown-menu__icon" src="img/tg.svg" alt="">
                       <span>Telegram</span>
                     </a>
-                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item">
-                      <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
+                    <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item link-copyright">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#copy-icon"></use>
+                      </svg>
                       <span>Скопировать ссылку</span>
                     </a>
                   </div>
@@ -1577,6 +1611,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/fileup.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+   <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -21,11 +22,38 @@
 </head>
 
 <body>
+
+    <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+       <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -55,22 +83,22 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search form-search-header">
+       <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
+       <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
+      
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -153,6 +181,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

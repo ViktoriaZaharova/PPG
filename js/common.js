@@ -383,3 +383,11 @@ $('.autographs-slider').slick({
 		}
 	]
 });
+
+
+// theme click
+$('.btn-theme').on('click', function (e) {
+	e.preventDefault();
+	$(this).toggleClass('click');
+	$('body').toggleClass('dark-theme');
+});

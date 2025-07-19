@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
-
+  <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -22,11 +22,36 @@
 </head>
 
 <body>
+   <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -61,17 +86,17 @@
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
+         <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
+     
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -94,7 +119,7 @@
                             <span class="sizes-banner-text">Оптимальные размеры 1320px × 224px</span>
                           </span>
                         </label>
-                        <div class="banner-cabinet__avatar"><img src="img/cabinet-liter.svg" alt=""></div>
+                        <div class="banner-cabinet__avatar banner-cabinet__avatar-text"><img src="img/cabinet-liter.svg" alt=""></div>
                       </div>
                     </div>
                     <div class="col-50 mb-16">
@@ -120,9 +145,8 @@
                     <div class="col-30 mb-16">
                       <div class="label-title">Номер телефона</div>
                       <label><svg class="svg-icon label-icon stroke-none">
-                        <use xlink:href="img/sprite.svg#phone"></use>
-                      </svg><input type="text" name="phonce" placeholder="Введите номер телефона" 
-                          required></label>
+                          <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg><input type="text" name="phonce" placeholder="Введите номер телефона" required></label>
                     </div>
                     <div class="col-30 mb-16">
                       <div class="label-title">Электронная почта</div>
@@ -139,9 +163,8 @@
                     <div class="col-30 mb-16 col-100-tablet">
                       <div class="label-title">Адрес</div>
                       <label><svg class="svg-icon label-icon">
-                        <use xlink:href="img/sprite.svg#location"></use>
-                      </svg><input type="text" name="address" placeholder="Введите ваш адрес"
-                          required></label>
+                          <use xlink:href="img/sprite.svg#location"></use>
+                        </svg><input type="text" name="address" placeholder="Введите ваш адрес" required></label>
                     </div>
                   </div>
                 </div>
@@ -493,6 +516,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

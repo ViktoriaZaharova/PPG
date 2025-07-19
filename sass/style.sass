@@ -49,6 +49,458 @@ body
 html, body, .wrapper
   height: 100%
 
+// dark theme  
+.dark-theme
+  background: #242933
+  color: #fff
+  header
+    background: #242933
+    color: #fff
+    .logo
+      img
+        display: none
+      .logo-white
+        display: block
+  .menu-link
+    color: rgba(#fff, .6)
+    .svg-icon
+      stroke: rgba(#fff, .6)
+    &:hover
+      color: #fff
+      .svg-icon
+        stroke: #fff
+  .menu-link-catalog
+    color: #fff
+    .svg-icon
+      stroke: #fff
+  .btn-cabinet
+    border: 1px solid rgba(#fff, .14)
+  .btn-grey
+    background: rgba(#fff, .04)
+    color: #fff
+    .svg-icon
+      stroke: #fff
+  .btn-notification
+    stroke: #fff
+  input, textarea, select
+    background: transparent
+    border: 1px solid rgba(#fff, .6)
+    color: #fff
+    &::placeholder
+      color: rgba(#fff, .6)
+  input:disabled, textarea:disabled, select:disabled
+    &::placeholder
+      color: rgba(#fff, .14)
+  .label-icon
+    stroke: rgba(#fff, .6)
+  .label-icon.stroke-none
+    fill: rgba(#fff, .6)
+  .btn-modal-code
+    width: 40px
+    height: 40px
+    background: rgba(#fff, .04)
+    padding: 10px
+    top: 4px
+    right: 4px
+    border-radius: 8px
+    img
+      filter: brightness(0) invert(1)
+  .color-blue
+    color: #57ADE3
+    &:hover
+      color: $blue
+  .advantages-box
+    h3
+      color: #fff
+    .box-text
+      color: rgba(#fff,.88)
+  .advantages-box1
+    border: 1px solid rgba(#fff, .14)
+    background: rgba(#fff, .04)
+  .advantages-box2
+    .box-text
+      background: #242933
+      &::before
+        background: #242933
+  .interface-box
+    border: 1px solid rgba(#fff, .14)
+    background: rgba(#fff, .04)
+  .form-subscribe
+    .btn-black
+      background: #fff
+      color: #242933
+  .modal__wrapper
+    background: #2D313B
+    color: #fff
+  .modal-title
+    color: #fff
+  .modal-head
+    border-bottom: 1px solid rgba(#fff, 0.14)
+  .modal__close
+    stroke: #fff
+  .btn-border
+    border: 1px solid rgba(#fff, 0.14)
+  .btn-refresh
+    stroke: #fff
+  .label-file
+    border: 1px dashed rgba(#fff, 0.14)
+    &__text
+      color: rgba(#fff, .6)
+    &__icon
+      filter: brightness(0) invert(1)
+  .tabs__caption
+    background: #383C45
+    li
+      a
+        color: #fff
+      &.active
+        background: #242933
+  .error-img
+    img
+      display: none
+    .logo-white
+      display: block
+  .error-section
+    .box-text
+      color: rgba(#fff, .6)
+  .breadcrumb a
+    color: rgba(#fff, .6)
+  .agreement-content .box-text
+    color: rgba(#fff, .88 )
+  .footer-page
+    color: rgba(#fff, .6)
+    border-top: 1px solid rgba(#fff, 0.14)
+    .footer-bottom
+      color: rgba(#fff, .6)
+      a
+        color: #fff
+        &:hover
+          color: $blue
+  .panel-accordeon
+    border-bottom: 1px solid rgba(#fff, 0.14)
+  .panel-accordeon__head:after
+    filter: brightness(0) invert(1)
+  .list-menu-faq a
+    color: #fff
+    &:hover
+      color: $blue
+    &::before
+      filter: brightness(0) invert(1)
+  .help-desk
+    background: rgba(#fff, .04)
+    .box-text
+      color: rgba(#fff, .6)
+  .faq-article-page .box-text
+    color: rgba(#fff, .88)
+  .list-grade a
+    filter: brightness(0) invert(1)
+    &:hover
+      filter: none
+  .faq-article__img
+    img
+      border-radius: 24px
+  .label-checkbox
+    color: #fff
+  .checkbox-custom
+    background: rgba(#fff, .04)
+    border: 1px solid rgba(#fff, 0.14)
+  .form
+    background: rgba(#fff, .04)
+  .color-black
+    color: #fff
+  .btn-white
+    background: #242933
+    color: #fff
+  .form-footer, .color-black-500, .showcase-user span, .list-collections li a, .card-product-top__body > span, .showcase-sorter-item p
+    color: rgba(#fff, .6)
+  .timer-code
+    color: rgba(#fff, 0.14)
+  .btn-showcase-dropdown
+    color: #fff
+    background: #242933
+    stroke: #fff
+    svg
+      stroke: #fff
+    &:hover, &:focus, &.active
+      svg
+        transform: none
+  .showcase-sorter-item .dropdown-toggle
+    color: rgba(#fff, .88)
+  .dropdown-toggle svg
+    stroke: #fff
+  .dropdown-menu
+    background: #383C45
+    .btn-white
+      background: transparent
+      &:hover
+        background: $accent
+  .dropdown-menu__item .svg-icon
+    stroke: #fff
+  .card-product
+    border: 1px solid rgba(#fff, 0.14)
+  .card-product__name
+    color: #fff
+    &:hover
+      color: $accent
+  .card-product__head .box-text
+    color: rgba(#fff, .6)
+  .card-product__img
+    background: rgba(#fff, 0.04)
+  .card-product-top
+    border-bottom: 1px solid rgba(#fff, 0.14)
+  .card-product-top__name
+    color: #fff
+  .card-product-column
+    border: 1px solid rgba(#fff, 0.14)
+  .card-product-column .card-product-top__img
+    background: #F6F7F7
+  .btn-favorite
+    border: 1px solid rgba(#fff, 0.14)
+    fill: #fff
+  .select-my
+    background: transparent url("../img/arrow-select-white.svg") no-repeat calc(100% - 12px) center
+    background-size: 20px
+  .datepicker
+    background: transparent url("../img/calendar-white.svg") no-repeat calc(100% - 12px) center
+    background-size: 20px
+  .ui-datepicker
+    color: #fff
+    background: #383C45
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+    color: #fff
+    background: #242933
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+    background: $accent
+  .ui-widget-header
+    background: rgba(#fff, .14)
+    border: none
+    border-radius: 0
+    color: #fff
+  .ui-widget-header a
+    filter: brightness(0) invert(1)
+  .blog-card__list
+    color: rgba(#fff, .4)
+  .blog-card__list li a
+    color: #fff
+    &:after
+      background: rgba(#fff, .4)
+  .form-comments__avatar
+    border: 1px solid rgba(#fff, 0.14)
+  .comment-box .box-text
+    color: rgba(#fff, .88)
+  .interesting-card.blog-card
+    background: rgba(#fff, .04)
+  .blog-card__title
+    color: #fff
+  .color-grey
+    color: rgba(#fff, .6)
+  .blog-menu__link
+    color: rgba(#fff, .88)
+  .blog-menu__link-category::after
+    filter: brightness(0) invert(1)
+  .blog-card, .cabinet-box
+    background: #242933
+  .blog-page__content
+    background: rgba(#fff, .04)
+  .cabinet-box__head
+    border-bottom: 1px solid rgba(#fff, 0.14)
+  .tooltip-icon
+    filter: brightness(0) invert(1)
+  .banner-cabinet__avatar
+    background: transparent
+    border: 1px solid rgba(#fff, 0.14)
+  .banner-cabinet__avatar-text
+    background: #242933
+    img
+      filter: brightness(0) invert(1)
+      border-radius: 0
+  .label-file-banner
+    border: 1px solid rgba(#fff, 0.14)
+  .saved-poppup
+    background: #383C45
+    border: none
+    color: #2CAD57
+  .color-red
+    color: #E54B4B
+  .btn-red
+    background: #E54B4B
+  .label-toggle input
+    background: rgba(#fff, 0.14)
+  .label-toggle input:checked
+    background: #fff
+  .label-toggle__custom
+    background: #242933
+  .cabinet-page
+    .blog-page__content
+      background: transparent
+    .cabinet-box
+      background: rgba(255, 255, 255, 0.04)
+    .label-file-banner
+      border: 1px dashed rgba(#fff, .14)
+      .label-file__text strong
+        color: #fff
+      .sizes-banner-text
+        color: rgba(#fff, 0.6)
+  .catalog-page h1 span
+    color: rgba(#fff, .4)
+  .form-filter__footer
+    background: #242933
+  .catalog-search-result .box-text, .filter-selected__tag.btn-clear-filter
+    color: rgba(#fff, .6)
+  .btn-filter-mobile
+    stroke: #fff
+  .catalog-page .title-wrapper .tabs__caption li
+    stroke: #fff
+  .form-search-catalog [type=submit]
+    stroke: #fff
+  h1.title-search-result
+    color: rgba(#fff, .6)
+    strong
+      color: #fff
+  .tooltip-fake
+    .tooltip-icon
+      filter: none
+      background: #E54B4B
+    .tooltip-text
+      background: #383C45
+      &::before
+        background: #383C45
+  .tooltip-text
+    background: #383C45
+    &::before
+      background: #383C45
+  .sticker
+    background: rgba(#fff, .04)
+    img
+      mix-blend-mode: inherit
+  .btn-grey2
+    background: #2D313B
+  .card-product-top.card-product-row .card-product__img
+    background: #fff
+    // background: #F6F7F7
+  .btn-table-search, .btn-cloud
+    border: 1px solid rgba(#fff, .14)
+    .svg-icon
+      stroke: #fff
+  .table-sorting
+    background: rgba(#fff, .04)
+  .table-sorting__item
+    color: #fff
+    &.active
+      background: #242933
+      color: #fff
+  .table tr
+    border-bottom: 1px solid rgba(#fff, .14)
+  .tooltip-wrapper__btn
+    stroke: #fff
+    // background: #242933
+  .tooltip-wrapper__box
+    background: #383C45
+    &::before
+      background: #383C45
+  .dropdown-menu__item.btn-list .svg-icon
+    filter: brightness(0) invert(1)
+  .dropdown-menu .btn-delete
+    color: #E54B4B
+    &:hover
+      color: #fff
+    svg
+      stroke: #E54B4B
+  .pagination li a
+    background: rgba(#fff, .09)
+    color: #fff
+  .pagination li a.pagination-arrow
+    stroke: #fff
+    background: transparent
+    border: 1px solid rgba(#fff, .09)
+  .btn-settings-table svg
+    fill: #fff
+  .collections-avatar
+    border: 1px solid rgba(#fff, .14)
+  .poppup-modal
+    background: #2D313B
+    .btn-white
+      background: #fff
+      color: #1D1D1B
+      &:hover
+        background: $accent
+        color: #fff
+  .link-btn-add-collections
+    color: #fff
+    svg
+      stroke: #fff
+  .dropdown-toggle
+    color: #fff
+  .product-image-max
+    background: #F6F7F7
+  .list-characteristics li p, .subtitle
+    color: rgba(#fff, .6)
+  .product-image-min
+    background: #fff
+  .price-chart span
+    color: #E54B4B
+  .slick-arrow
+    background: #242933
+    stroke: #fff
+    border: 1px solid rgba(#fff, .14)
+  .label-radio
+    color: #fff
+  .radio-custom
+    border-color: #3497D5
+    &::before
+      background: #3497D5
+  .autographs-wrapper__head h3 span
+    color: rgba(#fff, .4)
+  .label-radio-autographs-v2
+    border-color: rgba(#fff, .14)
+  .slick-dots li
+    background: rgba(#fff, .14)
+  .btn-group-nav .link-rate
+    background: rgba(#fff, .04)
+    &:hover
+      background: $accent
+  .price-updated
+    color: rgba(#fff, .6)
+  .tabbar
+    background: #383C45
+    border-color: rgba(#fff, .14)
+  .tabbar-list__link
+    fill: #fff
+    background: #242933
+    &:hover
+      background: $accent
+    &.fill-none
+      stroke: #fff
+  .btn-login-mobile
+    stroke: #fff
+  .header-noadmin .logo
+    background: url("../img/logo-mini-black.svg") no-repeat center center
+    background-size: 100%
+    img
+      display: none
+  .blog-menu-mobile li a
+    background: #242933
+  .blog-menu-mobile li a.active
+    background: rgba(#fff, .14)
+  .poppup-modal__body .btn-group .btn
+    background: #242933
+    color: #fff
+    &:hover
+      background: $accent
+  .panel-accordeon-collections
+    border: 1px solid rgba(#57ADE324, .14)
+  .panel-accordeon-collections__top
+    border-bottom: 1px solid rgba(#57ADE324, .14)
+  .panel-accordeon-collections .panel-accordeon__body
+    border-top: 1px solid rgba(#57ADE324, .14)       
+  .accordeon-collections-list li p
+    color: rgba(#fff, .6)
+  #filter-modal
+    .modal-footer
+      background: #2D313B  
+
+// dark theme  end
+
 img
   display: block
   max-width: 100%
@@ -150,7 +602,6 @@ textarea
   width: 100%
   font-weight: 600
   margin: 0 0 8px
-  
 
 button, .btn
   outline: none
@@ -287,8 +738,10 @@ button, .btn
     align-items: center
     justify-content: flex-end
     .btn
-      margin: 0 0 0 32px
+      margin: 0 32px 0 0
       flex: none
+      &:last-child
+        margin: 0
 
 .svg-icon
   @include d-flex
@@ -599,6 +1052,9 @@ a.color-black
         &:hover, &.active, &:focus
           background: $accent
           stroke: #fff
+        svg
+          width: 16px
+          height: 16px
 
 .table-responsive
   width: 100%
@@ -728,7 +1184,7 @@ a.color-black
     fill: #fff
   &:focus
     background: #fff
-    fill: $black  
+    fill: $black
 
 .btn-favorite2
   border: none
@@ -747,9 +1203,9 @@ a.color-black
   height: 48px
 
 .datepicker
-  background: #fff url('../img/calendar.svg') no-repeat 16px center
+  background: #fff url('../img/calendar.svg') no-repeat calc(100% - 12px) center
   background-size: 20px
-  padding: 0 16px 0 48px
+  padding: 0 48px 0 16px
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
   width: 100%
@@ -960,6 +1416,12 @@ a.color-black
     height: 32px
     min-width: 32px
     @include d-flex
+    stroke: #1D1D1B
+    fill: none
+    padding: 8px
+    svg
+      width: 16px
+      height: 16px
 
 .tooltip-wrapper__box
   position: absolute
@@ -1088,16 +1550,15 @@ a.color-black
     opacity: 0
 
 .radio-text
-  padding: 0 0 0 32px  
-
+  padding: 0 0 0 32px
 
 // slick slider
 .slick-slider
   width: 100%
-  
+
 .slick-dots
   list-style: none
-  padding: 0  
+  padding: 0
   position: relative
   z-index: 1
   opacity: 1
@@ -1113,7 +1574,7 @@ a.color-black
     transition: .3s ease
     width: 8px
     height: 8px
-    border-radius: 10px  
+    border-radius: 10px
     min-width: 8px
     margin: 0 8px 0 0
     background: rgba(#242933, .14)
@@ -1129,7 +1590,7 @@ a.color-black
 .slick-arrow
   position: absolute
   top: 50%
-  transform: translate(0,-50%)  
+  transform: translate(0,-50%)
   opacity: 1
   z-index: 1
   width: 32px
@@ -1150,13 +1611,13 @@ a.color-black
     border-color: $accent
     stroke: #fff
   &.slick-disabled
-    opacity: 0  
+    opacity: 0
 
 .slick-next
   right: -16px
 
 .slick-prev
-  left: -16px        
+  left: -16px
 
 .list-social
   margin: 0 auto
@@ -1174,4 +1635,4 @@ a.color-black
     min-width: 26px
     opacity: 0.6
     &:hover
-      opacity: 1   
+      opacity: 1

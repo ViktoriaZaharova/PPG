@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -22,10 +23,11 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -55,22 +57,22 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search form-search-header">
+       <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#search-icon"></use>
-        </svg></a>
+        <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#notification"></use>
-        </svg></a>
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
+      
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -100,13 +102,17 @@
                 войны или связано с вашим любимым телешоу или вымышленным персонажем или кинозвездой. Все это здесь.</p>
               <p>Чтобы достичь этого, мы любим добавлять новые способности:</p>
               <ul>
-                <li>Пользователи должны иметь возможность изменять цвета и уровни контрастности в настройках нашего сайта;</li>
+                <li>Пользователи должны иметь возможность изменять цвета и уровни контрастности в настройках нашего
+                  сайта;</li>
                 <li>
-                  Зум браузера должен работать до 400% без высыпания текста за экран (это уже работает на большинстве наших
+                  Зум браузера должен работать до 400% без высыпания текста за экран (это уже работает на большинстве
+                  наших
                   страниц);</li>
-                <li>Посетители смогут перемещаться по всему веб-сайту с помощью клавиатуры или программного обеспечения для
+                <li>Посетители смогут перемещаться по всему веб-сайту с помощью клавиатуры или программного обеспечения
+                  для
                   распознавания речи (это в основном тоже работает);</li>
-                <li>Слушайте все страницы сайта с помощью часто используемых программ чтения с экрана, таких как JAWS, NVDA и
+                <li>Слушайте все страницы сайта с помощью часто используемых программ чтения с экрана, таких как JAWS,
+                  NVDA и
                   VoiceOver (мы считаем, что теперь все это работает, но все еще тестируем это).</li>
               </ul>
               <p>Это также больше, чем просто место для исследований, просмотра и воспоминаний. База данных обеспечивает
@@ -114,7 +120,8 @@
                 своих собственных предметах коллекционирования, чтобы отслеживать их.</p>
               <p>Существует также торговая площадка, где пользователи могут выставлять свои товары на продажу всего за
                 несколько кликов, создавать списки желаний и получать уведомления, когда вещи, которые они хотят купить,
-                выставляются на продажу. Узнайте больше об истории PPG <a href="#" class="d-inline text-decoration color-blue">здесь</a>.</p>
+                выставляются на продажу. Узнайте больше об истории PPG <a href="#"
+                  class="d-inline text-decoration color-blue">здесь</a>.</p>
             </div>
 
             <div class="grade-answer">
@@ -148,6 +155,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

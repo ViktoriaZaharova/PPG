@@ -54,7 +54,9 @@
     <header class="header-admin">
       <div class="container">
         <!-- <a href="#" class="btn-burger"></a> -->
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -101,6 +103,7 @@
           </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
+      <a href="#" class="btn-theme"></a>
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -122,7 +125,11 @@
                   <span>На сайте с 29 июля 2018</span>
                 </div>
                 <div class="dropdown showcase-dropdown">
-                  <a href="#" class="btn-showcase-dropdown dropdown-toggle"><img src="img/share.svg" alt=""></a>
+                  <a href="#" class="btn-showcase-dropdown dropdown-toggle">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#share-icon"></use>
+                    </svg>
+                  </a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <h4 class="d-mobile">Поделиться</h4>
@@ -140,7 +147,9 @@
                           <span>Telegram</span>
                         </a>
                         <a href="#" target="_blank" class="btn btn-sm btn-white dropdown-menu__item link-copyright">
-                          <img class="dropdown-menu__icon" src="img/copy.svg" alt="">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#copy-icon"></use>
+                          </svg>
                           <span>Скопировать ссылку</span>
                         </a>
                       </div>

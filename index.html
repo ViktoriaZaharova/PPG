@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -52,7 +53,9 @@
     <header class="header-noadmin">
       <div class="container">
         <!-- <a href="#" class="btn-burger"></a> -->
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -87,18 +90,18 @@
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
           <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#search-icon"></use>
-        </svg></a> -->
+     
+        <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-login-mobile"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#login-icon"></use>
           </svg></a>
         <a href="login.html" class="btn btn-grey btn-login">Войти</a>
       </div>
+      
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -234,11 +237,70 @@
 
   <div class="overlay"></div>
 
+  <div class="modal__div tabs" id="codeModal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Поиск фигурки по штрих-коду</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-search-modal">
+
+          <ul class="tabs__caption my-ul w-100">
+            <li class="active"><a href="#tab3">Загрузить</a></li>
+            <li><a href="#tab4">Сканировать</a></li>
+          </ul>
+
+          <div class="tabs__content active" id="tab3">
+            <label class="label-file">
+              <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+              <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+              <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                  class="d-inline color-blue text-decoration">загрузить</a></span>
+            </label>
+            <div class="label-file__result queue" id="upload-demo-queue"></div>
+          </div>
+
+          <div class="tabs__content" id="tab4">
+            <div class="form-search-modal__img"><img src="img/tab-scan1.jpg" alt=""></div>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Введите штрих-код</span>
+            <label>
+              <svg class="svg-icon label-icon">
+                <use xlink:href="img/sprite.svg#code-icon"></use>
+              </svg>
+              <input type="number" name="name_figure" placeholder="____ ____ _____[_]"></label>
+          </div>
+
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Найти</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/fileup.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

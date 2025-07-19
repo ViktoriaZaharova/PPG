@@ -1,13 +1,12 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z" fill="#A00000"/>
-<g clip-path="url(#clip0_2271_21962)">
-<circle cx="16.0026" cy="16" r="6.66667" stroke="white"/>
-<path d="M16 12.6667V16.6667" stroke="white" stroke-linecap="round"/>
-<ellipse cx="16.0026" cy="18.6667" rx="0.666667" ry="0.666667" fill="white"/>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2412_39511)">
+<circle cx="8.00065" cy="7.99967" r="6.66667" stroke="white"/>
+<path d="M8 4.66699V8.66699" stroke="white" stroke-linecap="round"/>
+<ellipse cx="8.00065" cy="10.6667" rx="0.666667" ry="0.666667" fill="white"/>
 </g>
 <defs>
-<clipPath id="clip0_2271_21962">
-<rect width="16" height="16" fill="white" transform="translate(8 8)"/>
+<clipPath id="clip0_2412_39511">
+<rect width="16" height="16" fill="white"/>
 </clipPath>
 </defs>
 </svg>

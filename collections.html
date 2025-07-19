@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
-
+  <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -52,7 +52,10 @@
     <header class="header-admin">
       <div class="container">
         <!-- <a href="#" class="btn-burger"></a> -->
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+         <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
+
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -87,18 +90,17 @@
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
           <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a> -->
+        <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
+      
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -180,7 +182,9 @@
 
                     <label class="label-checkbox collections-name">
                       <span class="tooltip-wrapper d-tablet">
-                        <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                        <a href="#" class="tooltip-wrapper__btn"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#link-icon"></use>
+                        </svg></a>
                         <span class="tooltip-wrapper__box">Найти фигурку в базе</span>
                       </span>
 
@@ -199,7 +203,9 @@
                   <td>На продажу</td>
                   <td class="d-pc">
                     <div class="tooltip-wrapper">
-                      <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                     <a href="#" class="tooltip-wrapper__btn"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#link-icon"></use>
+                        </svg></a>
                       <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
                     </div>
                   </td>
@@ -555,7 +561,9 @@
                 </label>
 
                 <div class="tooltip-wrapper">
-                  <a href="#" class="tooltip-wrapper__btn"><img src="img/link-icon.svg" alt=""></a>
+                 <a href="#" class="tooltip-wrapper__btn"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#link-icon"></use>
+                        </svg></a>
                   <div class="tooltip-wrapper__box">Найти фигурку в базе</div>
                 </div>
 
@@ -1298,6 +1306,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/fileup.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

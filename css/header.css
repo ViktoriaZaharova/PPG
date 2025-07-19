@@ -26,9 +26,14 @@ header .container {
 
 .btn-modal-code {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 4px;
+  right: 4px;
   z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-search-mobile {
@@ -107,6 +112,9 @@ header .container {
   justify-content: center;
   max-width: 97px;
   width: 100%;
+}
+.logo .logo-white {
+  display: none;
 }
 
 .btn-burger {
@@ -188,6 +196,13 @@ header .container {
   border-radius: 50%;
   border: 1px solid rgba(36, 41, 51, 0.14);
 }
+.btn-cabinet img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
 
 .tabbar {
   display: none;
@@ -240,4 +255,22 @@ header .container {
 .tabbar-list__link:hover.fill-none {
   fill: none;
   stroke: #fff;
+}
+
+.btn-theme {
+  position: fixed;
+  right: 24px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/night-icon.svg") no-repeat center;
+  background-size: 20px;
+  padding: 10px;
+}
+.btn-theme.click {
+  background: url("../img/day-icon.svg") no-repeat center;
+  background-size: 20px;
 }
