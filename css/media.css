@@ -145,6 +145,9 @@
   .tabbar {
     display: block;
   }
+  footer, .footer-page {
+    padding-bottom: 64px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .col-50, .col-30, .col-100 {
@@ -436,6 +439,10 @@
   .form-search-modal__img {
     height: 248px;
   }
+  .nav-menu-mobile {
+    height: calc(100% - 8px - 72px);
+    top: 72px;
+  }
 }
 @media only screen and (max-width: 680px) {
   .tabs__caption-overflow {
@@ -476,7 +483,7 @@
 }
 @media only screen and (max-width: 600px) {
   .form-search-header {
-    width: calc(100% - 80px - 80px);
+    width: calc(100% - 80px - 60px);
     padding: 0;
     margin: 0 auto;
     max-width: none;
@@ -513,6 +520,16 @@
     display: none;
   }
   .header-noadmin .btn-login {
+    display: none;
+  }
+  .header-noadmin .form-search-header {
+    width: calc(100% - 80px - 60px);
+  }
+  .dark-theme .header-noadmin .logo {
+    background: url("../img/logo-mini-black.svg") no-repeat center center;
+    background-size: 100%;
+  }
+  .dark-theme .header-noadmin .logo img {
     display: none;
   }
   .dropdown-menu {
@@ -565,11 +582,26 @@
     border-radius: 16px 16px 0 0;
     background: #fff;
   }
-  .dropdown-menu__item {
+  .dark-theme .dropdown-menu-wrapper {
+    background: #383C45;
+  }
+  .dark-theme .dropdown-menu::before {
+    background: #434750;
+  }
+  .dark-theme .dropdown-menu__item {
     margin: 0 0 0 -16px;
   }
-  .dropdown-menu__item.active {
+  .dark-theme .dropdown-menu__item.active {
     color: #57ADE3;
+  }
+  .dark-theme .list-messangers .dropdown-menu__item {
+    border: 1px solid #434750;
+  }
+  .dark-theme .label-copyright__link img {
+    filter: brightness(0) invert(1);
+  }
+  .dark-theme .label-copyright input {
+    border: 1px solid #434750;
   }
   .list-messangers .dropdown-menu__item {
     margin: 0 0 0 8px;
@@ -856,6 +888,7 @@
   .btn {
     height: 40px;
     font-size: 14px;
+    line-height: normal;
     padding: 9px 16px;
   }
   .btn img {
@@ -992,9 +1025,8 @@
     flex-wrap: wrap;
   }
   .card-product__footer .price {
-    width: 100%;
     text-align: right;
-    margin: 0 0 12px;
+    margin: 0 0 12px auto;
   }
   .card-product .add-collection {
     width: 74px;
@@ -1302,6 +1334,10 @@
   }
   label .tooltip {
     top: 9px;
+  }
+  .nav-menu-mobile {
+    height: calc(100% - 8px - 64px);
+    top: 64px;
   }
 }
 @media only screen and (max-width: 370px) {

@@ -13,7 +13,7 @@
     top: 0
     right: 0
     margin: 0 12px 0 0
-    
+
   .nav-menu
     margin: 0 0 0 20px
 
@@ -70,8 +70,7 @@
       width: 100%
       margin: 0 0 16px
     .label-file-banner
-      border-radius: 16px  
-
+      border-radius: 16px
 
 @media only screen and (max-width: 1200px)
   // .btn-burger
@@ -149,7 +148,10 @@
 
   .tabbar
     display: block
-      
+
+  footer, .footer-page
+    padding-bottom: 64px  
+
 @media only screen and (max-width: 992px)
   .col-50, .col-30, .col-100
     padding: 0 8px
@@ -349,7 +351,7 @@
     .tooltip-text
       right: 0
       left: auto
-      transform: none  
+      transform: none
 
 @media only screen and (max-width: 768px)
   header
@@ -437,6 +439,10 @@
   .form-search-modal__img
     height: 248px
 
+  .nav-menu-mobile
+    height: calc(100% - 8px - 72px)
+    top: 72px   
+
 @media only screen and (max-width: 680px)
   .tabs__caption-overflow
     flex-wrap: nowrap
@@ -470,7 +476,7 @@
     margin: 10px 0 0
 
   header .container
-    flex-wrap: nowrap  
+    flex-wrap: nowrap
 
 @media only screen and (max-width: 600px)
   // .btn-search-mobile
@@ -484,7 +490,7 @@
     // top: 56px
     // z-index: 101
     // background: #fff
-    width: calc(100% - 80px - 80px)
+    width: calc(100% - 80px - 60px)
     padding: 0
     // padding: 0 12px
     // padding: 24px
@@ -496,15 +502,13 @@
     display: none
 
   .table-collections-mobile
-    display: block  
-  
+    display: block
 
   .btn-login-mobile
     display: flex
 
   .btn-theme
     margin: 0 4px 0 0
-
 
   .btn-modal-code
     // right: 28px
@@ -528,6 +532,16 @@
         display: none
     .btn-login
       display: none
+    .form-search-header
+      width: calc( 100% - 80px - 60px)
+
+  .dark-theme
+    .header-noadmin
+      .logo
+        background: url("../img/logo-mini-black.svg") no-repeat center center
+        background-size: 100%
+        img
+          display: none
 
   .dropdown-menu
     position: fixed
@@ -576,10 +590,23 @@
     border-radius: 16px 16px 0 0
     background: #fff
 
-  .dropdown-menu__item
-    margin: 0 0 0 -16px
-    &.active
-      color: #57ADE3
+  .dark-theme
+    .dropdown-menu-wrapper
+      background: #383C45
+    .dropdown-menu::before
+      background: #434750
+
+    .dropdown-menu__item
+      margin: 0 0 0 -16px
+      &.active
+        color: #57ADE3
+    .list-messangers .dropdown-menu__item
+      border: 1px solid #434750
+    .label-copyright__link img
+      filter: brightness(0) invert(1)
+    .label-copyright input
+      border: 1px solid #434750
+
 
   .list-messangers
     .dropdown-menu__item
@@ -624,7 +651,6 @@
     justify-content: center
     img
       width: 100%
-
 
   .btn-notification
     width: 40px
@@ -735,18 +761,17 @@
     width: 40px
     height: 40px
     min-width: 40px
-    
+
     // svg
     //   display: none
-  
 
   .modal-body
     .box-text
       font-size: 14px
-      color: rgba(#000, .5)   
+      color: rgba(#000, .5)
 
   .modal-footer
-    padding: 24px 0 0   
+    padding: 24px 0 0
 
   .label-file
     height: 200px
@@ -761,12 +786,12 @@
       background: #fff
       z-index: 1
       padding: 12px 16px
-      backdrop-filter: blur(6px)   
+      backdrop-filter: blur(6px)
     .modal-body
-      padding: 16px 0 64px     
+      padding: 16px 0 64px
 
   .table-search-wrapper
-    display: none    
+    display: none
 
 @media only screen and (max-width: 576px)
   .p-32
@@ -856,6 +881,7 @@
   .btn
     height: 40px
     font-size: 14px
+    line-height: normal
     padding: 9px 16px
     img
       max-height: 100%
@@ -982,9 +1008,9 @@
     &__footer
       flex-wrap: wrap
       .price
-        width: 100%
+        // width: 100%
         text-align: right
-        margin: 0 0 12px
+        margin: 0 0 12px auto
     .add-collection
       width: 74px
       svg
@@ -1258,7 +1284,7 @@
   .dark-theme .btn-modal-code
     width: 32px
     height: 32px
-    padding: 8px  
+    padding: 8px
 
   .list-social
     justify-content: flex-start
@@ -1285,6 +1311,10 @@
   label
     .tooltip
       top: 9px
+
+  .nav-menu-mobile
+    height: calc(100% - 8px - 64px)
+    top: 64px       
 
 @media only screen and (max-width: 370px)
   .card-product__img

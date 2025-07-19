@@ -53,6 +53,12 @@ html, body, .wrapper
 .dark-theme
   background: #242933
   color: #fff
+  .login-section
+    .logo
+      img
+        display: none
+      .logo-white
+        display: block
   header
     background: #242933
     color: #fff
@@ -462,22 +468,30 @@ html, body, .wrapper
   .price-updated
     color: rgba(#fff, .6)
   .tabbar
-    background: #383C45
+    background: #242933
     border-color: rgba(#fff, .14)
   .tabbar-list__link
     fill: #fff
-    background: #242933
+    color: #fff
+    background: #383C45
     &:hover
       background: $accent
     &.fill-none
       stroke: #fff
+  .nav-menu-mobile
+    background: rgba(#fff, .4)
+  .nav-menu-mobile__wrapper
+    background: #242933
+  .nav-menu-mobile__link
+    color: #fff
+    svg
+      stroke: #fff
+    .stroke-none
+      stroke: none
+      fill: #fff        
   .btn-login-mobile
     stroke: #fff
-  .header-noadmin .logo
-    background: url("../img/logo-mini-black.svg") no-repeat center center
-    background-size: 100%
-    img
-      display: none
+  
   .blog-menu-mobile li a
     background: #242933
   .blog-menu-mobile li a.active
@@ -1403,6 +1417,10 @@ a.color-black
   .nav-breadcrumb
     width: fit-content
     margin: 0 auto 0 0
+  .btn-favorite
+    svg
+      width: 100%
+      height: 100%  
 
 .tooltip-wrapper
   position: relative

@@ -23,11 +23,37 @@
 </head>
 
 <body>
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+  
   <div class="wrapper">
-    <header>
+    <header class="header-admin">
       <div class="container">
-        <a href="#" class="btn-burger"></a>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+         <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
 
         <nav class="nav-menu">
           <ul class="my-ul menu">
@@ -57,23 +83,21 @@
               </a></li>
           </ul>
         </nav>
-        <form method="post" class="form-search form-search-header">
+       <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
-            <input type="text" name="search" placeholder="Поиск фигурки" required>
+            <input type="text" name="search" placeholder="Поиск" required>
           </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-        <a href="#" class="btn-search-mobile"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg></a>
+        <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
-      <a href="#" class="btn-theme"></a>
     </header>
 
     <div class="wrapper-content wrapper-content-page">
@@ -286,7 +310,7 @@
                     </div>
                     <div class="btn-group btn-group-nav">
                       <a href="#" class="btn btn-sm btn-blue">В коллекцию</a>
-                      <a href="#" class="color-black link-rate">Оценить фигурку</a>
+                      <a href="#" class="btn btn-sm btn-white link-rate">Оценить фигурку</a>
                     </div>
                     <div class="product-page-box">
                       <h5>Характеристики</h5>
@@ -486,7 +510,7 @@
 
       <div class="modal-footer">
         <div class="btn-group">
-          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-blue btn-apply">Показать более 10 тыс. фигурок</a>
           <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
               <use xlink:href="img/sprite.svg#refresh-icon"></use>
             </svg></a>
@@ -559,7 +583,7 @@
 
       <div class="modal-footer">
         <div class="btn-group">
-          <a href="#" class="btn btn-blue btn-apply">Применить</a>
+          <a href="#" class="btn btn-blue btn-apply">Добавить</a>
           <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
               <use xlink:href="img/sprite.svg#refresh-icon"></use>
             </svg></a>
@@ -595,7 +619,7 @@
 
       <div class="modal-footer">
         <div class="btn-group">
-          <a href="#" class="btn btn-blue btn-apply">Добавить</a>
+          <a href="#" class="btn btn-blue btn-apply">Импортировать</a>
           <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
               <use xlink:href="img/sprite.svg#refresh-icon"></use>
             </svg></a>

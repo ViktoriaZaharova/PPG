@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/fileup.min.css">
-   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -23,35 +23,107 @@
 
 <body>
 
-    <div class="tabbar">
+ <div class="tabbar">
     <ul class="tabbar-list my-ul">
       <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
-          </svg></a>
+          </svg>
+          <span>Управление</span>
+        </a>
       </li>
       <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
-          </svg></a>
+          </svg>
+          <span>Витрина</span>
+        </a>
       </li>
       <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
-          </svg></a>
+          </svg>
+          <span>Фигурки</span>
+        </a>
       </li>
       <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
-          </svg></a>
+          </svg>
+          <span>Блог</span>
+        </a>
       </li>
-      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
-          </svg></a>
+      <li><a href="#" class="tabbar-list__link tabbar-link__burger"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon6"></use>
+          </svg>
+          <span>Ещё</span>
+        </a>
       </li>
     </ul>
+  </div>
+
+  <div class="nav-menu-mobile">
+    <a href="catalog.html" class="menu-link menu-link-catalog btn btn-accent">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#catalog-icon"></use>
+      </svg>
+      <span>Все фигурки</span>
+    </a>
+
+    <div class="nav-menu-mobile__wrapper">
+      <ul class="my-ul nav-menu-mobile__list">
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#collection-icon"></use>
+            </svg>
+            <span>Управление коллекцией</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon stroke-none">
+              <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+            </svg>
+            <span>Витрина</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#blog-icon"></use>
+            </svg>
+            <span>Блог</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon stroke-none">
+              <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+            </svg>
+            <span>FAQ</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#user-icon"></use>
+            </svg>
+            <span>Профиль</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#exit-icon"></use>
+            </svg>
+            <span>Выход</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="wrapper">
     <header class="header-admin">
       <div class="container">
-       <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
           <img src="img/logo-white.svg" alt="" class="logo-white">
         </a>
 
@@ -83,7 +155,7 @@
               </a></li>
           </ul>
         </nav>
-       <form method="post" class="form-search form-search-header">
+        <form method="post" class="form-search form-search-header">
           <label>
             <svg class="svg-icon label-icon">
               <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -92,13 +164,13 @@
           </label>
           <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
         </form>
-       <a href="#" class="btn-theme"></a>
+        <a href="#" class="btn-theme"></a>
         <a href="#" class="btn-notification"><svg class="svg-icon">
             <use xlink:href="img/sprite.svg#notification"></use>
           </svg></a>
         <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
       </div>
-      
+
     </header>
 
     <div class="wrapper-content wrapper-content-page">

@@ -818,12 +818,14 @@
   fill: #fff;
 }
 .btn-settings-table:hover svg, .btn-settings-table:focus svg {
-  stroke: #fff;
+  fill: #fff;
 }
 .btn-settings-table svg {
   width: 20px;
   height: 20px;
   margin: 0;
+  stroke: none;
+  fill: #1D1D1B;
 }
 
 .collections-avatar {
@@ -1810,8 +1812,8 @@ h1.title-search-result strong {
   padding: 24px 0 0;
 }
 .tooltip-fake .tooltip-text__body h4 {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Xolonium", sans-serif;
   margin: 0 0 12px;
 }

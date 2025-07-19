@@ -1,5 +1,11 @@
+$('.tabbar-link__burger').on('click', function (e) {
+	e.preventDefault();
+	$('.nav-menu-mobile').fadeToggle();
+});
 
-
+$('.nav-menu-mobile:not(.nav-menu-mobile__wrapper)').on('click', function () {
+	$('.nav-menu-mobile').fadeOut();
+});
 
 function mediaClick() {
 	var checkWidth = $(window).width();

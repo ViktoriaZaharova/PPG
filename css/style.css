@@ -96,6 +96,12 @@ html, body, .wrapper {
   background: #242933;
   color: #fff;
 }
+.dark-theme .login-section .logo img {
+  display: none;
+}
+.dark-theme .login-section .logo .logo-white {
+  display: block;
+}
 .dark-theme header {
   background: #242933;
   color: #fff;
@@ -674,12 +680,13 @@ html, body, .wrapper {
   color: rgba(255, 255, 255, 0.6);
 }
 .dark-theme .tabbar {
-  background: #383C45;
+  background: #242933;
   border-color: rgba(255, 255, 255, 0.14);
 }
 .dark-theme .tabbar-list__link {
   fill: #fff;
-  background: #242933;
+  color: #fff;
+  background: #383C45;
 }
 .dark-theme .tabbar-list__link:hover {
   background: #57ADE3;
@@ -687,15 +694,24 @@ html, body, .wrapper {
 .dark-theme .tabbar-list__link.fill-none {
   stroke: #fff;
 }
-.dark-theme .btn-login-mobile {
+.dark-theme .nav-menu-mobile {
+  background: rgba(255, 255, 255, 0.4);
+}
+.dark-theme .nav-menu-mobile__wrapper {
+  background: #242933;
+}
+.dark-theme .nav-menu-mobile__link {
+  color: #fff;
+}
+.dark-theme .nav-menu-mobile__link svg {
   stroke: #fff;
 }
-.dark-theme .header-noadmin .logo {
-  background: url("../img/logo-mini-black.svg") no-repeat center center;
-  background-size: 100%;
+.dark-theme .nav-menu-mobile__link .stroke-none {
+  stroke: none;
+  fill: #fff;
 }
-.dark-theme .header-noadmin .logo img {
-  display: none;
+.dark-theme .btn-login-mobile {
+  stroke: #fff;
 }
 .dark-theme .blog-menu-mobile li a {
   background: #242933;
@@ -1853,6 +1869,10 @@ a.color-black:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 0 0;
+}
+.title-wrapper .btn-favorite svg {
+  width: 100%;
+  height: 100%;
 }
 
 .tooltip-wrapper {
