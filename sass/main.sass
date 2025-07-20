@@ -70,6 +70,7 @@
   border-radius: 32px
   width: 100%
   padding: 160px 0 0px
+  overflow: hidden
 
 .home-image
   width: 100%
@@ -914,7 +915,7 @@
 
 .banner-cabinet__avatar-text
   img
-    border-radius: 0  
+    border-radius: 0
 
 .label-file-banner
   height: 200px
@@ -978,7 +979,7 @@
     color: rgba(#1D1D1B, .6)
 
 .showcase-dropdown
-  margin-left: auto    
+  margin-left: auto
 
 .btn-showcase-dropdown
   width: 40px
@@ -989,11 +990,11 @@
   @include d-flex
   svg
     width: 20px
-    height: 20px  
-    margin: 0  
+    height: 20px
+    margin: 0
   &:hover
     svg
-      transform: none  
+      transform: none
 
 // .showcase-dropdown
 //   margin-left: auto
@@ -1042,7 +1043,7 @@
     border-radius: 10px
     overflow: hidden
     background: #F6F7F7
-  
+
   &__body
     width: calc( 100% - 72px )
     padding: 4px 0 0 16px
@@ -1173,7 +1174,7 @@
   .price
     margin: 0 0 auto
   .new-price
-    margin: 0 auto 0 0  
+    margin: 0 auto 0 0
   .btn-group
     margin: auto 0 0
 
@@ -1672,3 +1673,62 @@ h1.title-search-result
       object-fit: cover
   .tabs__content
     margin: 0 0 16px
+
+.slider-animate
+  width: 100%
+  overflow: hidden
+  margin: 64px 0 76px
+  white-space: nowrap
+  position: relative
+  z-index: 1
+  &::before, &:after
+    content: ''
+    position: absolute
+    top: 0
+    height: 100%
+    width: 110px
+    z-index: 1
+  &::before
+    left: 0
+    background: linear-gradient(to right, rgba(87,173,227,1) 0%,rgba(255,255,255,0) 100%)
+  &:after
+    right: 0
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(87,173,227,1) 100%)
+
+.slides-animate-wrapper
+  display: flex
+  align-items: stretch
+  animation: slide 20s linear infinite
+
+.slider-animate__img
+  width: 220px
+  min-width: 220px
+  height: 261px
+  margin: 0 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  background: #fff
+  border-radius: 24px
+  img
+    max-height: 100%
+
+@keyframes slide
+  0%
+    transform: translateX(0)
+
+  100%
+    transform: translateX(-100%)
+
+
+
+.scroll-text span 
+  opacity: 0.3
+  transition: opacity .3s ease
+
+.scroll-text span.active 
+  opacity: 1
+
+  
+

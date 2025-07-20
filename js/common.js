@@ -1,11 +1,3 @@
-$('.tabbar-link__burger').on('click', function (e) {
-	e.preventDefault();
-	$('.nav-menu-mobile').fadeToggle();
-});
-
-$('.nav-menu-mobile:not(.nav-menu-mobile__wrapper)').on('click', function () {
-	$('.nav-menu-mobile').fadeOut();
-});
 
 function mediaClick() {
 	var checkWidth = $(window).width();
@@ -396,4 +388,51 @@ $('.btn-theme').on('click', function (e) {
 	e.preventDefault();
 	$(this).toggleClass('click');
 	$('body').toggleClass('dark-theme');
+});
+
+
+
+// animate slider
+$('.tabbar-link__burger').on('click', function (e) {
+	e.preventDefault();
+	$('.nav-menu-mobile').fadeToggle();
+});
+
+$('.nav-menu-mobile:not(.nav-menu-mobile__wrapper)').on('click', function () {
+	$('.nav-menu-mobile').fadeOut();
+});
+
+// animate text scroll
+$(function () {
+  const $words = $('.scroll-text span');
+  const total = $words.length;
+  const headerHeight = $('header').outerHeight();
+
+  $(window).on('scroll', function () {
+    const windowHeight = $(window).height();
+    const scrollTop = $(window).scrollTop();
+    const $block = $('.scroll-text');
+
+    const blockTop = $block.offset().top;
+
+    // Начало анимации — когда верх блока появится ниже нижней границы окна
+    const startScroll = blockTop - windowHeight;
+
+    // Конец анимации — когда верх блока дойдёт до верхней границы окна минус высота header
+    const endScroll = blockTop - headerHeight - 100;
+
+    // Вычисляем прогресс (от 0 до 1) в этом интервале
+    const progress = (scrollTop - startScroll) / (endScroll - startScroll);
+    const clampedProgress = Math.min(Math.max(progress, 0), 1);
+
+    const currentIndex = Math.floor(clampedProgress * total);
+
+    $words.each(function (index) {
+      if (index <= currentIndex) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
+  });
 });

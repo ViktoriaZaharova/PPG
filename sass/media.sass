@@ -441,7 +441,17 @@
 
   .nav-menu-mobile
     height: calc(100% - 8px - 72px)
-    top: 72px   
+    top: 72px  
+
+  .slider-animate__img
+    width: 150px
+    min-width: 150px
+    height: 180px  
+    &::before, &:after
+      width: 70px    
+
+  .slider-animate
+    margin: 40px 0 50px
 
 @media only screen and (max-width: 680px)
   .tabs__caption-overflow
@@ -478,6 +488,7 @@
   header .container
     flex-wrap: nowrap
 
+  
 @media only screen and (max-width: 600px)
   // .btn-search-mobile
   //   display: flex
@@ -1314,7 +1325,16 @@
 
   .nav-menu-mobile
     height: calc(100% - 8px - 64px)
-    top: 64px       
+    top: 64px     
+
+  .slider-animate__img
+    width: 80px
+    min-width: 80px
+    height: 100px
+    border-radius: 10px
+    &::before, &:after
+      width: 40px
+          
 
 @media only screen and (max-width: 370px)
   .card-product__img

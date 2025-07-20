@@ -82,6 +82,7 @@
   border-radius: 32px;
   width: 100%;
   padding: 160px 0 0px;
+  overflow: hidden;
 }
 
 .home-image {
@@ -2066,4 +2067,68 @@ h1.title-search-result strong {
 }
 .form-search-modal .tabs__content {
   margin: 0 0 16px;
+}
+
+.slider-animate {
+  width: 100%;
+  overflow: hidden;
+  margin: 64px 0 76px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+.slider-animate::before, .slider-animate:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 110px;
+  z-index: 1;
+}
+.slider-animate::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(87, 173, 227) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.slider-animate:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(87, 173, 227) 100%);
+}
+
+.slides-animate-wrapper {
+  display: flex;
+  align-items: stretch;
+  animation: slide 20s linear infinite;
+}
+
+.slider-animate__img {
+  width: 220px;
+  min-width: 220px;
+  height: 261px;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 24px;
+}
+.slider-animate__img img {
+  max-height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.scroll-text span {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-text span.active {
+  opacity: 1;
 }
