@@ -12,6 +12,11 @@ footer .link:last-child {
   margin: 0;
 }
 
+.footer-text-error {
+  margin: 0 auto;
+  font-weight: 600;
+}
+
 .footer-wrapper {
   width: 100%;
   color: #fff;
@@ -216,7 +221,7 @@ footer .link:last-child {
   margin: 0;
 }
 .modal-footer .btn-group .btn-apply {
-  width: 100%;
+  flex: 1;
 }
 
 .overlay {

@@ -619,10 +619,11 @@
       padding-left: 16px
   td:not(:first-child), th:not(:first-child)
     text-align: center
-  .dropdown
+  .dropdown-menu
     width: fit-content
     left: auto
     right: 0
+    transform: none
 
 .collections-name
   .tooltip-wrapper
@@ -1275,6 +1276,25 @@
   margin: 0 0 16px
   &:last-child
     margin: 0
+  .dropdown-toggle
+    width: 100%
+    min-height: 40px
+    border: 1px solid rgba(36, 41, 51, 0.14)
+    border-radius: 8px
+    padding: 5px 16px
+    align-items: flex-start
+    svg
+      margin-left: auto  
+  .dropdown-menu
+    position: relative
+    transform: none
+    top: 0
+    left: 0
+    padding: 16px
+    .label-checkbox
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
 
 .filter-selected
   width: 100%

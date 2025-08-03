@@ -164,8 +164,7 @@
   position: absolute;
   bottom: -15px;
   right: 30px;
-  -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
-          clip-path: polygon(0 0, 50% 100%, 100% 0);
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
   width: 46px;
   height: 16px;
   background: #fff;
@@ -767,11 +766,12 @@
 .table-collections td:not(:first-child), .table-collections th:not(:first-child) {
   text-align: center;
 }
-.table-collections .dropdown {
+.table-collections .dropdown-menu {
   width: -moz-fit-content;
   width: fit-content;
   left: auto;
   right: 0;
+  transform: none;
 }
 
 .collections-name .tooltip-wrapper {
@@ -1575,6 +1575,30 @@
 .form-filter-box:last-child {
   margin: 0;
 }
+.form-filter-box .dropdown-toggle {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid rgba(36, 41, 51, 0.14);
+  border-radius: 8px;
+  padding: 5px 16px;
+  align-items: flex-start;
+}
+.form-filter-box .dropdown-toggle svg {
+  margin-left: auto;
+}
+.form-filter-box .dropdown-menu {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+  padding: 16px;
+}
+.form-filter-box .dropdown-menu .label-checkbox {
+  margin: 0 0 10px;
+}
+.form-filter-box .dropdown-menu .label-checkbox:last-child {
+  margin: 0;
+}
 
 .filter-selected {
   width: 100%;
@@ -1792,8 +1816,7 @@ h1.title-search-result strong {
   width: 14px;
   height: 6px;
   background: #242933;
-  -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0, 0% 100%, 100% 100%);
   position: absolute;
 }
 .tooltip-fake .tooltip-text__img {

@@ -86,7 +86,7 @@ $(function () {
 
 	$(document).click(function (e) {
 		var target = e.target;
-		if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+		if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-menu')) {
 			$('.dropdown-menu').slideUp();
 			$('.dropdown-toggle').removeClass('active');
 		}

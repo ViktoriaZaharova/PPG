@@ -351,6 +351,11 @@
     left: auto;
     transform: none;
   }
+  .footer-text-error {
+    width: 100%;
+    margin: 10px 0 0;
+    order: 1;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -802,6 +807,9 @@
     padding: 16px 0 64px;
   }
   .table-search-wrapper {
+    display: none;
+  }
+  .form-filter-box .dropdown-menu::before, .form-filter-box .dropdown-menu:after {
     display: none;
   }
 }

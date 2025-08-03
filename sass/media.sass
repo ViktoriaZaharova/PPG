@@ -150,7 +150,7 @@
     display: block
 
   footer, .footer-page
-    padding-bottom: 64px  
+    padding-bottom: 64px
 
 @media only screen and (max-width: 992px)
   .col-50, .col-30, .col-100
@@ -353,6 +353,11 @@
       left: auto
       transform: none
 
+  .footer-text-error
+    width: 100%
+    margin: 10px 0 0
+    order: 1
+
 @media only screen and (max-width: 768px)
   header
     padding: 12px 0
@@ -441,14 +446,14 @@
 
   .nav-menu-mobile
     height: calc(100% - 8px - 72px)
-    top: 72px  
+    top: 72px
 
   .slider-animate__img
     width: 150px
     min-width: 150px
-    height: 180px  
+    height: 180px
     &::before, &:after
-      width: 70px    
+      width: 70px
 
   .slider-animate
     margin: 40px 0 50px
@@ -488,7 +493,6 @@
   header .container
     flex-wrap: nowrap
 
-  
 @media only screen and (max-width: 600px)
   // .btn-search-mobile
   //   display: flex
@@ -617,7 +621,6 @@
       filter: brightness(0) invert(1)
     .label-copyright input
       border: 1px solid #434750
-
 
   .list-messangers
     .dropdown-menu__item
@@ -803,6 +806,10 @@
 
   .table-search-wrapper
     display: none
+
+  .form-filter-box .dropdown-menu
+    &::before, &:after
+      display: none
 
 @media only screen and (max-width: 576px)
   .p-32
@@ -1325,7 +1332,7 @@
 
   .nav-menu-mobile
     height: calc(100% - 8px - 64px)
-    top: 64px     
+    top: 64px
 
   .slider-animate__img
     width: 80px
@@ -1334,7 +1341,6 @@
     border-radius: 10px
     &::before, &:after
       width: 40px
-          
 
 @media only screen and (max-width: 370px)
   .card-product__img
