@@ -748,6 +748,9 @@ html, body, .wrapper {
   border-color: #57ADE3;
   color: #fff;
 }
+.dark-theme .datepicker-year {
+  background: transparent url(/local/templates/popprice/img/calendar.svg) no-repeat 16px center;
+}
 
 img {
   display: block;
@@ -1060,6 +1063,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-group.justify-end .btn:last-child {
   margin: 0;
+}
+.btn-group.justify-end .btn.btn-exit {
+  margin: 0 0 0 16px;
 }
 
 .svg-icon {
@@ -1640,17 +1646,26 @@ a.color-black:hover {
   padding: 0 48px 0 16px;
 }
 
+.ui-datepicker {
+  width: 100%;
+  max-width: 240px;
+}
+
+.ui-datepicker th {
+  padding: 4px 1px;
+}
+
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
   width: 100%;
   border: none;
   text-align: center;
   font-family: "OpenSans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .ui-datepicker th {
   font-family: "OpenSans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 

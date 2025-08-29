@@ -17,6 +17,20 @@
   .nav-menu
     margin: 0 0 0 20px
 
+  .in-collection svg
+    width: 12px
+    height: 12px
+    min-width: 12px
+
+  .sidebar
+    max-width: 260px
+
+  .showcase-content
+    width: calc( 100% - 260px )
+
+  .btn
+    padding: 10px 12px
+
 @media only screen and (max-width: 1240px)
   .nav-menu
     margin: 0 0 0 10px
@@ -122,11 +136,17 @@
       &:first-child
         position: sticky
         left: 0
-        background: #242933
-        // background: #fff
+
+        background: #fff
         z-index: 1
         width: 326px
         // border-right: 1px solid rgba(#242933,.14)
+
+  .dark-theme
+    .table-collections
+      th, td
+        &:first-child
+          background: #242933
 
   .pagination
     width: 100%
@@ -401,15 +421,24 @@
   .product-image-max
     height: 288px
 
+  .in-collection svg
+    width: 20px
+    height: 20px
+    min-width: 20px
+    stroke: #1D1D1B
+
+
   .card-product-column
     .in-collection
       span
         display: none
       svg
-        display: none
-        margin: 0
-        &:last-child
-          display: block
+        margin: 0  
+      // svg
+      //   display: none
+      //   margin: 0
+      //   &:last-child
+      //     display: block
     .add-collection
       span
         display: none
@@ -587,6 +616,8 @@
       border-radius: 16px
       background: rgba(#24293324, .14)
       z-index: 2
+
+  body
     &:after
       content: ""
       position: fixed
@@ -595,7 +626,12 @@
       width: 100%
       height: 100%
       background: rgba(#24293324, .14)
-      z-index: -1
+      z-index: 101
+      display: none
+      transition: .3s ease
+    &.dropdown-open
+      &:after
+        display: block
 
   .dropdown-menu-wrapper
     position: relative

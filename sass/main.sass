@@ -979,8 +979,8 @@
   span
     color: rgba(#1D1D1B, .6)
 
-.showcase-dropdown
-  margin-left: auto
+// .showcase-dropdown
+//   margin-left: auto
 
 .btn-showcase-dropdown
   width: 40px
@@ -1144,7 +1144,8 @@
   border-radius: 16px
   overflow: visible
   width: 100%
-  height: 100%
+  // height: 100%
+  height: 388px
   flex-direction: column
   align-items: flex-start
   padding: 0
@@ -1178,6 +1179,16 @@
     margin: 0 auto 0 0
   .btn-group
     margin: auto 0 0
+  .card-product-top__name
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -moz-box
+    -moz-box-orient: vertical
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    line-clamp: 2
+    box-orient: vertical
 
 // select sorter
 .showcase-sorter
@@ -1267,7 +1278,7 @@
   &__footer
     position: sticky
     bottom: 0
-    z-index: 2
+    z-index: 3
     background: #fff
     padding: 16px 0
 
@@ -1284,13 +1295,15 @@
     padding: 5px 16px
     align-items: flex-start
     svg
-      margin-left: auto  
+      margin-left: auto
   .dropdown-menu
     position: relative
     transform: none
     top: 0
     left: 0
     padding: 16px
+    max-height: 220px
+    overflow-y: auto
     .label-checkbox
       margin: 0 0 10px
       &:last-child
@@ -1741,14 +1754,9 @@ h1.title-search-result
   100%
     transform: translateX(-100%)
 
-
-
-.scroll-text span 
+.scroll-text span
   opacity: 0.3
   transition: opacity .3s ease
 
-.scroll-text span.active 
+.scroll-text span.active
   opacity: 1
-
-  
-

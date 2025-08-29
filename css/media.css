@@ -17,6 +17,20 @@
   .nav-menu {
     margin: 0 0 0 20px;
   }
+  .in-collection svg {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+  }
+  .sidebar {
+    max-width: 260px;
+  }
+  .showcase-content {
+    width: calc(100% - 260px);
+  }
+  .btn {
+    padding: 10px 12px;
+  }
 }
 @media only screen and (max-width: 1240px) {
   .nav-menu {
@@ -119,9 +133,12 @@
   .table-collections th:first-child, .table-collections td:first-child {
     position: sticky;
     left: 0;
-    background: #242933;
+    background: #fff;
     z-index: 1;
     width: 326px;
+  }
+  .dark-theme .table-collections th:first-child, .dark-theme .table-collections td:first-child {
+    background: #242933;
   }
   .pagination {
     width: 100%;
@@ -400,15 +417,17 @@
   .product-image-max {
     height: 288px;
   }
+  .in-collection svg {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    stroke: #1D1D1B;
+  }
   .card-product-column .in-collection span {
     display: none;
   }
   .card-product-column .in-collection svg {
-    display: none;
     margin: 0;
-  }
-  .card-product-column .in-collection svg:last-child {
-    display: block;
   }
   .card-product-column .add-collection span {
     display: none;
@@ -580,7 +599,7 @@
     background: rgba(36, 41, 51, 0.14);
     z-index: 2;
   }
-  .dropdown-menu:after {
+  body:after {
     content: "";
     position: fixed;
     left: 0;
@@ -588,7 +607,12 @@
     width: 100%;
     height: 100%;
     background: rgba(36, 41, 51, 0.14);
-    z-index: -1;
+    z-index: 101;
+    display: none;
+    transition: 0.3s ease;
+  }
+  body.dropdown-open:after {
+    display: block;
   }
   .dropdown-menu-wrapper {
     position: relative;

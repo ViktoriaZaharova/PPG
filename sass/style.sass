@@ -491,7 +491,6 @@ html, body, .wrapper
       fill: #fff        
   .btn-login-mobile
     stroke: #fff
-  
   .blog-menu-mobile li a
     background: #242933
   .blog-menu-mobile li a.active
@@ -517,6 +516,9 @@ html, body, .wrapper
     &:hover
       border-color: $accent
       color: #fff
+  .datepicker-year
+    background: transparent url(/local/templates/popprice/img/calendar.svg) no-repeat 16px center    
+    
 
 // dark theme  end
 
@@ -761,6 +763,8 @@ button, .btn
       flex: none
       &:last-child
         margin: 0
+      &.btn-exit
+        margin: 0 0 0 16px    
 
 .svg-icon
   @include d-flex
@@ -1226,16 +1230,23 @@ a.color-black
   background-size: 20px
   padding: 0 48px 0 16px
 
+.ui-datepicker
+  width: 100%
+  max-width: 240px
+
+.ui-datepicker th
+  padding: 4px 1px
+
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
   width: 100%
   border: none
   text-align: center
   font-family: $default-font
-  font-size: 14px
+  font-size: 13px
 
 .ui-datepicker th
   font-family: $default-font
-  font-size: 14px
+  font-size: 13px
   font-weight: 500
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next

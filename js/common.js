@@ -76,23 +76,43 @@ $(function () {
 
 // dropdown menu
 $(function () {
-	$('.dropdown-toggle').click(function (e) {
+	function closeAllDropdowns() {
+		$('.dropdown-toggle').removeClass('active');
+		$('.dropdown-menu').slideUp();
+		$('body').removeClass('dropdown-open');
+	}
+
+	$('.dropdown-toggle').on('click', function (e) {
 		e.preventDefault();
 
-		let pd = $(this).parents('.dropdown');
-		$('.dropdown').not(pd).find('.dropdown-toggle').removeClass('active').next('.dropdown-menu').slideUp(200);
-		$(this).toggleClass('active').next('.dropdown-menu').slideToggle();
+		let $dropdown = $(this).closest('.dropdown');
+
+		// Закрыть все остальные открытые меню
+		$('.dropdown').not($dropdown).find('.dropdown-toggle').removeClass('active');
+		$('.dropdown').not($dropdown).find('.dropdown-menu').slideUp();
+
+		// Открыть/закрыть текущее
+		$(this).toggleClass('active');
+		$dropdown.find('.dropdown-menu').stop(true, true).slideToggle();
+
+		// Обновить состояние body
+		if ($dropdown.find('.dropdown-menu').is(':visible')) {
+			$('body').addClass('dropdown-open');
+		} else {
+			$('body').removeClass('dropdown-open');
+		}
 	});
 
-	$(document).click(function (e) {
-		var target = e.target;
-		if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-menu')) {
-			$('.dropdown-menu').slideUp();
-			$('.dropdown-toggle').removeClass('active');
+	// Клик вне dropdown или по самому body с классом dropdown-open
+	$(document).on('click', function (e) {
+		if (
+			!$(e.target).closest('.dropdown').length || 
+			$(e.target).is('body.dropdown-open')
+		) {
+			closeAllDropdowns();
 		}
 	});
 });
-
 
 
 
@@ -404,35 +424,35 @@ $('.nav-menu-mobile:not(.nav-menu-mobile__wrapper)').on('click', function () {
 
 // animate text scroll
 $(function () {
-  const $words = $('.scroll-text span');
-  const total = $words.length;
-  const headerHeight = $('header').outerHeight();
+	const $words = $('.scroll-text span');
+	const total = $words.length;
+	const headerHeight = $('header').outerHeight();
 
-  $(window).on('scroll', function () {
-    const windowHeight = $(window).height();
-    const scrollTop = $(window).scrollTop();
-    const $block = $('.scroll-text');
+	$(window).on('scroll', function () {
+		const windowHeight = $(window).height();
+		const scrollTop = $(window).scrollTop();
+		const $block = $('.scroll-text');
 
-    const blockTop = $block.offset().top;
+		const blockTop = $block.offset().top;
 
-    // Начало анимации — когда верх блока появится ниже нижней границы окна
-    const startScroll = blockTop - windowHeight;
+		// Начало анимации — когда верх блока появится ниже нижней границы окна
+		const startScroll = blockTop - windowHeight;
 
-    // Конец анимации — когда верх блока дойдёт до верхней границы окна минус высота header
-    const endScroll = blockTop - headerHeight - 100;
+		// Конец анимации — когда верх блока дойдёт до верхней границы окна минус высота header
+		const endScroll = blockTop - headerHeight - 100;
 
-    // Вычисляем прогресс (от 0 до 1) в этом интервале
-    const progress = (scrollTop - startScroll) / (endScroll - startScroll);
-    const clampedProgress = Math.min(Math.max(progress, 0), 1);
+		// Вычисляем прогресс (от 0 до 1) в этом интервале
+		const progress = (scrollTop - startScroll) / (endScroll - startScroll);
+		const clampedProgress = Math.min(Math.max(progress, 0), 1);
 
-    const currentIndex = Math.floor(clampedProgress * total);
+		const currentIndex = Math.floor(clampedProgress * total);
 
-    $words.each(function (index) {
-      if (index <= currentIndex) {
-        $(this).addClass('active');
-      } else {
-        $(this).removeClass('active');
-      }
-    });
-  });
+		$words.each(function (index) {
+			if (index <= currentIndex) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
+	});
 });

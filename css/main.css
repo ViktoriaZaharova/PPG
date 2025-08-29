@@ -1211,10 +1211,6 @@
   color: rgba(29, 29, 27, 0.6);
 }
 
-.showcase-dropdown {
-  margin-left: auto;
-}
-
 .btn-showcase-dropdown {
   width: 40px;
   height: 40px;
@@ -1413,7 +1409,7 @@
   border-radius: 16px;
   overflow: visible;
   width: 100%;
-  height: 100%;
+  height: 388px;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
@@ -1454,6 +1450,16 @@
 }
 .card-product-column .btn-group {
   margin: auto 0 0;
+}
+.card-product-column .card-product-top__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 
 .showcase-sorter {
@@ -1563,7 +1569,7 @@
 .form-filter__footer {
   position: sticky;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   background: #fff;
   padding: 16px 0;
 }
@@ -1592,6 +1598,8 @@
   top: 0;
   left: 0;
   padding: 16px;
+  max-height: 220px;
+  overflow-y: auto;
 }
 .form-filter-box .dropdown-menu .label-checkbox {
   margin: 0 0 10px;
