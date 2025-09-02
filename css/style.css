@@ -118,11 +118,19 @@ html, body, .wrapper {
 .dark-theme .menu-link .svg-icon {
   stroke: rgba(255, 255, 255, 0.6);
 }
+.dark-theme .menu-link .svg-icon.stroke-none {
+  stroke: none;
+  fill: rgba(255, 255, 255, 0.6);
+}
 .dark-theme .menu-link:hover {
   color: #fff;
 }
 .dark-theme .menu-link:hover .svg-icon {
   stroke: #fff;
+}
+.dark-theme .menu-link:hover .svg-icon.stroke-none {
+  stroke: none;
+  fill: #fff;
 }
 .dark-theme .menu-link-catalog {
   color: #fff;
@@ -1655,7 +1663,7 @@ a.color-black:hover {
   padding: 4px 1px;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, .menu-linkhtml .ui-button.ui-state-disabled:active {
   width: 100%;
   border: none;
   text-align: center;

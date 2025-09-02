@@ -84,6 +84,10 @@ header .container {
   fill: none;
   stroke: #1D1D1B;
 }
+.menu-link .svg-icon.stroke-none {
+  stroke: none;
+  fill: #1D1D1B;
+}
 .menu-link span {
   padding: 1px 4px;
 }

@@ -93,6 +93,9 @@
   .cabinet-page .label-file-banner {
     border-radius: 16px;
   }
+  .form-search {
+    max-width: 300px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .nav-menu {

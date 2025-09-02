@@ -71,10 +71,16 @@ html, body, .wrapper
     color: rgba(#fff, .6)
     .svg-icon
       stroke: rgba(#fff, .6)
+      &.stroke-none
+        stroke: none
+        fill: rgba(#fff, .6)
     &:hover
       color: #fff
       .svg-icon
         stroke: #fff
+        &.stroke-none
+          stroke: none
+          fill: #fff
   .menu-link-catalog
     color: #fff
     .svg-icon
@@ -488,7 +494,7 @@ html, body, .wrapper
       stroke: #fff
     .stroke-none
       stroke: none
-      fill: #fff        
+      fill: #fff
   .btn-login-mobile
     stroke: #fff
   .blog-menu-mobile li a
@@ -505,20 +511,19 @@ html, body, .wrapper
   .panel-accordeon-collections__top
     border-bottom: 1px solid rgba(#57ADE324, .14)
   .panel-accordeon-collections .panel-accordeon__body
-    border-top: 1px solid rgba(#57ADE324, .14)       
+    border-top: 1px solid rgba(#57ADE324, .14)
   .accordeon-collections-list li p
     color: rgba(#fff, .6)
   #filter-modal
     .modal-footer
-      background: #2D313B  
+      background: #2D313B
   .form-filter-box .dropdown-toggle
     border: 1px solid rgba(255, 255, 255, 0.6)
     &:hover
       border-color: $accent
       color: #fff
   .datepicker-year
-    background: transparent url(/local/templates/popprice/img/calendar.svg) no-repeat 16px center    
-    
+    background: transparent url(/local/templates/popprice/img/calendar.svg) no-repeat 16px center
 
 // dark theme  end
 
@@ -764,7 +769,7 @@ button, .btn
       &:last-child
         margin: 0
       &.btn-exit
-        margin: 0 0 0 16px    
+        margin: 0 0 0 16px
 
 .svg-icon
   @include d-flex
@@ -1237,7 +1242,7 @@ a.color-black
 .ui-datepicker th
   padding: 4px 1px
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, .menu-linkhtml .ui-button.ui-state-disabled:active
   width: 100%
   border: none
   text-align: center
@@ -1436,7 +1441,7 @@ a.color-black
   .btn-favorite
     svg
       width: 100%
-      height: 100%  
+      height: 100%
 
 .tooltip-wrapper
   position: relative
