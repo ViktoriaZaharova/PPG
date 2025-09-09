@@ -84,6 +84,12 @@
       stroke-linejoin="round" />
   </symbol>
 
+  <symbol id="icon-arrow-right" viewBox="0 0 20 20">
+    <path d="M3.33594 10H16.6693M16.6693 10L11.6693 5M16.6693 10L11.6693 15" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+
+
 
   <symbol id="cloud-icon" viewBox="0 0 20 20">
     <path

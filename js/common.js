@@ -402,6 +402,33 @@ $('.autographs-slider').slick({
 	]
 });
 
+$('.support-domestic-collectors-slider').slick({
+	variableWidth: true,
+	slidesToShow: 1,
+	infinite: false,
+	arrows: false,
+	infinite: true,
+	autoplay: true,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+	dots: false,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				// arrows: false
+			}
+		}
+	]
+});
+
 
 // theme click
 $('.btn-theme').on('click', function (e) {

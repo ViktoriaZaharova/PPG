@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg></a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="wrapper">
+    <header class="header-admin">
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
+
+        <nav class="nav-menu">
+          <ul class="my-ul menu">
+            <li><a href="catalog.html" class="menu-link menu-link-catalog btn">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#catalog-icon"></use>
+                </svg>
+                <span>Все фигурки</span>
+              </a></li>
+            <li><a href="collections.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#collection-icon"></use>
+                </svg>
+                <span>Управление коллекцией</span>
+              </a></li>
+            <li><a href="blog.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#blog-icon"></use>
+                </svg>
+                <span>Блог</span>
+              </a></li>
+            <li><a href="help.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#help-icon"></use>
+                </svg>
+                <span>Поддержка</span>
+              </a></li>
+          </ul>
+        </nav>
+        <form method="post" class="form-search form-search-header">
+          <label>
+            <svg class="svg-icon label-icon">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <input type="text" name="search" placeholder="Поиск" required>
+          </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
+        </form>
+        <!-- <a href="#" class="btn-search-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search-icon"></use>
+          </svg></a> -->
+        <a href="#" class="btn-theme"></a>
+        <a href="#" class="btn-notification"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a>
+        <a href="cabinet.html" class="btn-cabinet"><img src="img/avatar-comment1.jpg" alt=""></a>
+      </div>
+
+    </header>
+
+    <div class="wrapper-content wrapper-content-page">
+      <section class="page catalog-page m-32 tabs">
+
+        <div class="container">
+          <div class="title-wrapper">
+            <h1>Фигурок<span>25 638</span></h1>
+            <div class="showcase-content__head">
+              <ul class="tabs__caption my-ul">
+                <li class="active"><a href="#tab1"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tab-icon1"></use>
+                    </svg></a></li>
+                <li><a href="#tab2"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tab-icon2"></use>
+                    </svg></a></li>
+              </ul>
+
+              <div class="showcase-sorter">
+
+                <div class="showcase-sorter-item">
+                  <p>Сначала:</p>
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Дороже <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                      </svg></a>
+
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu-wrapper">
+                        <h4 class="d-mobile">Поделиться</h4>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Старые</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Новые</a>
+                        <a href="#" class="btn btn-sm btn-white dropdown-menu__item">Дешевле</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-wrapper">
+            <div class="sidebar sidebar-filter">
+
+              <form method="post" class="form-filter">
+                <div class="form-filter-box">
+                  <span class="label-title">Название фигурки</span>
+                  <label><input type="text" name="language" placeholder="На англ. языке" class="p-default"></label>
+                </div>
+
+                <div class="dropdown form-filter-box">
+                  <a href="#" class="dropdown-toggle">Выбор <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg></a>
+
+                  <div class="dropdown-menu">
+                    <label class="label-checkbox">
+                      <input type="checkbox" name="checkbox_filter2" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Наличие автографа</span>
+                    </label>
+                    <label class="label-checkbox">
+                      <input type="checkbox" name="checkbox_filter2">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Наличие автографа</span>
+                    </label>
+                    <label class="label-checkbox">
+                      <input type="checkbox" name="checkbox_filter2">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Наличие автографа</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">Эксклюзивно для</span>
+                  <select name="select" class="select-my">
+                    <option value="Выберите">Выберите</option>
+                    <option value="Выберите">Выберите</option>
+                    <option value="Выберите">Выберите</option>
+                  </select>
+                </div>
+
+                <div class="form-filter-box">
+                  <label class="label-checkbox">
+                    <input type="checkbox" name="checkbox_filter">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Наличие автографа</span>
+                  </label>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">Размер</span>
+                  <select name="select" class="select-my">
+                    <option value="Выберите">Выберите</option>
+                    <option value="Выберите">Выберите</option>
+                    <option value="Выберите">Выберите</option>
+                  </select>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">Дата выпуска</span>
+                  <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                      class="datepicker datepicker-2"></label>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">Номер фигурки</span>
+                  <label><input type="text" name="number_figure" placeholder="Написан на коробке"
+                      class="p-default"></label>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">PPGID</span>
+                  <label><input type="text" name="ppgid" placeholder="8 цифр" class="p-default"></label>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">Добавлено пользователем</span>
+                  <label><input type="text" name="name_user" placeholder="Никнейм" class="p-default"></label>
+                </div>
+
+                <div class="form-filter-box">
+                  <span class="label-title">Тип фигурки</span>
+                  <select name="select" class="select-my">
+                    <option value="Выберите">Выберите</option>
+                    <option value="Выберите">Выберите</option>
+                    <option value="Выберите">Выберите</option>
+                  </select>
+                </div>
+
+                <div class="btn-group form-filter__footer">
+                  <a href="#" class="btn btn-blue btn-apply">Применить</a>
+                  <a href="#" class="btn btn-refresh btn-border flex-none"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#refresh-icon"></use>
+                    </svg></a>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="showcase-content catalog-content">
+              <div class="catalog-line-mobile">
+                <form method="post" class="form-search form-search-catalog">
+                  <button type="submit"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#search-icon"></use>
+                    </svg>
+                  </button>
+                  <label><input type="text" placeholder="Поиск фигурки"></label>
+                </form>
+                <a href="#filter-catalog-modal" class="btn btn-border btn-filter-mobile open_modal">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#filter-icon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="tabs__content" id="tab2">
+                <div class="w-100">
+                  <div class="row">
+
+                    <div class="col-100 mb-16">
+                      <div class="card-product-top card-product card-product-row">
+                        <div class="tooltip tooltip-fake">
+                          <div class="tooltip-icon"><img src="img/tooltip-fake.svg" alt=""></div>
+                          <div class="tooltip-text">
+                            <div class="tooltip-text__img"><img src="img/fake-img.jpg" alt=""></div>
+                            <div class="tooltip-text__body">
+                              <h4>Внимание! <br>
+                                У фигурки есть фейки</h4>
+                              <div class="box-text">
+                                <p>Пожалуйста, ознакомьтесь с материалом прежде чем покупать фигурку, будьте бдительны
+                                </p>
+
+                                <div class="btn-group">
+                                  <a href="#" class="btn btn-grey2">Фото</a>
+                                  <a href="#" class="btn btn-grey2">Видео</a>
+                                </div>
+                                <p>Благодарность за сравнение <a href="#"
+                                    class="d-inline color-blue">@serjo_funko_pop</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="product.html" class="card-product__img"><img src="img/top-img1.jpg" alt=""></a>
+                        <div class="card-product__body">
+                          <div class="card-product__head">
+                            <div class="card-product__head-name">
+                              <a href="product.html" class="card-product__name">God Loki</a>
+                              <div class="box-text">
+                                <p>God Loki On Throne</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-product__footer">
+                            <div class="price-wrapper">
+                              <div class="price">19 220 ₽</div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-100 mb-16">
+                      <div class="card-product-top card-product card-product-row">
+                        <a href="product.html" class="card-product__img"><img src="img/top-img2.jpg" alt=""></a>
+                        <div class="card-product__body">
+                          <div class="card-product__head">
+                            <div class="card-product__head-name">
+                              <a href="product.html" class="card-product__name">Gol D. Roger</a>
+                              <div class="box-text">
+                                <p>Gol D. Roger Wanted Poster</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-product__footer">
+                            <div class="price-wrapper">
+                              <div class="price">15 376 ₽</div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-100 mb-16">
+                      <div class="card-product-top card-product card-product-row">
+                        <a href="product.html" class="card-product__img"><img src="img/top-img3.jpg" alt=""></a>
+                        <div class="card-product__body">
+                          <div class="card-product__head">
+                            <div class="card-product__head-name">
+                              <a href="product.html" class="card-product__name">Balrog</a>
+                              <div class="box-text">
+                                <p>Barlog (Glow in the Dark)</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-product__footer">
+                            <div class="price-wrapper">
+                              <div class="new-price">+ 961 ₽</div>
+                              <div class="price">14 896 ₽</div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-100 mb-16">
+                      <div class="card-product-top card-product card-product-row">
+                        <a href="product.html" class="card-product__img"><img src="img/top-img4.jpg" alt=""></a>
+                        <div class="card-product__body">
+                          <div class="card-product__head">
+                            <div class="card-product__head-name">
+                              <a href="product.html" class="card-product__name">Shanks</a>
+                              <div class="box-text">
+                                <p>Shanks with Hat</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-product__footer">
+                            <div class="price-wrapper">
+                              <div class="price">14 896 ₽</div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-100 mb-16">
+
+                      <div class="card-product-top card-product card-product-row">
+                        <a href="product.html" class="card-product__img"><img src="img/top-img5.jpg" alt=""></a>
+                        <div class="card-product__body">
+                          <div class="card-product__head">
+                            <div class="card-product__head-name">
+                              <a href="product.html" class="card-product__name">Luffy With Going Merry</a>
+                              <div class="box-text">
+                                <p>God Loki On Throne</p>
+                              </div>
+                            </div>
+                            <div class="stickers">
+                              <a href="#" class="sticker active"><img src="img/sticker1.jpg" alt=""></a>
+                              <a href="#" class="sticker"><img src="img/sticker2.jpg" alt=""></a>
+                            </div>
+                          </div>
+                          <div class="card-product__footer">
+                            <div class="price-wrapper">
+                              <div class="price">12 013 ₽</div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-100 mb-16">
+                      <div class="card-product-top card-product card-product-row">
+                        <a href="product.html" class="card-product__img"><img src="img/top-img6.jpg" alt=""></a>
+                        <div class="card-product__body">
+                          <div class="card-product__head">
+                            <div class="card-product__head-name">
+                              <a href="product.html" class="card-product__name">Gol D. Roger</a>
+                              <div class="box-text">
+                                <p>Gol D. Roger with hat (Chase)</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-product__footer">
+                            <div class="price-wrapper">
+                              <div class="price">12 013 ₽</div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs__content active" id="tab1">
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <div class="tooltip tooltip-fake"><img src="img/tooltip-fake.svg" alt="" class="tooltip-icon">
+                          <div class="tooltip-text">
+                            <div class="tooltip-text__img"><img src="img/fake-img.jpg" alt=""></div>
+                            <div class="tooltip-text__body">
+                              <h4>Внимание! <br>
+                                У фигурки есть фейки</h4>
+                              <div class="box-text">
+                                <p>Пожалуйста, ознакомьтесь с материалом прежде чем покупать фигурку, будьте бдительны
+                                </p>
+
+                                <div class="btn-group">
+                                  <a href="#" class="btn btn-grey2">Фото</a>
+                                  <a href="#" class="btn btn-grey2">Видео</a>
+                                </div>
+                                <p>Благодарность за сравнение <a href="#"
+                                    class="d-inline color-blue">@serjo_funko_pop</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img1.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">God Loki</a>
+                          <span>God Loki On Throne</span>
+                          <div class="price-wrapper">
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                          <div class="btn-group">
+
+                            <a href="#" class="btn btn-sm btn-grey in-collection">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check-icon"></use>
+                              </svg>
+                              <span>В коллекции</span>
+                             </a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img2.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Gol D. Roger</a>
+                          <span>Gol D. Roger Wanted Poster</span>
+                          <div class="price-wrapper">
+                            <div class="price">15 376 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img3.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Balrog</a>
+                          <span>Barlog (Glow in the Dark)</span>
+                          <div class="price-wrapper">
+                            <div class="new-price">+ 961 ₽</div>
+                            <div class="price">19 220 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img4.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Shanks</a>
+                          <span>Shanks with Hat</span>
+                          <div class="price-wrapper">
+                            <div class="price">14 896 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img5.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Thousand Sunny</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img6.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Father</a>
+                          <div class="price-wrapper">
+                            <div class="price">13 454 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img7.jpg" alt="">
+                          <span class="stickers">
+                            <span class="sticker active"><img src="img/sticker1.jpg" alt=""></span>
+                            <span class="sticker"><img src="img/sticker2.jpg" alt=""></span>
+                          </span>
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Luffy With Going Merry</a>
+                          <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column card-product-subscribe">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/img-area.png" alt="">
+                          <img src="img/img-area-dark.png" alt="" class="img-dark">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Барахолка в Telegram</a>
+                          <span>Здесь ты купишь фигурку у проверенного продавца</span>
+                          <!-- <div class="price-wrapper">
+                            <div class="price">12 013 ₽</div>
+                          </div> -->
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-white w-100"><span>Вступить</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img9.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Ghost Rider</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 532 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img10.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Experiment 626</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img11.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">James Hetfield / Lars Ulrich / Kirk
+                            Hammett / Jason Newsted</a>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-25 mb-16">
+                      <div class="card-product-top card-product card-product-column">
+                        <a href="product.html" class="card-product-top__img">
+                          <img src="img/top-img12.jpg" alt="">
+                        </a>
+                        <div class="card-product-top__body">
+                          <a href="product.html" class="card-product-top__name">Samurai Brook</a>
+                          <span>Experiment 626 (Done)</span>
+                          <div class="price-wrapper">
+                            <div class="price">11 052 ₽</div>
+                          </div>
+                          <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-grey add-collection"><span>В коллекцию</span>
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#add-icon"></use>
+                              </svg></a>
+                            <a href="#" class="btn btn-favorite"><svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer class="footer-page">
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="copyright">© poppriceguide.ru</div>
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/Telegram2.svg" alt=""></a></li>
+            <li><a href="https://www.instagram.com/poppriceguide.ru"><img src="img/WhatsApp2.svg" alt=""></a></li>
+          </ul>
+          <a href="agreement.html" class="link" target="_blank">Соглашения пользования сервисом</a>
+          <a href="policy.html" class="link" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- modal -->
+  <div class="collections-poppup poppup-modal">
+    <div class="poppup-modal__body">
+      <label class="label-checkbox">
+        <input type="checkbox" name="checkbox_table3" checked>
+        <span class="checkbox-custom"></span>
+        <span class="checkbox-text">4 фигурки выбрано</span>
+      </label>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-sm btn-white btn-close-poppup">Удалить</a>
+        <a href="#list-modal" class="btn btn-sm btn-white open_modal">В список</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal__div" id="filter-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Фильтр</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="filter-wrapper w-100">
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Название</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Содержит">Содержит</option>
+                <option value="Содержит">Содержит</option>
+              </select>
+              <label><input type="text" name="language" placeholder="На англ. языке"></label>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>HBID</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="number" placeholder="8 цифр"></label>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Количество</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="text" placeholder="Любое"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Дата добавления в коллекцию</p>
+            </div>
+            <div class="filter-row__body">
+              <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                  class="datepicker datepicker-2"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Дата покупки</p>
+            </div>
+            <div class="filter-row__body">
+              <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                  class="datepicker datepicker-2-1"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Состояние</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Выберите">Выберите</option>
+                <option value="Выберите">Выберите</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Прибыль/убыток</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my">
+                <option value="Равно">Равно</option>
+                <option value="Равно">Равно</option>
+              </select>
+              <label><input type="text" name="text" placeholder="В рублях"></label>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>Приватность</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Любая">Любая</option>
+                <option value="Любая">Любая</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-row__name">
+              <p>В списке</p>
+            </div>
+            <div class="filter-row__body">
+              <select name="select" class="select-my w-100">
+                <option value="Все">Все</option>
+                <option value="Все">Все</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Показать более 10 тыс. фигурок</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div" id="list-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Добавление в список</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Выберите список или несколько списков, <br>в которые стоит добавить фигуру</p>
+        </div>
+
+        <ul class="list-collections-add my-ul">
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Все списки</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Без стоимости</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Высокая прибыль</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Для продажи</span>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_table4">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Высокая прибыль</span>
+            </label>
+          </li>
+          <li><a href="#" class="link-btn-add-collections">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#plus-icon"></use>
+              </svg>
+              <span>Создать новый список</span>
+            </a></li>
+        </ul>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Добавить</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div" id="export-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Импорт коллекции</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form method="post" class="form-export">
+          <label class="label-file">
+            <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+            <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+            <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                class="d-inline color-blue text-decoration">загрузить</a></span>
+          </label>
+          <div class="label-file__result queue" id="upload-demo-queue"></div>
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Импортировать</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div modal__div2" id="delete-account-modal">
+    <div class="modal__wrapper">
+
+
+      <button type="button" class="modal__close"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close-icon"></use>
+        </svg></button>
+
+      <div class="modal-body">
+        <h3 class="modal-title"><span class="color-red">Внимание!</span> Вы действительно хотите удалить аккаунт?</h3>
+        <div class="box-text">
+          <p>Это действие необратимо, и все ваши данные будут утеряны. Пожалуйста, убедитесь, что хотите это сделать.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-grey btn-cancel">Отменить</a>
+          <a href="#" class="btn btn-red btn-delete-account">Удалить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal__div" id="filter-catalog-modal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Фильтр</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-filter">
+          <div class="dropdown form-filter-box">
+            <a href="#" class="dropdown-toggle">Выбор <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+              </svg></a>
+
+            <div class="dropdown-menu">
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox_filter2" checked>
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Наличие автографа</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox_filter2">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Наличие автографа</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox_filter2">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Наличие автографа</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Название фигурки</span>
+            <label><input type="text" name="language" placeholder="На англ. языке" class="p-default"></label>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Эксклюзивно для</span>
+            <select name="select" class="select-my">
+              <option value="Выберите">Выберите</option>
+              <option value="Выберите">Выберите</option>
+              <option value="Выберите">Выберите</option>
+            </select>
+          </div>
+
+          <div class="form-filter-box">
+            <label class="label-checkbox">
+              <input type="checkbox" name="checkbox_filter">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Наличие автографа</span>
+            </label>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Размер</span>
+            <select name="select" class="select-my">
+              <option value="Выберите">Выберите</option>
+              <option value="Выберите">Выберите</option>
+              <option value="Выберите">Выберите</option>
+            </select>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Дата выпуска</span>
+            <label><input type="text" name="daterange" placeholder="01.11.2024 — 03.11.2024"
+                class="datepicker datepicker-2"></label>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Номер фигурки</span>
+            <label><input type="text" name="number_figure" placeholder="Написан на коробке" class="p-default"></label>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">PPGID</span>
+            <label><input type="text" name="ppgid" placeholder="8 цифр" class="p-default"></label>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Добавлено пользователем</span>
+            <label><input type="text" name="name_user" placeholder="Никнейм" class="p-default"></label>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Тип фигурки</span>
+            <select name="select" class="select-my">
+              <option value="Выберите">Выберите</option>
+              <option value="Выберите">Выберите</option>
+              <option value="Выберите">Выберите</option>
+            </select>
+          </div>
+
+          <!-- <div class="btn-group form-filter__footer">
+            <a href="#" class="btn btn-blue btn-apply">Применить</a>
+            <a href="#" class="btn btn-refresh btn-border flex-none"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#refresh-icon"></use>
+              </svg></a>
+          </div> -->
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Показать более 10 тыс. фигурок</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal__div tabs" id="codeModal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Поиск фигурки по штрих-коду</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-search-modal">
+
+          <ul class="tabs__caption my-ul w-100">
+            <li class="active"><a href="#tab3">Загрузить</a></li>
+            <li><a href="#tab4">Сканировать</a></li>
+          </ul>
+
+          <div class="tabs__content active" id="tab3">
+            <label class="label-file">
+              <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+              <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+              <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                  class="d-inline color-blue text-decoration">загрузить</a></span>
+            </label>
+            <div class="label-file__result queue" id="upload-demo-queue"></div>
+          </div>
+
+          <div class="tabs__content" id="tab4">
+            <div class="form-search-modal__img"><img src="img/tab-scan1.jpg" alt=""></div>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Введите штрих-код</span>
+            <label>
+              <svg class="svg-icon label-icon">
+                <use xlink:href="img/sprite.svg#code-icon"></use>
+              </svg>
+              <input type="number" name="name_figure" placeholder="____ ____ _____[_]"></label>
+          </div>
+
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply">Найти</a>
+          <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="overlay"></div>
+
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/fileup.js"></script>
+  <script src="js/slick.min.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

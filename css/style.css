@@ -759,6 +759,57 @@ html, body, .wrapper {
 .dark-theme .datepicker-year {
   background: transparent url(/local/templates/popprice/img/calendar.svg) no-repeat 16px center;
 }
+.dark-theme .card-product-subscribe {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: transparent;
+}
+.dark-theme .card-product-subscribe .card-product-top__img {
+  background: transparent;
+}
+.dark-theme .card-product-subscribe .card-product-top__img img {
+  display: none;
+}
+.dark-theme .card-product-subscribe .card-product-top__img .img-dark {
+  display: block;
+}
+.dark-theme .market-telegram {
+  background: rgba(255, 255, 255, 0.14);
+}
+.dark-theme .market-telegram__img img {
+  display: none;
+}
+.dark-theme .market-telegram__img .img-dark {
+  display: block;
+}
+.dark-theme .join-market-telegram-box {
+  background: rgba(255, 255, 255, 0.14);
+}
+.dark-theme .support-domestic-collectors-text .box-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark-theme .support-domestic-collectors-box {
+  background: rgba(255, 255, 255, 0.04);
+}
+.dark-theme .support-domestic-collectors-box__img::before {
+  background: linear-gradient(180deg, rgba(45, 49, 59, 0) 0%, #2D313B 100%);
+}
+.dark-theme .support-domestic-collectors-box__title {
+  color: #fff;
+}
+.dark-theme .support-domestic-collectors-box__title:hover {
+  color: #57ADE3;
+}
+.dark-theme .support-domestic-collectors-box__body .box-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark-theme .support-domestic-collectors-box__body .link-details {
+  color: #fff;
+  stroke: #fff;
+}
+.dark-theme .support-domestic-collectors-box__body .link-details:hover {
+  stroke: #57ADE3;
+  color: #275C7E;
+}
 
 img {
   display: block;
@@ -1151,6 +1202,10 @@ h4 {
   margin: 0 -12px;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .row-wrapper {
   width: 100%;
   display: flex;
@@ -1257,6 +1312,14 @@ h4 {
 
 .m-32 {
   margin: 32px 0;
+}
+
+.m-64 {
+  margin: 64px 0;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .d-inline {
@@ -2152,6 +2215,18 @@ a.color-black:hover {
 
 .slick-prev {
   left: -16px;
+}
+
+.slider-stretch .slick-list {
+  margin: 0 -8px;
+}
+.slider-stretch .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+.slider-stretch .slick-slide {
+  height: auto;
+  padding: 0 8px;
 }
 
 .list-social {

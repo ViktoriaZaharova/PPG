@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+
+  <div class="tabbar">
+    <ul class="tabbar-list my-ul">
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon1"></use>
+          </svg>
+          <span>Управление</span>
+        </a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+          </svg>
+          <span>Витрина</span>
+        </a>
+      </li>
+      <li><a href="#" class="tabbar-list__link fill-none"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon3"></use>
+          </svg>
+          <span>Фигурки</span>
+        </a>
+      </li>
+      <li><a href="#" class="tabbar-list__link"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon4"></use>
+          </svg>
+          <span>Блог</span>
+        </a>
+      </li>
+      <li><a href="#" class="tabbar-list__link tabbar-link__burger"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#tabbar-icon6"></use>
+          </svg>
+          <span>Ещё</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="nav-menu-mobile">
+    <a href="catalog.html" class="menu-link menu-link-catalog btn btn-accent">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#catalog-icon"></use>
+      </svg>
+      <span>Все фигурки</span>
+    </a>
+
+    <div class="nav-menu-mobile__wrapper">
+      <ul class="my-ul nav-menu-mobile__list">
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#collection-icon"></use>
+            </svg>
+            <span>Управление коллекцией</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon stroke-none">
+              <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+            </svg>
+            <span>Витрина</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#blog-icon"></use>
+            </svg>
+            <span>Блог</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon stroke-none">
+              <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+            </svg>
+            <span>FAQ</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#user-icon"></use>
+            </svg>
+            <span>Профиль</span>
+          </a>
+        </li>
+        <li class="nav-menu-mobile__item">
+          <a href="#" class="nav-menu-mobile__link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#exit-icon"></use>
+            </svg>
+            <span>Выход</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <header class="header-noadmin">
+      <div class="container">
+        <!-- <a href="#" class="btn-burger"></a> -->
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt="">
+          <img src="img/logo-white.svg" alt="" class="logo-white">
+        </a>
+
+        <nav class="nav-menu">
+          <ul class="my-ul menu">
+            <li><a href="catalog.html" class="menu-link menu-link-catalog btn">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#catalog-icon"></use>
+                </svg>
+                <span>Все фигурки</span>
+              </a></li>
+            <li><a href="collections.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#collection-icon"></use>
+                </svg>
+                <span>Управление коллекцией</span>
+              </a></li>
+            <li><a href="collections.html" class="menu-link">
+                <svg class="svg-icon stroke-none">
+                  <use xlink:href="img/sprite.svg#tabbar-icon2"></use>
+                </svg>
+                <span>Витрина</span>
+              </a></li>
+            <li><a href="blog.html" class="menu-link">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#blog-icon"></use>
+                </svg>
+                <span>Блог</span>
+              </a></li>
+            <li><a href="help.html" class="menu-link">
+                <svg class="svg-icon stroke-none">
+                  <use xlink:href="img/sprite.svg#tabbar-icon5"></use>
+                </svg>
+                <span>FAQ</span>
+              </a></li>
+          </ul>
+        </nav>
+        <form method="post" class="form-search form-search-header">
+          <label>
+            <svg class="svg-icon label-icon">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <input type="text" name="search" placeholder="Поиск" required>
+          </label>
+          <a href="#codeModal" class="btn-modal-code open_modal"><img src="img/code-icon.svg" alt=""></a>
+        </form>
+
+        <a href="#" class="btn-theme"></a>
+        <a href="#" class="btn-login-mobile"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#login-icon"></use>
+          </svg></a>
+        <a href="login.html" class="btn btn-grey btn-login">Войти</a>
+      </div>
+    </header>
+
+    <div class="wrapper-content wrapper-content-page">
+      <main class="home mb-48">
+        <div class="home-wrapper">
+          <div class="container">
+            <h1 class="h1">Управляй коллекцией с комфортом</h1>
+            <div class="box-text">
+              <p>Сервис по управлению коллекциями фигурок Funko Popот отечественных разработчиков</p>
+            </div>
+            <a href="#" class="btn btn-white btn-add-collection">Создать коллекцию</a>
+            <div class="home-image"><img src="img/home-img.png" class="d-pc" alt="">
+              <img src="img/home-img-tablet.png" class="d-tablet" alt="">
+              <img src="img/home-img-phone.png" class="d-mobile" alt="">
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="about-section mb-48">
+        <div class="container d-flex">
+          <div class="box-text">
+            <h2><a href="https://poppriceguide.ru" class="color-blue d-inline">poppriceguide.ru</a> — сервис для ведения
+              коллекции, который объединяет коллекционеров со всего мира</h2>
+          </div>
+          <div class="box-image"><img src="img/about-img.png" alt=""></div>
+        </div>
+      </div>
+
+      <div class="advantages-section mb-24">
+        <div class="container">
+          <div class="w-100">
+            <div class="row">
+              <div class="col-50 mb-24">
+                <div class="advantages-box advantages-box1">
+                  <div class="advantages-box__text">
+                    <div class="box-text">
+                      <h3>Облачный сервис</h3>
+                      <p>Сохраняем всю коллекцию у себя, вам не придётся ничего скачивать, лишь только
+                        зарегистрироваться</p>
+                    </div>
+                  </div>
+                  <div class="advantages-box__img"><img src="img/adv-img1.png" class="d-pc" alt=""> <img
+                      src="img/adv-img1-tablet.png" class="d-tablet" alt="">
+                    <img src="img/adv-img1-phone.png" class="d-mobile" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-50 mb-24">
+                <div class="advantages-box advantages-box2">
+                  <div class="advantages-box__text">
+                    <div class="box-text">
+                      <h3>Большое комьюнити</h3>
+                      <p>Свежие новости и бурные обсуждение в комментариях наших статей не оставят вас равнодушными</p>
+                    </div>
+                  </div>
+                  <div class="advantages-box__img"><img src="img/adv-img2.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="interface-section p-80 mb-24">
+        <div class="container">
+          <div class="w-100">
+            <div class="row">
+              <div class="col-50">
+                <div class="interface-text">
+                  <h3>Продуманный интерфейс</h3>
+                  <div class="box-text">
+                    <p>Постарались создать сервис, который будет понятен и удобен с первого взгляда, но несмотря на это
+                      мы дорабатываем его и делаем комфортнее</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-30 mb-24">
+                <div class="interface-box interface-box1"><img src="img/interface-img1.png" class="d-pc" alt=""> <img
+                    src="img/interface-img1-tablet.png" class="d-tablet" alt=""></div>
+              </div>
+              <div class="col-70 mb-24">
+                <div class="interface-box interface-box2"><img src="img/interface-img2.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="support-domestic-collectors">
+        <div class="container">
+          <div class="w-100">
+            <div class="row mb-40">
+              <div class="col-70">
+                <div class="support-domestic-collectors-text">
+                  <h3>Поддерживаем отечественных коллекционеров</h3>
+                  <div class="box-text">
+                    <p>Предлагаем удобные и надежные инструменты для пополнения коллекции: доступ к мировым площадкам,
+                      крупные партии фигурок и гарантии безопасности каждой покупки</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="support-domestic-collectors-slider slider-stretch">
+              <div class="slide">
+                <div class="support-domestic-collectors-box">
+                  <a href="#" class="support-domestic-collectors-box__img"><img src="img/img-card1.jpg" alt=""></a>
+                  <div class="support-domestic-collectors-box__body">
+                    <a href="#" class="support-domestic-collectors-box__title">Выкуп <br>фигурок с eBay</a>
+                    <div class="box-text">
+                      <p>Вы выбираете фигурку, вносите 50% предоплаты, а покупку и доставку мы берём на себя</p>
+                    </div>
+                    <a href="#" class="link-details">
+                      <span>Подробнее</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="support-domestic-collectors-box">
+                  <a href="#" class="support-domestic-collectors-box__img"><img src="img/img-card2.jpg" alt=""></a>
+                  <div class="support-domestic-collectors-box__body">
+                    <a href="#" class="support-domestic-collectors-box__title">Новая поставка <br>на 40 фигурок</a>
+                    <div class="box-text">
+                      <p>Привезли 40 новых фигурок, начиная от популярных фигуроки заканчивая эксклюзивами</p>
+                    </div>
+                    <a href="#" class="link-details">
+                      <span>Подробнее</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="support-domestic-collectors-box support-domestic-collectors-box2">
+                  <a href="#" class="support-domestic-collectors-box__img"><img src="img/img-card3.jpg" alt=""></a>
+                  <div class="support-domestic-collectors-box__body">
+                    <a href="#" class="support-domestic-collectors-box__title">Гарант при покупке фигурок</a>
+                    <div class="box-text">
+                      <p>Поддержим при покупки фигурки гарантируя сохранность средств</p>
+                    </div>
+                    <a href="#" class="link-details">
+                      <span>Подробнее</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="support-domestic-collectors-box">
+                  <a href="#" class="support-domestic-collectors-box__img"><img src="img/img-card4.png" alt=""></a>
+                  <div class="support-domestic-collectors-box__body">
+                    <a href="#" class="support-domestic-collectors-box__title">Привезли коллекцию Star Wars</a>
+                    <div class="box-text">
+                      <p>Наш партнёр привёз новую коллекцию фигурок Star Wars</p>
+                    </div>
+                    <a href="#" class="link-details">
+                      <span>Подробнее</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="support-domestic-collectors-box">
+                  <a href="#" class="support-domestic-collectors-box__img"><img src="img/img-card2.jpg" alt=""></a>
+                  <div class="support-domestic-collectors-box__body">
+                    <a href="#" class="support-domestic-collectors-box__title">Новая поставка на 40 фигурок</a>
+                    <div class="box-text">
+                      <p>Привезли 40 новых фигурок, начиная от популярных фигуроки заканчивая эксклюзивами</p>
+                    </div>
+                    <a href="#" class="link-details">
+                      <span>Подробнее</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection-start p-80">
+        <div class="container">
+          <h2 class="h1">Начни коллекционировать вместе с <a href="https://poppriceguide.ru" class="d-inline color-blue"
+              target="_blank">poppriceguide.ru</a></h2>
+
+          <a href="#" class="btn btn-blue">Создать коллекцию</a>
+        </div>
+      </section>
+
+
+      <div class="join-market-telegram">
+        <div class="container">
+          <div class="join-market-telegram-box">
+            <div class="join-market-telegram-box__body">
+              <h3>Вступай в нашу барахолку в Telegram</h3>
+              <div class="box-text">
+                <p>Здесь ты сможешь купить фигурку напрямую у проверенного продавца или продать свою</p>
+              </div>
+              <a href="#" class="btn btn-sm btn-white" target="_blank">Вступить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="news-section m-64">
+        <div class="container">
+          <div class="w-100">
+            <div class="row mb-40 align-items-center">
+              <div class="col-50">
+                <h2>Блог</h2>
+              </div>
+              <div class="col-50 d-pc">
+                <a href="blog.html" class="link link-news color-black ml-auto">Все новости</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-50 mb-16">
+                <div class="blog-card blog-card-news interesting-card">
+                  <div class="blog-card__body">
+                    <a href="blog-page.html" class="blog-card__title">Веселье на Хэллоуин! Наша любимая тыква и нож
+                      Funko Pop! Цифра</a>
+                  </div>
+
+                  <div class="blog-card__footer">
+                    <ul class="my-ul blog-card__list">
+                      <li><a href="#">ТОП-10</a></li>
+                      <li><span>5 минут назад</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-50 mb-16">
+                <div class="blog-card blog-card-news interesting-card">
+                  <div class="blog-card__body">
+                    <a href="blog-page.html" class="blog-card__title">Веселье на Хэллоуин! Наша любимая тыква и нож
+                      Funko Pop! Цифра</a>
+                  </div>
+
+                  <div class="blog-card__footer">
+                    <ul class="my-ul blog-card__list">
+                      <li><a href="#">ТОП-10</a></li>
+                      <li><span>5 минут назад</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50 d-tablet d-mobile">
+                <a href="blog.html" class="link link-news color-black">Все новости</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="footer-top"><a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+
+            <ul class="list-social my-ul">
+              <li><a href="#"><img src="img/Telegram3.svg" alt=""></a></li>
+              <li><a href="https://www.instagram.com/poppriceguide.ru"><img src="img/WhatsApp3.svg" alt=""></a></li>
+            </ul>
+            <div class="subscribe-wrapper">
+              <p>Узнавай новости первым!</p>
+              <form method="post" class="form-subscribe">
+                <label>
+                  <svg class="svg-icon label-icon">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <input type="text" name="mail" placeholder="Электронная почта" required>
+                </label>
+                <button type="submit" class="btn btn-black">Подписаться</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="copyright">© poppriceguide.ru</div>
+            <a href="agreement.html" class="link" target="_blank">Соглашения пользования сервисом</a>
+            <a href="policy.html" class="link" target="_blank">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="modal__div tabs" id="codeModal">
+    <div class="modal__wrapper">
+
+      <div class="modal-head">
+        <h3 class="modal-title">Поиск фигурки по штрих-коду</h3>
+        <button type="button" class="modal__close"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg></button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-search-modal">
+
+          <ul class="tabs__caption my-ul w-100">
+            <li class="active"><a href="#tab3">Загрузить</a></li>
+            <li><a href="#tab4">Сканировать</a></li>
+          </ul>
+
+          <div class="tabs__content active" id="tab3">
+            <label class="label-file">
+              <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+              <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+              <span class="label-file__text">Чтобы загрузить файлы, перетащите их сюда или нажмите <a href="#"
+                  class="d-inline color-blue text-decoration">загрузить</a></span>
+            </label>
+            <div class="label-file__result queue" id="upload-demo-queue"></div>
+          </div>
+
+          <div class="tabs__content" id="tab4">
+            <div class="form-search-modal__img"><img src="img/tab-scan1.jpg" alt=""></div>
+          </div>
+
+          <div class="form-filter-box">
+            <span class="label-title">Введите штрих-код</span>
+            <label>
+              <svg class="svg-icon label-icon">
+                <use xlink:href="img/sprite.svg#code-icon"></use>
+              </svg>
+              <input type="number" name="name_figure" placeholder="____ ____ _____[_]"></label>
+          </div>
+
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-group">
+          <a href="#" class="btn btn-blue btn-apply w-100">Найти</a>
+          <!-- <a href="#" class="btn btn-refresh btn-border"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#refresh-icon"></use>
+            </svg></a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/fileup.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

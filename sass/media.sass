@@ -31,6 +31,9 @@
   .btn
     padding: 10px 12px
 
+  .form-search
+    max-width: 300px
+
 @media only screen and (max-width: 1240px)
   .nav-menu
     margin: 0 0 0 10px
@@ -86,8 +89,8 @@
     .label-file-banner
       border-radius: 16px
 
-  .form-search
-    max-width: 300px
+  
+
 @media only screen and (max-width: 1200px)
   // .btn-burger
   //   display: flex
@@ -380,6 +383,46 @@
     margin: 10px 0 0
     order: 1
 
+  .market-telegram
+    margin: 16px 0 0
+    padding: 24px
+    &__img
+      display: none
+    &__body
+      .btn
+        max-width: none
+        margin: 24px 0 0  
+
+  .join-market-telegram
+    margin: 40px 0
+    &-box
+      padding: 32px
+      .btn
+        margin: 44px 0 0
+      &__body
+        max-width: 435px  
+      &::before
+        right: -69px
+
+  .mb-40
+    margin-bottom: 24px
+
+  .link-news
+    margin: 8px auto 0
+
+  .news-section
+    margin: 40px 0
+    .col-50
+      width: 100%
+
+  .support-domestic-collectors
+    padding: 40px 0
+    margin: 24px 0
+
+  .col-70
+    width: 100%
+
+
 @media only screen and (max-width: 768px)
   header
     padding: 12px 0
@@ -429,13 +472,14 @@
     min-width: 20px
     stroke: #1D1D1B
 
-
   .card-product-column
+    font-size: 12px
+    line-height: 18px
     .in-collection
       span
         display: none
       svg
-        margin: 0  
+        margin: 0
       // svg
       //   display: none
       //   margin: 0
@@ -450,6 +494,10 @@
         height: 20px
     .btn-favorite
       flex: 1
+    .card-product-top__img
+      height: 218px
+    .card-product-top__body
+      height: calc( 100% - 218px )
 
   .table-search-wrapper .form-search
     width: 260px
@@ -1380,6 +1428,79 @@
     &::before, &:after
       width: 40px
 
+  .card-product-column
+    height: 312px
+
+  .card-product-subscribe
+    .card-product-top__img
+      height: 124px
+    .card-product-top__body
+      height: calc( 100% - 124px )
+    .card-product-top__name
+      font-size: 16px
+
+  .market-telegram
+    padding: 0
+    &__body
+      padding: 24px
+      max-width: none
+      .btn
+        max-width: none
+        margin: 16px 0 0
+    &__title
+      font-size: 20px
+    &__img
+      width: 100%
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+
+  .join-market-telegram
+    margin: 24px 0
+    &-box
+      padding: 24px 
+      &__body
+        padding: 250px 0 0
+        max-width: none
+        .btn
+          width: 100%
+          margin: 16px 0 0
+      &::before
+        left: 50%
+        transform: translate(-50%,0)
+        right: auto
+        bottom: auto
+        top: 0
+        max-width: 344px
+        width: 100%
+        height: 278px
+        background: url('../img/join2.png') no-repeat center center
+        background-size: 100%
+        
+  .dark-theme
+    .join-market-telegram
+      &-box
+        &::before
+          background: url('../img/join3.png') no-repeat center center
+          background-size: 100%
+
+  .blog-card-news.interesting-card .blog-card__title
+    font-size: 16px
+
+  .link-news
+    margin: 0 auto
+
+  .news-section
+    .mb-16
+      margin-bottom: 8px    
+
+  .support-domestic-collectors-box__body
+    padding: 16px 24px 24px 24px
+
+  .support-domestic-collectors-box .link-details
+    margin: 16px 0 0
+      
 @media only screen and (max-width: 370px)
   .card-product__img
     width: 130px

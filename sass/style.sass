@@ -524,6 +524,44 @@ html, body, .wrapper
       color: #fff
   .datepicker-year
     background: transparent url(/local/templates/popprice/img/calendar.svg) no-repeat 16px center
+  .card-product-subscribe
+    background: rgba(#fff, .14)
+    border-color: transparent
+    .card-product-top__img
+      background: transparent
+      img
+        display: none
+      .img-dark
+        display: block  
+  .market-telegram
+    background: rgba(#fff, .14)
+    &__img
+      img
+        display: none
+      .img-dark
+        display: block
+  .join-market-telegram-box
+    background: rgba(#fff, .14)
+  .support-domestic-collectors-text .box-text
+    color: rgba(#fff, .6)
+  .support-domestic-collectors-box
+    background: rgba(#fff, .04)
+    &__img
+      &::before
+        background: linear-gradient(180deg, rgba(45, 49, 59, 0) 0%, #2D313B 100%)
+    &__title
+      color: #fff
+      &:hover
+        color: $accent
+    &__body
+      .box-text
+        color: rgba(#fff, .6)
+      .link-details
+        color: #fff
+        stroke: #fff
+        &:hover
+          stroke: #57ADE3
+          color: $blue      
 
 // dark theme  end
 
@@ -578,6 +616,7 @@ input, textarea, select
       color: rgba(#1D1D1B, .14)
   &.p-default
     padding: 0 16px
+  
 
 .label-icon
   fill: none
@@ -834,6 +873,9 @@ h4
   align-items: stretch
   margin: 0 -12px
 
+.align-items-center
+  align-items: center  
+
 .row-wrapper
   width: 100%
   display: flex
@@ -918,6 +960,12 @@ h4
 
 .m-32
   margin: 32px 0
+
+.m-64
+  margin: 64px 0  
+
+.ml-auto
+  margin-left: auto  
 
 .d-inline
   display: inline
@@ -1657,6 +1705,16 @@ a.color-black
 
 .slick-prev
   left: -16px
+
+.slider-stretch
+  .slick-list
+    margin: 0 -8px
+  .slick-track
+    display: flex
+    align-items: stretch
+  .slick-slide
+    height: auto 
+    padding: 0 8px 
 
 .list-social
   margin: 0 auto

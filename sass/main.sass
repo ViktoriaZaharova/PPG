@@ -87,6 +87,48 @@
     margin: 0 auto 24px
     max-width: 900px
 
+.join-market-telegram
+  margin: 48px 0
+  width: 100%
+  overflow: hidden
+  &-box
+    width: 100%
+    position: relative
+    z-index: 1
+    padding: 32px 40px
+    border-radius: 16px
+    background: #242933
+    color: #fff
+    .btn
+      margin: 50px 0 0
+    .box-text
+      color: rgba(#fff, .6)
+      font-size: 14px
+
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      bottom: 0
+      right: 118px
+      width: 100%
+      max-width: 652px
+      height: 271px
+      background: url('../img/join1.png') no-repeat center
+      background-size: 100%
+
+.link-news
+  display: block
+
+.blog-card-news.interesting-card
+  border-radius: 16px
+  .blog-card__title
+    font-size: 28px
+    font-family: $title-font
+    line-height: normal
+    font-weight: normal
+    margin: 0
+
 .about-section
   .box-image
     margin: 0 -80px 0 38px
@@ -156,6 +198,103 @@
 
 .interface-text
   margin: 0 0 40px
+  .box-text
+    color: rgba($black, .6)
+
+.support-domestic-collectors
+  padding: 56px 0
+  margin: 48px 0
+  &-text
+    .box-text
+      color: rgba($black, .6)
+
+.support-domestic-collectors-box
+  height: 100%
+  width: 318px
+  position: relative
+  z-index: 1
+  border-radius: 16px
+  overflow: hidden
+  background: rgba(#242933, .04)
+  display: flex
+  flex-direction: column
+  &__img
+    width: 100%
+    height: 286px
+    position: relative
+    z-index: 1
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 81px
+      z-index: 1
+      background: linear-gradient(180deg, rgba(246, 247, 247, 0) 0%, #F6F7F7 97.71%), linear-gradient(180deg, rgba(246, 247, 247, 0) 0%, #F6F7F7 97.71%)
+  &__body
+    width: 100%
+    padding: 16px 32px 32px 32px
+    height: calc( 100% - 286px )
+    display: flex
+    flex-direction: column
+  &__title
+    font-size: 20px
+    font-family: $title-font
+    margin: 0 0 8px
+    color: #242933
+    &:hover
+      color: $accent
+  .box-text
+    font-size: 14px
+    line-height: 22px
+    color: rgba($black, .6) 
+    margin: 0 0 auto  
+  .link-details
+    margin: 24px 0 0
+    display: flex
+    align-items: center
+    color: #1D1D1B
+    stroke: #1D1D1B
+    font-size: 16px
+    svg
+      width: 20px
+      height: 20px
+      min-width: 20px
+      margin: 0 0 0 12px
+    &:hover
+      color: $blue
+      stroke: $blue
+
+.support-domestic-collectors-box2
+  .support-domestic-collectors-box
+    &__img
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      z-index: -1
+      &::before
+        display: none
+    &__title
+      color: #fff
+      &:hover
+        color: $accent    
+    &__body
+      margin: auto 0 0
+      .box-text
+        color: rgba(#fff, .6) 
+      .link-details
+        color: #fff
+        stroke: #fff
+        &:hover
+          color: $accent
+          stroke: $accent
 
 .error-section
   text-align: center
@@ -1145,7 +1284,7 @@
   overflow: visible
   width: 100%
   // height: 100%
-  height: 388px
+  height: 390px
   flex-direction: column
   align-items: flex-start
   padding: 0
@@ -1158,12 +1297,14 @@
     padding: 16px 16px 8px
     flex-direction: column
     flex-wrap: nowrap
-    align-items: flex-start
+    // align-items: flex-start
+    align-items: center
     img
       mix-blend-mode: multiply
-      // max-height: 100%
+      max-height: 100%
     .stickers
       margin: 8px 0 0
+      width: 100%
   .card-product-top__body
     width: 100%
     height: calc( 100% - 224px )
@@ -1189,6 +1330,33 @@
     -webkit-box-orient: vertical
     line-clamp: 2
     box-orient: vertical
+
+.card-product-subscribe
+  background: #242933
+  border-color: #242933
+  color: #fff
+  .card-product-top__img
+    background: transparent
+    align-items: center
+    img
+      mix-blend-mode: normal
+      max-height: 100%
+    .img-dark
+      display: none
+  .card-product-top__name
+    margin: 0 0 8px
+    color: #FFFFFF
+    font-size: 20px
+    line-height: normal
+    font-family: $title-font
+    &:hover
+      color: $blue
+  .card-product-top__body
+    padding-top: 0
+  .card-product-top__body > span
+    color: rgba(#FFFFFF, .6)
+  .btn-group .btn:last-child
+    margin: 0
 
 // select sorter
 .showcase-sorter
@@ -1420,6 +1588,43 @@ h1.title-search-result
     margin: 0 0 16px
     &:last-child
       margin: 0
+
+.market-telegram
+  width: 100%
+  color: #fff
+  position: relative
+  z-index: 1
+  margin: 32px 0 0
+  background: #242933
+  border-radius: 16px
+  overflow: hidden
+  padding: 32px
+  &__img
+    position: absolute
+    z-index: -1
+    right: 0
+    bottom: 0
+    .img-dark
+      display: none
+  &__title
+    font-size: 20px
+    line-height: normal
+    font-family: $title-font
+    color: #fff
+    &:hover
+      color: $blue
+  &__body
+    max-width: 300px
+    width: 100%
+    .box-text
+      max-width: 185px
+      font-size: 14px
+      color: rgba(#fff,.6 )
+      margin: 8px 0 0
+    .btn
+      margin: 38px 0 0
+      max-width: 202px
+      width: 100%
 
 .product-image-preview
   width: 100%
